@@ -1,9 +1,24 @@
 rootProject.name = "Apache SIS"
 
+/**
+ * Check if JavaFx is available. Note that:
+ * - If user specify a `javafx` project property, we do not check classpath, and directly return true.
+ * - Otherwise, we try to load arbitrarily the `javafx.application.Application` class, to verify if JavaFx is available.
+ * @return True if JavaFx is available on the classpath, or if user has forced `-Pjavafx` argument. False otherwise.
+ */
+fun javaFxFound() : Boolean {
+    if (gradle.startParameter.projectProperties.containsKey("javafx")) return true
+    return runCatching {
+        ClassLoader.getSystemClassLoader().loadClass("javafx.application.Application")
+        true
+    }
+    .getOrDefault(false)
+}
+
 include(
     ":application",
     ":application:sis-console",
-    ":application:sis-javafx",
+    if (javaFxFound()) ":application:sis-javafx" else "",
     ":application:sis-openoffice",
     ":application:sis-webapp",
 )
