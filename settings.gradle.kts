@@ -1,3 +1,16 @@
+//=============================================================================================
+// Gradle project configuration file
+//        https://gradle.org/
+//
+// Apache SIS build requires Java 11 or higher, but compiled files can be executed on Java 8.
+// Setting the SIS_DATA environment variable before build is optional but recommended.
+//
+// Build development snapshot:        mvn clean install
+// Include EPSG database:             mvn install -Pnon-free
+// Include JavaFX dependency (GPL):   mvn install -Pjavafx
+// Run more extensive tests:          mvn test -Dorg.apache.sis.test.extensive=true
+//=============================================================================================
+
 rootProject.name = "Apache SIS"
 
 /**
