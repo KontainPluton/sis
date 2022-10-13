@@ -28,47 +28,47 @@ fun javaFxFound() : Boolean {
     .getOrDefault(false)
 }
 
-include(
-    ":application",
-    ":application:sis-console",
-    if (javaFxFound()) ":application:sis-javafx" else "",
-    ":application:sis-openoffice",
-    ":application:sis-webapp",
-)
-
-include(
-    ":core",
-    ":core:sis-build-helper",
-    ":core:sis-cql",
-    ":core:sis-feature",
-    ":core:sis-metadata",
-    ":core:sis-portrayal",
-    ":core:sis-referencing",
-    ":core:sis-referencing-by-identifiers",
-    ":core:sis-utility"
-)
-
-include(
-    ":cloud",
-    ":cloud:sis-cloud-aws"
-)
-
-include(
-    ":profiles",
-    ":profiles:sis-french-profile",
-    ":profiles:sis-japan-profile",
-)
-
-include(
-    ":storage",
-    ":storage:sis-earth-observation",
-    ":storage:sis-geotiff",
-    ":storage:sis-netcdf",
-    ":storage:sis-shapefile",
-    ":storage:sis-sqlstore",
-    ":storage:sis-storage",
-    ":storage:sis-xmlstore",
-)
+//include(
+//    ":application",
+//    ":application:sis-console",
+//    if (javaFxFound()) ":application:sis-javafx" else "",
+//    ":application:sis-openoffice",
+//    ":application:sis-webapp",
+//)
+//
+//include(
+//    ":core",
+//    ":core:sis-build-helper",
+//    ":core:sis-cql",
+//    ":core:sis-feature",
+//    ":core:sis-metadata",
+//    ":core:sis-portrayal",
+//    ":core:sis-referencing",
+//    ":core:sis-referencing-by-identifiers",
+//    ":core:sis-utility"
+//)
+//
+//include(
+//    ":cloud",
+//    ":cloud:sis-cloud-aws"
+//)
+//
+//include(
+//    ":profiles",
+//    ":profiles:sis-french-profile",
+//    ":profiles:sis-japan-profile",
+//)
+//
+//include(
+//    ":storage",
+//    ":storage:sis-earth-observation",
+//    ":storage:sis-geotiff",
+//    ":storage:sis-netcdf",
+//    ":storage:sis-shapefile",
+//    ":storage:sis-sqlstore",
+//    ":storage:sis-storage",
+//    ":storage:sis-xmlstore",
+//)
 
 val geoapiVersion = "4.0-SNAPSHOT"
 

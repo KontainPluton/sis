@@ -230,23 +230,23 @@
     </concat>
 
     <!-- TypeRegistration implementations to be loaded by ServiceLoader. -->
-    <concat destfile="${build.classes.dir}/META-INF/services/org.apache.sis.internal.jaxb.TypeRegistration" encoding="UTF-8" fixlastline="yes">
+    <concat destfile="${build.classes.dir}/META-INF/services/jaxb.internal.sis.apache.org.java.main.src.org.apache.sis.metadata.TypeRegistration" encoding="UTF-8" fixlastline="yes">
       <fileset dir="${project.root}">
-        <include name="*/*/src/main/resources/META-INF/services/org.apache.sis.internal.jaxb.TypeRegistration"/>
+        <include name="*/*/src/main/resources/META-INF/services/jaxb.internal.sis.apache.org.java.main.src.org.apache.sis.metadata.TypeRegistration"/>
       </fileset>
     </concat>
 
     <!-- AdapterReplacement implementations to be loaded by ServiceLoader. -->
-    <concat destfile="${build.classes.dir}/META-INF/services/org.apache.sis.internal.jaxb.AdapterReplacement" encoding="UTF-8" fixlastline="yes">
+    <concat destfile="${build.classes.dir}/META-INF/services/jaxb.internal.sis.apache.org.java.main.src.org.apache.sis.metadata.AdapterReplacement" encoding="UTF-8" fixlastline="yes">
       <fileset dir="${project.root}">
-        <include name="*/*/src/main/resources/META-INF/services/org.apache.sis.internal.jaxb.AdapterReplacement"/>
+        <include name="*/*/src/main/resources/META-INF/services/jaxb.internal.sis.apache.org.java.main.src.org.apache.sis.metadata.AdapterReplacement"/>
       </fileset>
     </concat>
 
     <!-- Initializer implementations to be loaded by ServiceLoader. -->
-    <concat destfile="${build.classes.dir}/META-INF/services/org.apache.sis.internal.metadata.sql.Initializer" encoding="UTF-8" fixlastline="yes">
+    <concat destfile="${build.classes.dir}/META-INF/services/sql.metadata.internal.sis.apache.org.java.main.src.org.apache.sis.metadata.Initializer" encoding="UTF-8" fixlastline="yes">
       <fileset dir="${project.root}">
-        <include name="*/*/src/main/resources/META-INF/services/org.apache.sis.internal.metadata.sql.Initializer"/>
+        <include name="*/*/src/main/resources/META-INF/services/sql.metadata.internal.sis.apache.org.java.main.src.org.apache.sis.metadata.Initializer"/>
       </fileset>
     </concat>
 
