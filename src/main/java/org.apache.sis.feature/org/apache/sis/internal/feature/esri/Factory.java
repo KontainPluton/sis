@@ -16,29 +16,19 @@
  */
 package org.apache.sis.internal.feature.esri;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Iterator;
-import java.nio.ByteBuffer;
-import java.io.ObjectStreamException;
-import com.esri.core.geometry.Geometry;
-import com.esri.core.geometry.Line;
-import com.esri.core.geometry.Point;
-import com.esri.core.geometry.Polygon;
-import com.esri.core.geometry.Polyline;
-import com.esri.core.geometry.MultiPath;
-import com.esri.core.geometry.MultiPoint;
-import com.esri.core.geometry.OperatorCentroid2D;
-import com.esri.core.geometry.OperatorImportFromWkb;
-import com.esri.core.geometry.OperatorImportFromWkt;
-import com.esri.core.geometry.WkbImportFlags;
-import com.esri.core.geometry.WktImportFlags;
-import org.apache.sis.setup.GeometryLibrary;
+import com.esri.core.geometry.*;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.GeometryType;
 import org.apache.sis.internal.feature.GeometryWrapper;
 import org.apache.sis.internal.util.CollectionsExt;
 import org.apache.sis.math.Vector;
+import org.apache.sis.setup.GeometryLibrary;
+
+import java.io.ObjectStreamException;
+import java.nio.ByteBuffer;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
 
 
 /**

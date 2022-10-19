@@ -48,14 +48,14 @@ import org.apache.sis.referencing.operation.matrix.Matrices;
 import org.apache.sis.referencing.operation.matrix.MatrixSIS;
 import org.apache.sis.referencing.operation.transform.MathTransforms;
 import org.apache.sis.referencing.operation.transform.TransformSeparator;
-import org.apache.sis.test.TestUtilities;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestUtilities;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.opengis.referencing.datum.PixelInCell.CELL_CENTER;
-import static org.apache.sis.test.FeatureAssert.*;
+import static org.apache.sis.testfeature.FeatureAssert.*;
 
 
 /**

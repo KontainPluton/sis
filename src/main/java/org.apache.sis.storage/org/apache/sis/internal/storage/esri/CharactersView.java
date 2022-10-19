@@ -16,18 +16,19 @@
  */
 package org.apache.sis.internal.storage.esri;
 
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Locale;
-import java.io.IOException;
-import java.io.EOFException;
-import java.nio.ByteBuffer;
-import java.nio.charset.StandardCharsets;
 import org.apache.sis.internal.jdk9.JDK9;
 import org.apache.sis.internal.storage.Resources;
 import org.apache.sis.internal.storage.io.ChannelDataInput;
 import org.apache.sis.storage.DataStoreContentException;
 import org.apache.sis.util.resources.Errors;
+
+import java.io.EOFException;
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
 
 
 /**

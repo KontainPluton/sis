@@ -16,25 +16,26 @@
  */
 package org.apache.sis.internal.coverage;
 
-import java.util.Arrays;
-import java.awt.Dimension;
-import java.awt.image.RenderedImage;
-import java.awt.image.WritableRenderedImage;
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridExtent;
+import org.apache.sis.coverage.grid.GridGeometry;
+import org.apache.sis.coverage.grid.ImageRenderer;
+import org.apache.sis.image.ImageCombiner;
+import org.apache.sis.image.ImageProcessor;
+import org.apache.sis.image.Interpolation;
+import org.apache.sis.image.PlanarImage;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.ArraysExt;
+import org.apache.sis.util.resources.Errors;
 import org.opengis.geometry.Envelope;
 import org.opengis.referencing.datum.PixelInCell;
 import org.opengis.referencing.operation.MathTransform;
 import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.coverage.grid.GridExtent;
-import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.coverage.grid.ImageRenderer;
-import org.apache.sis.image.ImageProcessor;
-import org.apache.sis.image.ImageCombiner;
-import org.apache.sis.image.Interpolation;
-import org.apache.sis.image.PlanarImage;
-import org.apache.sis.util.ArraysExt;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.resources.Errors;
+
+import java.awt.*;
+import java.awt.image.RenderedImage;
+import java.awt.image.WritableRenderedImage;
+import java.util.Arrays;
 
 import static java.lang.Math.round;
 import static org.apache.sis.internal.util.Numerics.saturatingAdd;

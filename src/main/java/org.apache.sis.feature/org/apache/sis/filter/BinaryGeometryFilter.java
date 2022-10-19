@@ -16,29 +16,22 @@
  */
 package org.apache.sis.filter;
 
-import java.util.List;
-import java.util.Arrays;
-import javax.measure.Unit;
-import javax.measure.IncommensurableException;
-import org.opengis.util.FactoryException;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
-import org.opengis.referencing.operation.TransformException;
+import org.apache.sis.internal.feature.AttributeConvention;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.GeometryWrapper;
 import org.apache.sis.internal.feature.SpatialOperationContext;
-import org.apache.sis.internal.feature.AttributeConvention;
 import org.apache.sis.util.ArgumentChecks;
-
-// Branch-dependent imports
-import org.opengis.filter.Filter;
-import org.opengis.filter.Literal;
-import org.opengis.filter.Expression;
-import org.opengis.filter.ValueReference;
-import org.opengis.filter.SpatialOperator;
-import org.opengis.filter.BinarySpatialOperator;
-import org.opengis.filter.InvalidFilterValueException;
 import org.opengis.feature.FeatureType;
 import org.opengis.feature.PropertyNotFoundException;
+import org.opengis.filter.*;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.FactoryException;
+
+import javax.measure.IncommensurableException;
+import javax.measure.Unit;
+import java.util.Arrays;
+import java.util.List;
 
 
 /**

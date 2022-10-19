@@ -16,14 +16,15 @@
  */
 package org.apache.sis.internal.storage;
 
-import java.util.logging.Level;
-import java.util.logging.LogRecord;
-import java.util.logging.Logger;
-import org.opengis.metadata.distribution.Format;
+import org.apache.sis.internal.system.Modules;
 import org.apache.sis.metadata.sql.MetadataSource;
 import org.apache.sis.metadata.sql.MetadataStoreException;
 import org.apache.sis.storage.event.StoreListeners;
-import org.apache.sis.internal.system.Modules;
+import org.opengis.metadata.distribution.Format;
+
+import java.util.logging.Level;
+import java.util.logging.LogRecord;
+import java.util.logging.Logger;
 
 
 /**

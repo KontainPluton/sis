@@ -16,16 +16,11 @@
  */
 package org.apache.sis.internal.feature.jts;
 
+import org.apache.sis.util.ArgumentChecks;
+import org.locationtech.jts.geom.*;
+
 import java.io.Serializable;
 import java.util.Arrays;
-import org.apache.sis.util.ArgumentChecks;
-import org.locationtech.jts.geom.Envelope;
-import org.locationtech.jts.geom.Coordinate;
-import org.locationtech.jts.geom.CoordinateXY;
-import org.locationtech.jts.geom.CoordinateXYM;
-import org.locationtech.jts.geom.CoordinateXYZM;
-import org.locationtech.jts.geom.CoordinateSequence;
-import org.locationtech.jts.geom.CoordinateSequences;
 
 
 /**

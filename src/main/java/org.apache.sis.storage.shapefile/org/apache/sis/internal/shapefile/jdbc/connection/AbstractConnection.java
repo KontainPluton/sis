@@ -16,14 +16,14 @@
  */
 package org.apache.sis.internal.shapefile.jdbc.connection;
 
+import org.apache.sis.internal.shapefile.jdbc.AbstractJDBC;
+
 import java.sql.*;
 import java.util.Collections;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.Executor;
 import java.util.logging.Level;
-
-import org.apache.sis.internal.shapefile.jdbc.AbstractJDBC;
 
 
 /**

@@ -26,14 +26,14 @@ import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.measure.Quantities;
 import org.apache.sis.measure.Units;
 import org.apache.sis.math.Vector;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.apache.sis.referencing.crs.HardCodedCRS;
 import org.apache.sis.referencing.operation.HardCodedConversions;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 import static org.opengis.test.Assert.assertInstanceOf;
-import static org.apache.sis.test.Assert.assertSerializedEquals;
+import static org.apache.sis.testutilities.Assert.assertSerializedEquals;
 
 // Branch-dependent imports
 import org.opengis.feature.Feature;

@@ -16,51 +16,41 @@
  */
 package org.apache.sis.storage.geotiff;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.logging.LogRecord;
-import java.net.URI;
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Path;
-import java.nio.file.StandardOpenOption;
-
-import org.apache.sis.storage.geotiff.GeoTiffStoreProvider;
-import org.apache.sis.storage.geotiff.ImageFileDirectory;
-import org.apache.sis.storage.geotiff.NativeMetadata;
-import org.opengis.util.NameSpace;
-import org.opengis.util.NameFactory;
-import org.opengis.util.GenericName;
-import org.opengis.metadata.Metadata;
-import org.opengis.metadata.maintenance.ScopeCode;
-import org.opengis.parameter.ParameterValueGroup;
-import org.apache.sis.setup.OptionKey;
-import org.apache.sis.storage.Aggregate;
-import org.apache.sis.storage.GridCoverageResource;
-import org.apache.sis.storage.DataStore;
-import org.apache.sis.storage.DataStoreProvider;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.DataStoreClosedException;
-import org.apache.sis.storage.IllegalNameException;
-import org.apache.sis.storage.event.StoreEvent;
-import org.apache.sis.storage.event.StoreListener;
-import org.apache.sis.storage.event.StoreListeners;
-import org.apache.sis.storage.event.WarningEvent;
-import org.apache.sis.internal.storage.io.ChannelDataInput;
-import org.apache.sis.internal.storage.io.IOUtilities;
+import org.apache.sis.internal.geotiff.SchemaModifier;
 import org.apache.sis.internal.storage.MetadataBuilder;
 import org.apache.sis.internal.storage.StoreUtilities;
 import org.apache.sis.internal.storage.URIDataStore;
-import org.apache.sis.internal.geotiff.SchemaModifier;
+import org.apache.sis.internal.storage.io.ChannelDataInput;
+import org.apache.sis.internal.storage.io.IOUtilities;
 import org.apache.sis.internal.util.Constants;
 import org.apache.sis.internal.util.ListOfUnknownSize;
 import org.apache.sis.metadata.iso.DefaultMetadata;
 import org.apache.sis.metadata.sql.MetadataStoreException;
+import org.apache.sis.setup.OptionKey;
+import org.apache.sis.storage.*;
+import org.apache.sis.storage.event.StoreEvent;
+import org.apache.sis.storage.event.StoreListener;
+import org.apache.sis.storage.event.StoreListeners;
+import org.apache.sis.storage.event.WarningEvent;
 import org.apache.sis.util.collection.BackingStoreException;
 import org.apache.sis.util.collection.TreeTable;
 import org.apache.sis.util.resources.Errors;
+import org.opengis.metadata.Metadata;
+import org.opengis.metadata.maintenance.ScopeCode;
+import org.opengis.parameter.ParameterValueGroup;
+import org.opengis.util.GenericName;
+import org.opengis.util.NameFactory;
+import org.opengis.util.NameSpace;
+
+import java.io.IOException;
+import java.net.URI;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+import java.util.List;
+import java.util.Optional;
+import java.util.logging.LogRecord;
 
 
 /**

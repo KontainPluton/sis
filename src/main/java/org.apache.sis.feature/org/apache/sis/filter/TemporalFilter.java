@@ -16,15 +16,14 @@
  */
 package org.apache.sis.filter;
 
-import java.util.Date;
-import java.time.Instant;
-
-// Branch-dependent imports
-import org.opengis.temporal.Period;
-import org.opengis.filter.Filter;
 import org.opengis.filter.Expression;
+import org.opengis.filter.Filter;
 import org.opengis.filter.TemporalOperator;
 import org.opengis.filter.TemporalOperatorName;
+import org.opengis.temporal.Period;
+
+import java.time.Instant;
+import java.util.Date;
 
 
 /**

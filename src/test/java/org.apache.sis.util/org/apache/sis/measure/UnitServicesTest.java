@@ -22,11 +22,11 @@ import java.util.Locale;
 import javax.measure.Unit;
 import javax.measure.format.UnitFormat;
 import javax.measure.spi.ServiceProvider;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

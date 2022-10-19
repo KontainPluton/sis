@@ -16,16 +16,17 @@
  */
 package org.apache.sis.internal.storage.image;
 
-import java.io.IOException;
-import java.awt.image.RenderedImage;
-import javax.imageio.ImageWriter;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.GridGeometry;
+import org.apache.sis.internal.storage.Resources;
+import org.apache.sis.internal.storage.WritableResourceSupport;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.WritableGridCoverageResource;
-import org.apache.sis.internal.storage.WritableResourceSupport;
-import org.apache.sis.internal.storage.Resources;
 import org.apache.sis.storage.event.StoreListeners;
+
+import javax.imageio.ImageWriter;
+import java.awt.image.RenderedImage;
+import java.io.IOException;
 
 
 /**

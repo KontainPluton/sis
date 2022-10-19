@@ -16,15 +16,15 @@
  */
 package org.apache.sis.image;
 
-import java.io.Closeable;
-import java.awt.Dimension;
-import java.awt.Rectangle;
+import org.apache.sis.internal.feature.Resources;
+import org.opengis.coverage.grid.SequenceType;
+
+import java.awt.*;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.WritableRaster;
 import java.awt.image.WritableRenderedImage;
-import org.opengis.coverage.grid.SequenceType;
-import org.apache.sis.internal.feature.Resources;
+import java.io.Closeable;
 
 
 /**

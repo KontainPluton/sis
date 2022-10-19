@@ -18,7 +18,7 @@ package org.apache.sis.internal.metadata;
 
 import org.junit.Test;
 import java.lang.reflect.Field;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 
 import static org.junit.Assert.*;
 

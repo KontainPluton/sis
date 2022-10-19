@@ -24,13 +24,13 @@ import java.awt.image.BufferedImage;
 import java.awt.image.ColorModel;
 import java.awt.image.ImagingOpException;
 import java.util.function.Consumer;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 import static org.opengis.test.Assert.assertInstanceOf;
-import static org.apache.sis.test.FeatureAssert.assertValuesEqual;
+import static org.apache.sis.testfeature.FeatureAssert.assertValuesEqual;
 
 
 /**

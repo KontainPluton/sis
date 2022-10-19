@@ -28,12 +28,12 @@ import org.apache.sis.feature.AbstractOperationTest;
 import org.apache.sis.feature.CharacteristicMapTest;
 import org.apache.sis.feature.DefaultAssociationRoleTest;
 import org.apache.sis.feature.DefaultFeatureTypeTest;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.TestUtilities;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.TestUtilities;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 // Branch-dependent import
 import org.opengis.feature.PropertyType;

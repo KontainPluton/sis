@@ -16,13 +16,13 @@
  */
 package org.apache.sis.internal.shapefile.jdbc.sql;
 
-import java.util.Objects;
-import java.util.function.Function;
-import java.util.logging.Level;
-
 import org.apache.sis.internal.shapefile.AutoChecker;
 import org.apache.sis.internal.shapefile.jdbc.SQLConnectionClosedException;
 import org.apache.sis.internal.shapefile.jdbc.resultset.*;
+
+import java.util.Objects;
+import java.util.function.Function;
+import java.util.logging.Level;
 
 /**
  * Base class for clause resolver.

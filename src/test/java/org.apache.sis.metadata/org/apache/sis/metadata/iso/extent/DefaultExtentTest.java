@@ -27,11 +27,11 @@ import org.apache.sis.metadata.xml.TestUsingFile;
 import org.opengis.metadata.extent.Extent;
 import org.apache.sis.util.Version;
 import org.apache.sis.util.SimpleInternationalString;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOn;
 import org.junit.Test;
 
-import static org.apache.sis.test.MetadataAssert.*;
-import static org.apache.sis.test.TestUtilities.date;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
+import static org.apache.sis.testutilities.TestUtilities.date;
 
 
 /**

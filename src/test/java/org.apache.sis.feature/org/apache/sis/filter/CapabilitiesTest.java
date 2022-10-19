@@ -18,8 +18,8 @@ package org.apache.sis.filter;
 
 import java.util.Set;
 import org.opengis.util.LocalName;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.TestUtilities;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.TestUtilities;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

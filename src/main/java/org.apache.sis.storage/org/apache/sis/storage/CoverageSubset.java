@@ -16,21 +16,15 @@
  */
 package org.apache.sis.storage;
 
-import java.util.Arrays;
-import java.util.List;
-
-import org.apache.sis.storage.*;
-import org.opengis.util.FactoryException;
-import org.opengis.referencing.operation.TransformException;
 import org.apache.sis.coverage.SampleDimension;
-import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.coverage.grid.GridDerivation;
-import org.apache.sis.coverage.grid.GridRoundingMode;
-import org.apache.sis.coverage.grid.GridClippingMode;
-import org.apache.sis.coverage.grid.DisjointExtentException;
+import org.apache.sis.coverage.grid.*;
 import org.apache.sis.internal.storage.Resources;
 import org.apache.sis.internal.util.UnmodifiableArrayList;
+import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.FactoryException;
+
+import java.util.Arrays;
+import java.util.List;
 
 
 /**

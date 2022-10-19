@@ -23,7 +23,7 @@ import java.awt.image.PixelInterleavedSampleModel;
 import java.awt.image.SinglePixelPackedSampleModel;
 import java.awt.image.MultiPixelPackedSampleModel;
 import org.apache.sis.image.DataType;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -16,45 +16,39 @@
  */
 package org.apache.sis.coverage.grid;
 
-import java.util.Arrays;
-import java.util.Locale;
-import java.io.IOException;
-import java.io.UncheckedIOException;
-import java.math.RoundingMode;
-import org.opengis.geometry.Envelope;
-import org.opengis.geometry.DirectPosition;
-import org.opengis.util.FactoryException;
-import org.opengis.referencing.datum.PixelInCell;
-import org.opengis.referencing.operation.Matrix;
-import org.opengis.referencing.operation.MathTransform;
-import org.opengis.referencing.operation.TransformException;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
-import org.apache.sis.referencing.operation.transform.MathTransforms;
-import org.apache.sis.referencing.operation.transform.LinearTransform;
-import org.apache.sis.referencing.operation.transform.TransformSeparator;
-import org.apache.sis.referencing.operation.matrix.Matrices;
-import org.apache.sis.referencing.CRS;
-import org.apache.sis.internal.referencing.DirectPositionView;
+import org.apache.sis.geometry.Envelopes;
 import org.apache.sis.geometry.GeneralDirectPosition;
 import org.apache.sis.geometry.GeneralEnvelope;
-import org.apache.sis.geometry.Envelopes;
 import org.apache.sis.geometry.WraparoundAdjustment;
 import org.apache.sis.internal.feature.Resources;
-import org.apache.sis.util.resources.Vocabulary;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.ArraysExt;
-import org.apache.sis.util.CharSequences;
-import org.apache.sis.util.Classes;
-import org.apache.sis.util.Debug;
+import org.apache.sis.internal.referencing.DirectPositionView;
+import org.apache.sis.math.MathFunctions;
+import org.apache.sis.referencing.CRS;
+import org.apache.sis.referencing.operation.matrix.Matrices;
+import org.apache.sis.referencing.operation.transform.LinearTransform;
+import org.apache.sis.referencing.operation.transform.MathTransforms;
+import org.apache.sis.referencing.operation.transform.TransformSeparator;
+import org.apache.sis.util.*;
 import org.apache.sis.util.collection.DefaultTreeTable;
 import org.apache.sis.util.collection.TableColumn;
 import org.apache.sis.util.collection.TreeTable;
-import org.apache.sis.util.StringBuilders;
-import org.apache.sis.math.MathFunctions;
-
-// Branch-dependent imports
+import org.apache.sis.util.resources.Errors;
+import org.apache.sis.util.resources.Vocabulary;
 import org.opengis.coverage.PointOutsideCoverageException;
+import org.opengis.geometry.DirectPosition;
+import org.opengis.geometry.Envelope;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.referencing.datum.PixelInCell;
+import org.opengis.referencing.operation.MathTransform;
+import org.opengis.referencing.operation.Matrix;
+import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.FactoryException;
+
+import java.io.IOException;
+import java.io.UncheckedIOException;
+import java.math.RoundingMode;
+import java.util.Arrays;
+import java.util.Locale;
 
 
 /**

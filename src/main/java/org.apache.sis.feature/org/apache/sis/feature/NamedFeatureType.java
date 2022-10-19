@@ -16,22 +16,16 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Set;
-import java.util.Collection;
-import java.util.Collections;
-import java.io.Serializable;
-
-import org.apache.sis.feature.DefaultAssociationRole;
-import org.apache.sis.feature.DefaultFeatureType;
-import org.opengis.feature.Feature;
-import org.opengis.feature.FeatureType;
-import org.opengis.feature.PropertyType;
-import org.opengis.feature.PropertyNotFoundException;
-import org.opengis.feature.FeatureInstantiationException;
+import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.internal.util.Strings;
+import org.opengis.feature.*;
 import org.opengis.util.GenericName;
 import org.opengis.util.InternationalString;
-import org.apache.sis.internal.util.Strings;
-import org.apache.sis.internal.feature.Resources;
+
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Set;
 
 
 /**

@@ -16,8 +16,9 @@
  */
 package org.apache.sis.storage.event;
 
-import java.util.EventListener;
 import org.apache.sis.storage.Resource;
+
+import java.util.EventListener;
 
 
 /**

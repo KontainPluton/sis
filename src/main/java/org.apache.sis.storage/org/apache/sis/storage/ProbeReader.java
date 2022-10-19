@@ -16,16 +16,12 @@
  */
 package org.apache.sis.storage;
 
+import org.apache.sis.internal.storage.Resources;
+import org.apache.sis.util.resources.Errors;
+
+import java.io.FilterReader;
 import java.io.IOException;
 import java.io.Reader;
-import java.io.FilterReader;
-
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.DataStoreProvider;
-import org.apache.sis.storage.ProbeInputStream;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.internal.storage.Resources;
 
 
 /**

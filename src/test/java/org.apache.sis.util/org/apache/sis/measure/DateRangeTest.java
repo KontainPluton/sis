@@ -18,11 +18,11 @@ package org.apache.sis.measure;
 
 import java.util.Date;
 import org.junit.Test;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.DependsOn;
 
 import static org.junit.Assert.*;
-import static org.apache.sis.test.TestUtilities.date;
+import static org.apache.sis.testutilities.TestUtilities.date;
 
 
 /**

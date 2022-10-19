@@ -16,39 +16,27 @@
  */
 package org.apache.sis.internal.feature.jts;
 
-import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.function.Function;
-import java.util.function.BiFunction;
-import java.nio.ByteBuffer;
-import java.io.ObjectStreamException;
-import org.apache.sis.setup.GeometryLibrary;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.GeometryType;
 import org.apache.sis.internal.feature.GeometryWrapper;
 import org.apache.sis.internal.util.Strings;
 import org.apache.sis.math.Vector;
+import org.apache.sis.setup.GeometryLibrary;
 import org.apache.sis.util.Classes;
 import org.apache.sis.util.resources.Errors;
-
-// Optional dependencies
-import org.locationtech.jts.geom.Coordinate;
-import org.locationtech.jts.geom.CoordinateXY;
-import org.locationtech.jts.geom.CoordinateSequence;
-import org.locationtech.jts.geom.Geometry;
-import org.locationtech.jts.geom.GeometryFactory;
-import org.locationtech.jts.geom.LineString;
-import org.locationtech.jts.geom.LinearRing;
-import org.locationtech.jts.geom.MultiLineString;
-import org.locationtech.jts.geom.MultiPoint;
-import org.locationtech.jts.geom.MultiPolygon;
-import org.locationtech.jts.geom.Point;
-import org.locationtech.jts.geom.Polygon;
+import org.locationtech.jts.geom.*;
 import org.locationtech.jts.io.ParseException;
 import org.locationtech.jts.io.WKBReader;
 import org.locationtech.jts.io.WKTReader;
+
+import java.io.ObjectStreamException;
+import java.nio.ByteBuffer;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+import java.util.function.BiFunction;
+import java.util.function.Function;
 
 
 /**

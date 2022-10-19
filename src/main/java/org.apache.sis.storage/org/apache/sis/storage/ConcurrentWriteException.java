@@ -16,8 +16,9 @@
  */
 package org.apache.sis.storage;
 
-import java.util.Locale;
 import org.apache.sis.internal.storage.Resources;
+
+import java.util.Locale;
 
 
 /**

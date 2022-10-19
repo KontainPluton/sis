@@ -28,11 +28,11 @@ import org.apache.sis.internal.jaxb.metadata.replace.ReferenceSystemMetadata;
 import org.apache.sis.internal.profile.fra.IndirectReferenceSystem;
 import org.apache.sis.internal.profile.fra.DirectReferenceSystem;
 import org.apache.sis.metadata.iso.DefaultIdentifier;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.opengis.test.Assert.*;
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
 
 
 /**

@@ -18,14 +18,14 @@ package org.apache.sis.util.collection;
 
 import java.util.HashSet;
 import java.util.Random;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.TestConfiguration;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.TestConfiguration;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
-import static org.apache.sis.test.TestUtilities.waitForGarbageCollection;
+import static org.apache.sis.testutilities.Assert.*;
+import static org.apache.sis.testutilities.TestUtilities.waitForGarbageCollection;
 
 
 /**

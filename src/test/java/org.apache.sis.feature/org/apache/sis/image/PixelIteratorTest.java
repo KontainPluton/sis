@@ -34,9 +34,9 @@ import java.awt.image.WritableRenderedImage;
 import org.opengis.coverage.grid.SequenceType;
 import org.apache.sis.util.ArraysExt;
 import org.apache.sis.measure.NumberRange;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.TestUtilities;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.TestUtilities;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.After;
 import org.junit.Test;
 

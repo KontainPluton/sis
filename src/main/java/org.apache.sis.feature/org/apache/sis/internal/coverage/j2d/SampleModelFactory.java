@@ -16,20 +16,14 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.util.Arrays;
-import java.awt.image.DataBuffer;
-import java.awt.image.SampleModel;
-import java.awt.image.BandedSampleModel;
-import java.awt.image.ComponentSampleModel;
-import java.awt.image.PixelInterleavedSampleModel;
-import java.awt.image.MultiPixelPackedSampleModel;
-import java.awt.image.SinglePixelPackedSampleModel;
-import java.awt.image.RasterFormatException;
-import org.apache.sis.internal.util.Numerics;
 import org.apache.sis.image.DataType;
-import org.apache.sis.util.ArraysExt;
+import org.apache.sis.internal.util.Numerics;
 import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.resources.Errors;
+
+import java.awt.image.*;
+import java.util.Arrays;
 
 
 /**

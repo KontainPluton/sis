@@ -16,6 +16,8 @@
  */
 package org.apache.sis.internal.shapefile;
 
+import org.apache.sis.internal.system.Modules;
+
 import java.lang.reflect.Constructor;
 import java.text.MessageFormat;
 import java.util.MissingResourceException;
@@ -23,7 +25,6 @@ import java.util.Objects;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.apache.sis.internal.system.Modules;
 
 
 /**

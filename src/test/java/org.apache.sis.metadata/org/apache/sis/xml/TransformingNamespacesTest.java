@@ -24,10 +24,10 @@ import java.util.Collection;
 import java.util.Collections;
 import javax.xml.namespace.NamespaceContext;
 import org.apache.sis.internal.xml.LegacyNamespaces;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

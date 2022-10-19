@@ -19,9 +19,9 @@ package org.apache.sis.feature;
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Collection;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOn;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 // Branch-dependent imports
 import org.opengis.feature.AttributeType;

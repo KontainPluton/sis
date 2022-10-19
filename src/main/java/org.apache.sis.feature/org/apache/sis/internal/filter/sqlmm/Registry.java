@@ -16,14 +16,13 @@
  */
 package org.apache.sis.internal.filter.sqlmm;
 
-import java.util.Arrays;
-import java.util.Collection;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.filter.FunctionRegister;
 import org.apache.sis.internal.jdk9.JDK9;
-
-// Branch-dependent imports
 import org.opengis.filter.Expression;
+
+import java.util.Arrays;
+import java.util.Collection;
 
 
 /**

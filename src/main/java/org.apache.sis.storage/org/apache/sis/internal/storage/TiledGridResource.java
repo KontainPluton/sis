@@ -16,30 +16,19 @@
  */
 package org.apache.sis.internal.storage;
 
-import java.util.List;
-import java.util.Arrays;
-import java.awt.image.DataBuffer;
-import java.awt.image.ColorModel;
-import java.awt.image.SampleModel;
-import java.awt.image.BandedSampleModel;
-import java.awt.image.ComponentSampleModel;
-import java.awt.image.Raster;
-import java.awt.image.RenderedImage;
-import java.awt.image.RasterFormatException;
-import org.opengis.coverage.CannotEvaluateException;
 import org.apache.sis.coverage.SampleDimension;
-import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.coverage.grid.GridCoverage2D;
-import org.apache.sis.coverage.grid.GridDerivation;
-import org.apache.sis.coverage.grid.GridExtent;
-import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.coverage.grid.GridRoundingMode;
+import org.apache.sis.coverage.grid.*;
 import org.apache.sis.storage.AbstractGridCoverageResource;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.RasterLoadingStrategy;
 import org.apache.sis.storage.event.StoreListeners;
-import org.apache.sis.util.collection.WeakValueHashMap;
 import org.apache.sis.util.ArraysExt;
+import org.apache.sis.util.collection.WeakValueHashMap;
+import org.opengis.coverage.CannotEvaluateException;
+
+import java.awt.image.*;
+import java.util.Arrays;
+import java.util.List;
 
 import static org.apache.sis.internal.storage.TiledGridCoverage.X_DIMENSION;
 import static org.apache.sis.internal.storage.TiledGridCoverage.Y_DIMENSION;

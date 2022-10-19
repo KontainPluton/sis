@@ -37,11 +37,11 @@ import org.opengis.test.dataset.ContentVerifier;
 import org.apache.sis.storage.AbstractResource;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.event.StoreListeners;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-import static org.apache.sis.test.TestUtilities.date;
+import static org.apache.sis.testutilities.TestUtilities.date;
 
 
 /**

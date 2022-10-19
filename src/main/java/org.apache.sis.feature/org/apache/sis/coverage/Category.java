@@ -16,23 +16,24 @@
  */
 package org.apache.sis.coverage;
 
-import java.util.Objects;
-import java.util.Optional;
-import java.util.Comparator;
-import java.util.function.DoubleToIntFunction;
-import java.io.Serializable;
-import javax.measure.Unit;
-import org.opengis.util.InternationalString;
-import org.opengis.referencing.operation.MathTransform1D;
-import org.opengis.referencing.operation.TransformException;
+import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.math.MathFunctions;
 import org.apache.sis.measure.MeasurementRange;
 import org.apache.sis.measure.NumberRange;
-import org.apache.sis.math.MathFunctions;
 import org.apache.sis.referencing.operation.transform.MathTransforms;
-import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.iso.Types;
+import org.opengis.referencing.operation.MathTransform1D;
+import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.InternationalString;
+
+import javax.measure.Unit;
+import java.io.Serializable;
+import java.util.Comparator;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.function.DoubleToIntFunction;
 
 import static java.lang.Double.doubleToRawLongBits;
 

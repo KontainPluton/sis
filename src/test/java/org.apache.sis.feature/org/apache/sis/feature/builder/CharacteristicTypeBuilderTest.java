@@ -17,10 +17,10 @@
 package org.apache.sis.feature.builder;
 
 import java.util.Collections;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 // Branch-dependent imports
 import org.opengis.feature.AttributeType;

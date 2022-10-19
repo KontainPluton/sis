@@ -20,8 +20,8 @@ import javax.measure.Unit;
 import javax.measure.Quantity;
 import javax.measure.quantity.Length;
 import javax.measure.quantity.Temperature;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.opengis.test.Assert.*;

@@ -16,11 +16,12 @@
  */
 package org.apache.sis.internal.storage;
 
+import org.apache.sis.storage.DataStoreException;
+import org.apache.sis.storage.DataStores;
+
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.spi.FileTypeDetector;
-import org.apache.sis.storage.DataStores;
-import org.apache.sis.storage.DataStoreException;
 
 
 /**

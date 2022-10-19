@@ -16,11 +16,12 @@
  */
 package org.apache.sis.index.tree;
 
+import org.apache.sis.internal.util.Numerics;
+import org.opengis.geometry.Envelope;
+
 import java.util.Arrays;
 import java.util.Spliterator;
 import java.util.function.Consumer;
-import org.opengis.geometry.Envelope;
-import org.apache.sis.internal.util.Numerics;
 
 
 /**

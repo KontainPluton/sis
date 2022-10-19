@@ -17,10 +17,10 @@
 package org.apache.sis.storage;
 
 import org.apache.sis.storage.ProbeResult;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 import static org.apache.sis.storage.ProbeResult.*;
 
 

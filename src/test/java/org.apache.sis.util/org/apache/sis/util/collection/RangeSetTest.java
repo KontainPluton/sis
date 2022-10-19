@@ -26,14 +26,14 @@ import java.util.SortedSet;
 import java.io.PrintWriter;
 import org.apache.sis.measure.Range;
 import org.apache.sis.measure.NumberRange;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.Performance;
-import org.apache.sis.test.TestUtilities;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.Performance;
+import org.apache.sis.testutilities.TestUtilities;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 import static org.apache.sis.internal.util.StandardDateFormat.MILLISECONDS_PER_DAY;
 import static org.apache.sis.internal.util.StandardDateFormat.NANOS_PER_SECOND;
 

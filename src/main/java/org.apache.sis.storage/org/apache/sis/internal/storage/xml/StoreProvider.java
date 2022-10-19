@@ -16,13 +16,13 @@
  */
 package org.apache.sis.internal.storage.xml;
 
-import org.apache.sis.xml.Namespaces;
+import org.apache.sis.internal.storage.Capability;
+import org.apache.sis.internal.storage.StoreMetadata;
+import org.apache.sis.internal.xml.LegacyNamespaces;
 import org.apache.sis.storage.DataStore;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.internal.xml.LegacyNamespaces;
-import org.apache.sis.internal.storage.StoreMetadata;
-import org.apache.sis.internal.storage.Capability;
+import org.apache.sis.xml.Namespaces;
 
 
 /**

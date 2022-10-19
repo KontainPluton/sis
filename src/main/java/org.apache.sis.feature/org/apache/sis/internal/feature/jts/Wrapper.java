@@ -16,55 +16,36 @@
  */
 package org.apache.sis.internal.feature.jts;
 
-import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.OptionalInt;
-import java.util.function.BiFunction;
-import java.util.function.BiPredicate;
-import java.util.function.IntFunction;
+import org.apache.sis.geometry.DirectPosition2D;
+import org.apache.sis.geometry.GeneralDirectPosition;
+import org.apache.sis.geometry.GeneralEnvelope;
+import org.apache.sis.internal.feature.Geometries;
+import org.apache.sis.internal.feature.GeometryType;
+import org.apache.sis.internal.feature.GeometryWrapper;
+import org.apache.sis.internal.filter.sqlmm.SQLMM;
+import org.apache.sis.internal.referencing.ReferencingUtilities;
 import org.apache.sis.util.ArgumentChecks;
-import org.opengis.util.FactoryException;
+import org.apache.sis.util.ArraysExt;
+import org.apache.sis.util.Debug;
+import org.apache.sis.util.UnconvertibleObjectException;
+import org.apache.sis.util.collection.BackingStoreException;
+import org.apache.sis.util.resources.Errors;
+import org.locationtech.jts.geom.*;
+import org.locationtech.jts.io.WKTWriter;
+import org.locationtech.jts.simplify.DouglasPeuckerSimplifier;
+import org.locationtech.jts.simplify.TopologyPreservingSimplifier;
+import org.opengis.filter.DistanceOperatorName;
+import org.opengis.filter.SpatialOperatorName;
 import org.opengis.geometry.DirectPosition;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.opengis.referencing.operation.CoordinateOperation;
 import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.geometry.DirectPosition2D;
-import org.apache.sis.geometry.GeneralDirectPosition;
-import org.apache.sis.geometry.GeneralEnvelope;
-import org.apache.sis.internal.filter.sqlmm.SQLMM;
-import org.apache.sis.internal.feature.Geometries;
-import org.apache.sis.internal.feature.GeometryType;
-import org.apache.sis.internal.feature.GeometryWrapper;
-import org.apache.sis.internal.referencing.ReferencingUtilities;
-import org.apache.sis.util.collection.BackingStoreException;
-import org.apache.sis.util.UnconvertibleObjectException;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.ArraysExt;
-import org.apache.sis.util.Debug;
+import org.opengis.util.FactoryException;
 
-// Optional dependencies
-import org.locationtech.jts.geom.Coordinate;
-import org.locationtech.jts.geom.CoordinateSequence;
-import org.locationtech.jts.geom.Envelope;
-import org.locationtech.jts.geom.Geometry;
-import org.locationtech.jts.geom.GeometryCollection;
-import org.locationtech.jts.geom.GeometryFactory;
-import org.locationtech.jts.geom.LineString;
-import org.locationtech.jts.geom.LinearRing;
-import org.locationtech.jts.geom.MultiLineString;
-import org.locationtech.jts.geom.MultiPoint;
-import org.locationtech.jts.geom.MultiPolygon;
-import org.locationtech.jts.geom.Point;
-import org.locationtech.jts.geom.Polygon;
-import org.locationtech.jts.io.WKTWriter;
-import org.locationtech.jts.simplify.DouglasPeuckerSimplifier;
-import org.locationtech.jts.simplify.TopologyPreservingSimplifier;
-
-// Branch-dependent imports
-import org.opengis.filter.SpatialOperatorName;
-import org.opengis.filter.DistanceOperatorName;
+import java.util.*;
+import java.util.function.BiFunction;
+import java.util.function.BiPredicate;
+import java.util.function.IntFunction;
 
 
 /**

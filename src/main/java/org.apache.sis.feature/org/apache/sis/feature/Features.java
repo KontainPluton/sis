@@ -16,34 +16,23 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Map;
-import java.util.Optional;
-import java.util.IdentityHashMap;
-
-import org.apache.sis.feature.*;
-import org.opengis.util.GenericName;
-import org.opengis.util.NameFactory;
-import org.opengis.util.InternationalString;
+import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.internal.system.DefaultFactories;
+import org.apache.sis.util.Static;
+import org.apache.sis.util.iso.DefaultNameFactory;
+import org.opengis.feature.*;
 import org.opengis.metadata.maintenance.ScopeCode;
 import org.opengis.metadata.quality.ConformanceResult;
 import org.opengis.metadata.quality.DataQuality;
 import org.opengis.metadata.quality.Element;
 import org.opengis.metadata.quality.Result;
-import org.apache.sis.util.Static;
-import org.apache.sis.util.iso.DefaultNameFactory;
-import org.apache.sis.internal.system.DefaultFactories;
-import org.apache.sis.internal.feature.Resources;
+import org.opengis.util.GenericName;
+import org.opengis.util.InternationalString;
+import org.opengis.util.NameFactory;
 
-// Branch-dependent imports
-import org.opengis.feature.Attribute;
-import org.opengis.feature.AttributeType;
-import org.opengis.feature.Feature;
-import org.opengis.feature.FeatureType;
-import org.opengis.feature.FeatureAssociationRole;
-import org.opengis.feature.IdentifiedType;
-import org.opengis.feature.InvalidPropertyValueException;
-import org.opengis.feature.Operation;
-import org.opengis.feature.PropertyType;
+import java.util.IdentityHashMap;
+import java.util.Map;
+import java.util.Optional;
 
 
 /**

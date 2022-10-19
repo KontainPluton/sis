@@ -16,15 +16,14 @@
  */
 package org.apache.sis.storage.geotiff;
 
-import java.util.Locale;
-import java.util.TimeZone;
+import org.apache.sis.internal.geotiff.Resources;
+import org.apache.sis.util.resources.Errors;
+
 import java.io.Closeable;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-
-import org.apache.sis.storage.geotiff.GeoTiffStore;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.internal.geotiff.Resources;
+import java.util.Locale;
+import java.util.TimeZone;
 
 
 /**

@@ -16,22 +16,18 @@
  */
 package org.apache.sis.image;
 
-import java.util.Vector;
-import java.util.Objects;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.image.ColorModel;
-import java.awt.image.SampleModel;
-import java.awt.image.RenderedImage;
-import java.awt.image.Raster;
-import java.awt.image.RasterFormatException;
 import org.apache.sis.internal.coverage.j2d.ImageUtilities;
 import org.apache.sis.internal.coverage.j2d.TileErrorHandler;
 import org.apache.sis.internal.coverage.j2d.TileOpExecutor;
 import org.apache.sis.internal.coverage.j2d.TilePlaceholder;
-import org.apache.sis.util.resources.Errors;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.Disposable;
+import org.apache.sis.util.resources.Errors;
+
+import java.awt.*;
+import java.awt.image.*;
+import java.util.Objects;
+import java.util.Vector;
 
 
 /**

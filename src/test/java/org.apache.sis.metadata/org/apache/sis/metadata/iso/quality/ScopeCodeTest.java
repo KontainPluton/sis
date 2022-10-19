@@ -19,10 +19,10 @@ package org.apache.sis.metadata.iso.quality;
 import javax.xml.bind.JAXBException;
 import org.opengis.metadata.maintenance.Scope;
 import org.opengis.metadata.maintenance.ScopeCode;
-import org.apache.sis.test.xml.TestCase;
+import org.apache.sis.testmetadata.xml.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.MetadataAssert.*;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
 
 
 /**

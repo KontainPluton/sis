@@ -16,17 +16,14 @@
  */
 package org.apache.sis.internal.storage.esri;
 
-import java.util.Map;
-import java.nio.ByteBuffer;
-import java.io.EOFException;
-import org.apache.sis.storage.DataStore;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.ProbeResult;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.storage.GridCoverageResource;
 import org.apache.sis.internal.storage.Capability;
-import org.apache.sis.internal.storage.StoreMetadata;
 import org.apache.sis.internal.storage.PRJDataStore;
+import org.apache.sis.internal.storage.StoreMetadata;
+import org.apache.sis.storage.*;
+
+import java.io.EOFException;
+import java.nio.ByteBuffer;
+import java.util.Map;
 
 
 /**

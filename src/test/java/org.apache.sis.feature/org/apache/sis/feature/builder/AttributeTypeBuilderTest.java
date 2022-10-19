@@ -24,12 +24,12 @@ import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.apache.sis.feature.Features;
 import org.apache.sis.referencing.CommonCRS;
 import org.apache.sis.internal.feature.AttributeConvention;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 // Branch-dependent imports
 import org.opengis.feature.Attribute;

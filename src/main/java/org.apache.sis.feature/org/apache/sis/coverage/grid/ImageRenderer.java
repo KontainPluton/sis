@@ -16,49 +16,32 @@
  */
 package org.apache.sis.coverage.grid;
 
+import org.apache.sis.coverage.Category;
+import org.apache.sis.coverage.MismatchedCoverageRangeException;
+import org.apache.sis.coverage.SampleDimension;
+import org.apache.sis.coverage.SubspaceNotSpecifiedException;
+import org.apache.sis.image.DataType;
+import org.apache.sis.internal.coverage.j2d.*;
+import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.internal.util.CollectionsExt;
+import org.apache.sis.math.Vector;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.ArraysExt;
+import org.apache.sis.util.ComparisonMode;
+import org.apache.sis.util.NullArgumentException;
+import org.apache.sis.util.resources.Errors;
+import org.opengis.geometry.MismatchedDimensionException;
+import org.opengis.referencing.operation.MathTransformFactory;
+import org.opengis.util.FactoryException;
+
+import java.awt.*;
+import java.awt.image.*;
+import java.nio.Buffer;
 import java.util.Arrays;
 import java.util.Hashtable;
 import java.util.function.Function;
-import java.nio.Buffer;
-import java.awt.Color;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.image.ColorModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.SampleModel;
-import java.awt.image.BufferedImage;
-import java.awt.image.RenderedImage;
-import java.awt.image.WritableRaster;
-import java.awt.image.ImagingOpException;
-import java.awt.image.RasterFormatException;
-import java.awt.image.Raster;
-import org.opengis.util.FactoryException;
-import org.opengis.geometry.MismatchedDimensionException;
-import org.opengis.referencing.operation.MathTransformFactory;
-import org.apache.sis.image.DataType;
-import org.apache.sis.coverage.SubspaceNotSpecifiedException;
-import org.apache.sis.coverage.MismatchedCoverageRangeException;
-import org.apache.sis.coverage.SampleDimension;
-import org.apache.sis.coverage.Category;
-import org.apache.sis.internal.coverage.j2d.Colorizer;
-import org.apache.sis.internal.coverage.j2d.DeferredProperty;
-import org.apache.sis.internal.coverage.j2d.RasterFactory;
-import org.apache.sis.internal.coverage.j2d.TiledImage;
-import org.apache.sis.internal.coverage.j2d.WritableTiledImage;
-import org.apache.sis.internal.feature.Resources;
-import org.apache.sis.internal.util.CollectionsExt;
-import org.apache.sis.util.NullArgumentException;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.ComparisonMode;
-import org.apache.sis.util.ArraysExt;
-import org.apache.sis.math.Vector;
 
-import static java.lang.Math.addExact;
-import static java.lang.Math.subtractExact;
-import static java.lang.Math.multiplyExact;
-import static java.lang.Math.incrementExact;
-import static java.lang.Math.toIntExact;
+import static java.lang.Math.*;
 import static org.apache.sis.image.PlanarImage.GRID_GEOMETRY_KEY;
 
 

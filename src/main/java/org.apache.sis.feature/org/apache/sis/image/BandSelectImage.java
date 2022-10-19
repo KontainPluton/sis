@@ -16,21 +16,18 @@
  */
 package org.apache.sis.image;
 
-import java.util.Set;
+import org.apache.sis.internal.coverage.j2d.ColorModelFactory;
+import org.apache.sis.internal.coverage.j2d.ImageUtilities;
+import org.apache.sis.internal.jdk9.JDK9;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.ArraysExt;
+
+import java.awt.*;
+import java.awt.image.*;
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Hashtable;
-import java.lang.reflect.Array;
-import java.awt.Image;
-import java.awt.image.Raster;
-import java.awt.image.BufferedImage;
-import java.awt.image.RenderedImage;
-import java.awt.image.WritableRaster;
-import java.awt.image.ColorModel;
-import org.apache.sis.util.ArraysExt;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.internal.coverage.j2d.ImageUtilities;
-import org.apache.sis.internal.coverage.j2d.ColorModelFactory;
-import org.apache.sis.internal.jdk9.JDK9;
+import java.util.Set;
 
 
 /**

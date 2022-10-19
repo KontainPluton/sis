@@ -16,12 +16,13 @@
  */
 package org.apache.sis.internal.storage.xml;
 
-import java.util.Map;
-import java.util.Arrays;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.ProbeResult;
+
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
+import java.util.Map;
 
 
 /**

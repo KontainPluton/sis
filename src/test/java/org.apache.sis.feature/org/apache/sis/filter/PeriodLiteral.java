@@ -19,7 +19,7 @@ package org.apache.sis.filter;
 import java.util.Date;
 import java.io.Serializable;
 import org.opengis.metadata.Identifier;
-import org.apache.sis.test.TestUtilities;
+import org.apache.sis.testutilities.TestUtilities;
 
 // Branch-dependent imports
 import org.opengis.feature.Feature;

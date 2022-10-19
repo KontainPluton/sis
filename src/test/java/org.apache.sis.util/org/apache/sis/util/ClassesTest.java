@@ -18,7 +18,7 @@ package org.apache.sis.util;
 
 import java.lang.reflect.Field;
 import org.junit.Test;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 
 import static org.junit.Assert.*;
 import static org.apache.sis.util.Classes.*;

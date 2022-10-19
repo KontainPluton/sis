@@ -25,7 +25,7 @@ import java.text.MessageFormat;
 import java.util.ArrayList;
 
 import org.apache.sis.internal.shapefile.jdbc.resultset.DBFRecordBasedResultSet;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOnMethod;
 import org.junit.Test;
 
 

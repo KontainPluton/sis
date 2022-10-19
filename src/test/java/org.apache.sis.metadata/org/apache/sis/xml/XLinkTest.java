@@ -19,7 +19,7 @@ package org.apache.sis.xml;
 import java.net.URI;
 import java.net.URISyntaxException;
 import org.apache.sis.util.SimpleInternationalString;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

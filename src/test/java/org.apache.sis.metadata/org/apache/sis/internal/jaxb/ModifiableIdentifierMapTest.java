@@ -28,13 +28,13 @@ import org.apache.sis.xml.XLink;
 import org.apache.sis.internal.jaxb.IdentifierMapAdapterTest;
 import org.opengis.metadata.Identifier;
 import org.opengis.metadata.citation.Citation;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static java.util.UUID.fromString;
-import static org.apache.sis.test.Assert.*;
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testutilities.Assert.*;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
 
 
 /**

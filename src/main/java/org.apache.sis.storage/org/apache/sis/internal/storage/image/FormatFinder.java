@@ -16,24 +16,25 @@
  */
 package org.apache.sis.internal.storage.image;
 
-import java.util.Map;
-import java.util.LinkedHashMap;
-import java.io.DataOutput;
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Files;
+import org.apache.sis.internal.storage.io.IOUtilities;
+import org.apache.sis.storage.DataStoreException;
+import org.apache.sis.storage.StorageConnector;
+
 import javax.imageio.ImageIO;
 import javax.imageio.ImageReader;
 import javax.imageio.ImageWriter;
 import javax.imageio.spi.ImageReaderSpi;
 import javax.imageio.spi.ImageWriterSpi;
+import javax.imageio.stream.FileImageOutputStream;
 import javax.imageio.stream.ImageInputStream;
 import javax.imageio.stream.ImageOutputStream;
-import javax.imageio.stream.FileImageOutputStream;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.internal.storage.io.IOUtilities;
+import java.io.DataOutput;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 
 /**

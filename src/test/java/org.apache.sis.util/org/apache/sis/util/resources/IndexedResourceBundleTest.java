@@ -24,13 +24,13 @@ import java.util.logging.LogRecord;
 import java.util.logging.SimpleFormatter;
 import org.opengis.metadata.maintenance.ScopeCode;
 import org.opengis.util.InternationalString;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 import org.junit.After;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

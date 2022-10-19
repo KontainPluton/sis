@@ -26,12 +26,12 @@ import org.opengis.metadata.constraint.LegalConstraints;
 import org.opengis.metadata.constraint.Restriction;
 import org.apache.sis.metadata.iso.DefaultMetadata;
 import org.apache.sis.feature.DefaultFeatureType;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.MetadataAssert.*;
-import static org.apache.sis.test.TestUtilities.date;
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
+import static org.apache.sis.testutilities.TestUtilities.date;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
 
 // Branch-dependent imports
 import org.opengis.feature.FeatureType;

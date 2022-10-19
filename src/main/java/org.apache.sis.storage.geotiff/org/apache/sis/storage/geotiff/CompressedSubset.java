@@ -16,17 +16,17 @@
  */
 package org.apache.sis.storage.geotiff;
 
+import org.apache.sis.image.DataType;
+import org.apache.sis.internal.coverage.j2d.RasterFactory;
+import org.apache.sis.internal.storage.TiledGridResource;
+import org.apache.sis.internal.storage.inflater.Inflater;
+import org.apache.sis.storage.DataStoreException;
+
+import java.awt.*;
+import java.awt.image.Raster;
 import java.io.Closeable;
 import java.io.IOException;
 import java.nio.Buffer;
-import java.awt.Point;
-import java.awt.image.Raster;
-import org.apache.sis.internal.storage.TiledGridResource;
-import org.apache.sis.internal.storage.inflater.Inflater;
-import org.apache.sis.internal.coverage.j2d.RasterFactory;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.image.DataType;
-import org.apache.sis.storage.geotiff.ImageFileDirectory;
 
 import static java.lang.Math.toIntExact;
 import static org.apache.sis.internal.jdk9.JDK9.multiplyFull;

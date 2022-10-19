@@ -27,11 +27,11 @@ import org.opengis.util.RecordType;
 import org.junit.Test;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.DependsOnMethod;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

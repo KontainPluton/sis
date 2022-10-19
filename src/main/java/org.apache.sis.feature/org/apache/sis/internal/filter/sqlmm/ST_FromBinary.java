@@ -16,12 +16,11 @@
  */
 package org.apache.sis.internal.filter.sqlmm;
 
-import java.nio.ByteBuffer;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.GeometryWrapper;
-
-// Branch-dependent imports
 import org.opengis.filter.Expression;
+
+import java.nio.ByteBuffer;
 
 
 /**

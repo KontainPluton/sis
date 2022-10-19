@@ -28,10 +28,10 @@ import org.opengis.referencing.crs.GeographicCRS;
 import org.apache.sis.internal.feature.AttributeConvention;
 import org.apache.sis.storage.DataStore;
 import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOn;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 // Branch-dependent imports
 import org.opengis.feature.Feature;

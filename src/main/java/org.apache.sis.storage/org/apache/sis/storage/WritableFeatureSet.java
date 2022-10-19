@@ -16,15 +16,13 @@
  */
 package org.apache.sis.storage;
 
-import java.util.Iterator;
-import java.util.stream.Stream;
-import java.util.function.Predicate;
-import java.util.function.UnaryOperator;
-
-// Branch-dependent imports
-import org.apache.sis.storage.IllegalFeatureTypeException;
 import org.opengis.feature.Feature;
 import org.opengis.feature.FeatureType;
+
+import java.util.Iterator;
+import java.util.function.Predicate;
+import java.util.function.UnaryOperator;
+import java.util.stream.Stream;
 
 
 /**

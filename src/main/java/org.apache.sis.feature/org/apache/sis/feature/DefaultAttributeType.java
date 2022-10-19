@@ -16,26 +16,23 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Map;
-import java.util.Objects;
-import java.util.Collections;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.IOException;
-import java.io.InvalidObjectException;
-
-import org.apache.sis.feature.AbstractIdentifiedType;
-import org.apache.sis.feature.CharacteristicTypeMap;
-import org.opengis.util.GenericName;
-import org.opengis.util.InternationalString;
-import org.apache.sis.util.Classes;
 import org.apache.sis.internal.util.Numerics;
-
-import static org.apache.sis.util.ArgumentChecks.*;
-
-// Branch-dependent imports
+import org.apache.sis.util.Classes;
 import org.opengis.feature.Attribute;
 import org.opengis.feature.AttributeType;
+import org.opengis.util.GenericName;
+import org.opengis.util.InternationalString;
+
+import java.io.IOException;
+import java.io.InvalidObjectException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.Collections;
+import java.util.Map;
+import java.util.Objects;
+
+import static org.apache.sis.util.ArgumentChecks.ensureCanCast;
+import static org.apache.sis.util.ArgumentChecks.ensureNonNull;
 
 
 /**

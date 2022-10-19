@@ -25,12 +25,12 @@ import org.apache.sis.measure.Longitude;
 import org.apache.sis.measure.NumberRange;
 import org.apache.sis.metadata.iso.citation.HardCodedCitations;
 import org.apache.sis.metadata.iso.extent.DefaultGeographicBoundingBox;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

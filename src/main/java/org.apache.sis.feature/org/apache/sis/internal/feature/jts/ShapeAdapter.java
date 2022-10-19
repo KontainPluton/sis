@@ -16,24 +16,18 @@
  */
 package org.apache.sis.internal.feature.jts;
 
-import java.awt.Shape;
-import java.awt.Rectangle;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.PathIterator;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Point2D;
-import java.io.Serializable;
 import org.apache.sis.internal.feature.j2d.EmptyShape;
 import org.apache.sis.internal.referencing.j2d.AbstractShape;
 import org.apache.sis.internal.referencing.j2d.IntervalRectangle;
-import org.locationtech.jts.geom.Coordinate;
-import org.locationtech.jts.geom.CoordinateSequence;
-import org.locationtech.jts.geom.Envelope;
-import org.locationtech.jts.geom.Geometry;
-import org.locationtech.jts.geom.GeometryFactory;
-import org.locationtech.jts.geom.LineString;
-import org.locationtech.jts.geom.LinearRing;
 import org.locationtech.jts.geom.Point;
+import org.locationtech.jts.geom.*;
+
+import java.awt.*;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.PathIterator;
+import java.awt.geom.Point2D;
+import java.awt.geom.Rectangle2D;
+import java.io.Serializable;
 
 
 /**

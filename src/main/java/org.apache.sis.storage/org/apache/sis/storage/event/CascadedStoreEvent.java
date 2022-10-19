@@ -16,9 +16,10 @@
  */
 package org.apache.sis.storage.event;
 
+import org.apache.sis.storage.Resource;
+
 import java.lang.ref.WeakReference;
 import java.util.concurrent.ExecutionException;
-import org.apache.sis.storage.Resource;
 
 
 /**

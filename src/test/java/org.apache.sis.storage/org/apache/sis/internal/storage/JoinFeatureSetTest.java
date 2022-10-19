@@ -27,8 +27,8 @@ import org.apache.sis.feature.builder.FeatureTypeBuilder;
 import org.apache.sis.internal.feature.AttributeConvention;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.FeatureSet;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -28,8 +28,8 @@ import org.apache.sis.internal.simple.SimpleAttributeType;
 
 // Test imports
 import org.junit.Test;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.DependsOn;
 
 import static org.junit.Assert.*;
 

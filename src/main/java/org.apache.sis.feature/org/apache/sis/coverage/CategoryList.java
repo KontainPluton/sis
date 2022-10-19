@@ -16,25 +16,26 @@
  */
 package org.apache.sis.coverage;
 
-import java.util.Arrays;
-import java.util.AbstractList;
-import java.io.Serializable;
-import java.io.ObjectStreamException;
-import org.opengis.geometry.DirectPosition;
-import org.opengis.referencing.operation.Matrix;
-import org.opengis.referencing.operation.MathTransform1D;
-import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.referencing.operation.matrix.Matrix1;
-import org.apache.sis.io.wkt.UnformattableObjectException;
 import org.apache.sis.geometry.GeneralDirectPosition;
 import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.io.wkt.UnformattableObjectException;
+import org.apache.sis.math.MathFunctions;
+import org.apache.sis.measure.NumberRange;
+import org.apache.sis.referencing.operation.matrix.Matrix1;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.ArraysExt;
-import org.apache.sis.measure.NumberRange;
-import org.apache.sis.math.MathFunctions;
+import org.opengis.geometry.DirectPosition;
+import org.opengis.referencing.operation.MathTransform1D;
+import org.opengis.referencing.operation.Matrix;
+import org.opengis.referencing.operation.TransformException;
 
-import static java.lang.Double.isNaN;
+import java.io.ObjectStreamException;
+import java.io.Serializable;
+import java.util.AbstractList;
+import java.util.Arrays;
+
 import static java.lang.Double.doubleToRawLongBits;
+import static java.lang.Double.isNaN;
 
 
 /**

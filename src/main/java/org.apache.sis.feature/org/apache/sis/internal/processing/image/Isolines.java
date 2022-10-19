@@ -16,28 +16,24 @@
  */
 package org.apache.sis.internal.processing.image;
 
-import java.util.AbstractList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.TreeMap;
-import java.util.NavigableMap;
-import java.util.concurrent.Future;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.CompletionException;
-import java.awt.Shape;
-import java.awt.geom.Path2D;
-import java.awt.image.RenderedImage;
-import org.opengis.coverage.grid.SequenceType;
-import org.opengis.referencing.operation.MathTransform;
-import org.opengis.referencing.operation.TransformException;
 import org.apache.sis.image.PixelIterator;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.resources.Errors;
+import org.opengis.coverage.grid.SequenceType;
+import org.opengis.referencing.operation.MathTransform;
+import org.opengis.referencing.operation.TransformException;
 
-import static org.apache.sis.internal.processing.image.IsolineTracer.UPPER_LEFT;
-import static org.apache.sis.internal.processing.image.IsolineTracer.UPPER_RIGHT;
-import static org.apache.sis.internal.processing.image.IsolineTracer.LOWER_RIGHT;
+import java.awt.*;
+import java.awt.geom.Path2D;
+import java.awt.image.RenderedImage;
+import java.util.List;
+import java.util.*;
+import java.util.concurrent.CompletionException;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
+
+import static org.apache.sis.internal.processing.image.IsolineTracer.*;
 
 
 /**

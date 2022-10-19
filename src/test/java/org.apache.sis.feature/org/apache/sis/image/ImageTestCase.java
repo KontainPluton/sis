@@ -25,8 +25,8 @@ import java.awt.image.RenderedImage;
 import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
 import java.awt.image.ImagingOpException;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.TestConfiguration;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.TestConfiguration;
 import org.junit.AfterClass;
 
 import static java.lang.StrictMath.round;

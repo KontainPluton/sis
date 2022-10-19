@@ -16,20 +16,14 @@
  */
 package org.apache.sis.storage;
 
-import java.util.Map;
-import java.util.HashMap;
-import java.util.List;
-import java.util.ConcurrentModificationException;
-import java.util.Locale;
-
-import org.apache.sis.storage.DataStoreProvider;
-import org.apache.sis.storage.IllegalNameException;
-import org.opengis.util.GenericName;
-import org.opengis.util.ScopedName;
+import org.apache.sis.internal.storage.Resources;
+import org.apache.sis.internal.util.CollectionsExt;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.resources.Vocabulary;
-import org.apache.sis.internal.util.CollectionsExt;
-import org.apache.sis.internal.storage.Resources;
+import org.opengis.util.GenericName;
+import org.opengis.util.ScopedName;
+
+import java.util.*;
 
 
 /**

@@ -16,16 +16,10 @@
  */
 package org.apache.sis.internal.storage.io;
 
-import java.nio.Buffer;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.nio.DoubleBuffer;
-import java.nio.FloatBuffer;
-import java.nio.IntBuffer;
-import java.nio.LongBuffer;
-import java.nio.ShortBuffer;
-import org.apache.sis.math.Vector;
 import org.apache.sis.internal.jdk9.JDK9;
+import org.apache.sis.math.Vector;
+
+import java.nio.*;
 
 
 /**

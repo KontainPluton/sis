@@ -20,8 +20,8 @@ import java.util.Locale;
 import java.nio.charset.StandardCharsets;
 
 import org.apache.sis.xml.LegacyCodesTest;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.apache.sis.measure.Units.METRE;

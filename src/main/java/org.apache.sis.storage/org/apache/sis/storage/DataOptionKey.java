@@ -16,8 +16,8 @@
  */
 package org.apache.sis.storage;
 
-import org.apache.sis.setup.OptionKey;
 import org.apache.sis.feature.FoliationRepresentation;
+import org.apache.sis.setup.OptionKey;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
 

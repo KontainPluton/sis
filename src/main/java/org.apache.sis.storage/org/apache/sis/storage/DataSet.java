@@ -16,13 +16,9 @@
  */
 package org.apache.sis.storage;
 
-import java.util.Optional;
-
-import org.apache.sis.storage.Aggregate;
-import org.apache.sis.storage.DataStore;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.Resource;
 import org.opengis.geometry.Envelope;
+
+import java.util.Optional;
 
 
 /**

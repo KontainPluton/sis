@@ -16,12 +16,12 @@
  */
 package org.apache.sis.internal.shapefile.jdbc.sql;
 
+import org.apache.sis.internal.shapefile.jdbc.AbstractJDBC;
+import org.apache.sis.internal.shapefile.jdbc.resultset.DBFRecordBasedResultSet;
+
 import java.io.File;
 import java.util.Objects;
 import java.util.logging.Level;
-
-import org.apache.sis.internal.shapefile.jdbc.AbstractJDBC;
-import org.apache.sis.internal.shapefile.jdbc.resultset.DBFRecordBasedResultSet;
 
 /**
  * Simple and temporary SQL parser.

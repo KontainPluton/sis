@@ -16,13 +16,13 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.util.Arrays;
-import java.util.Objects;
-import java.lang.reflect.Array;
 import java.awt.image.DataBuffer;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
 import java.awt.image.WritableRenderedImage;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Objects;
 
 
 /**

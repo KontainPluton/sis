@@ -16,23 +16,22 @@
  */
 package org.apache.sis.internal.storage;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Optional;
+import org.apache.sis.geometry.Envelopes;
+import org.apache.sis.geometry.ImmutableEnvelope;
+import org.apache.sis.storage.AbstractFeatureSet;
+import org.apache.sis.storage.DataStoreException;
+import org.apache.sis.storage.FeatureSet;
+import org.apache.sis.storage.event.StoreListeners;
+import org.opengis.feature.FeatureType;
 import org.opengis.geometry.Envelope;
 import org.opengis.metadata.Metadata;
 import org.opengis.metadata.maintenance.ScopeCode;
 import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.geometry.ImmutableEnvelope;
-import org.apache.sis.geometry.Envelopes;
-import org.apache.sis.storage.FeatureSet;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.event.StoreListeners;
-import org.apache.sis.storage.AbstractFeatureSet;
 
-// Branch-dependent imports
-import org.opengis.feature.FeatureType;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Optional;
 
 
 /**

@@ -16,23 +16,24 @@
  */
 package org.apache.sis.coverage;
 
-import java.awt.Shape;
-import java.util.Objects;
-import java.io.Serializable;
-import org.opengis.util.FactoryException;
-import org.opengis.referencing.datum.PixelInCell;
+import org.apache.sis.coverage.grid.GridGeometry;
+import org.apache.sis.referencing.CRS;
+import org.apache.sis.referencing.operation.transform.MathTransforms;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.ComparisonMode;
+import org.apache.sis.util.LenientComparable;
+import org.apache.sis.util.Utilities;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.referencing.datum.PixelInCell;
 import org.opengis.referencing.operation.CoordinateOperation;
 import org.opengis.referencing.operation.MathTransform;
 import org.opengis.referencing.operation.MathTransform2D;
 import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.referencing.operation.transform.MathTransforms;
-import org.apache.sis.referencing.CRS;
-import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.util.LenientComparable;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.ComparisonMode;
-import org.apache.sis.util.Utilities;
+import org.opengis.util.FactoryException;
+
+import java.awt.*;
+import java.io.Serializable;
+import java.util.Objects;
 
 
 /**

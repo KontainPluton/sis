@@ -16,25 +16,24 @@
  */
 package org.apache.sis.internal.filter.sqlmm;
 
-import java.util.EnumMap;
-import java.util.Collection;
-import org.opengis.util.LocalName;
-import org.opengis.util.ScopedName;
-import org.apache.sis.filter.Optimization;
-import org.apache.sis.internal.filter.Node;
-import org.apache.sis.internal.feature.Resources;
-import org.apache.sis.internal.feature.Geometries;
-import org.apache.sis.internal.feature.FeatureExpression;
+import org.apache.sis.feature.builder.AttributeTypeBuilder;
 import org.apache.sis.feature.builder.FeatureTypeBuilder;
 import org.apache.sis.feature.builder.PropertyTypeBuilder;
-import org.apache.sis.feature.builder.AttributeTypeBuilder;
-import org.apache.sis.util.resources.Errors;
+import org.apache.sis.filter.Optimization;
+import org.apache.sis.internal.feature.FeatureExpression;
+import org.apache.sis.internal.feature.Geometries;
+import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.internal.filter.Node;
 import org.apache.sis.util.iso.Names;
-
-// Branch-dependent imports
+import org.apache.sis.util.resources.Errors;
 import org.opengis.feature.FeatureType;
 import org.opengis.filter.Expression;
 import org.opengis.filter.InvalidFilterValueException;
+import org.opengis.util.LocalName;
+import org.opengis.util.ScopedName;
+
+import java.util.Collection;
+import java.util.EnumMap;
 
 
 /**

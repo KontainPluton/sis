@@ -16,21 +16,20 @@
  */
 package org.apache.sis.filter;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import org.opengis.util.ScopedName;
 import org.apache.sis.feature.builder.FeatureTypeBuilder;
 import org.apache.sis.feature.builder.PropertyTypeBuilder;
 import org.apache.sis.internal.feature.FeatureExpression;
 import org.apache.sis.internal.filter.FunctionNames;
+import org.apache.sis.math.Fraction;
 import org.apache.sis.util.UnconvertibleObjectException;
 import org.apache.sis.util.resources.Errors;
-import org.apache.sis.math.Fraction;
-
-// Branch-dependent imports
 import org.opengis.feature.AttributeType;
 import org.opengis.feature.FeatureType;
 import org.opengis.filter.Expression;
+import org.opengis.util.ScopedName;
+
+import java.math.BigDecimal;
+import java.math.BigInteger;
 
 
 /**

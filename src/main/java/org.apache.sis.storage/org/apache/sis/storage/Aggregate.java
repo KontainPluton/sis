@@ -16,9 +16,6 @@
  */
 package org.apache.sis.storage;
 
-import org.apache.sis.storage.DataStore;
-import org.apache.sis.storage.DataStoreException;
-
 import java.util.Collection;
 
 /**

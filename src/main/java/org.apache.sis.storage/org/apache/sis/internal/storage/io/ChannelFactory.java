@@ -16,43 +16,25 @@
  */
 package org.apache.sis.internal.storage.io;
 
-import java.util.Set;
-import java.util.EnumSet;
-import java.util.HashSet;
-import java.util.Collections;
-import java.util.Arrays;
-import java.util.logging.Level;
-import java.util.logging.LogRecord;
-import java.util.function.UnaryOperator;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URL;
-import java.net.MalformedURLException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.Files;
-import java.nio.file.InvalidPathException;
-import java.nio.file.FileSystemNotFoundException;
-import java.nio.file.OpenOption;
-import java.nio.file.StandardOpenOption;
-import java.nio.channels.Channel;
-import java.nio.channels.Channels;
-import java.nio.channels.FileChannel;
-import java.nio.channels.ReadableByteChannel;
-import java.nio.channels.WritableByteChannel;
-import org.apache.sis.util.logging.Logging;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.internal.system.Modules;
 import org.apache.sis.internal.storage.Resources;
 import org.apache.sis.internal.storage.StoreUtilities;
+import org.apache.sis.internal.system.Modules;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.ForwardOnlyStorageException;
 import org.apache.sis.storage.event.StoreListeners;
+import org.apache.sis.util.logging.Logging;
+import org.apache.sis.util.resources.Errors;
+
+import java.io.*;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
+import java.nio.channels.*;
+import java.nio.file.*;
+import java.util.*;
+import java.util.function.UnaryOperator;
+import java.util.logging.Level;
+import java.util.logging.LogRecord;
 
 
 /**

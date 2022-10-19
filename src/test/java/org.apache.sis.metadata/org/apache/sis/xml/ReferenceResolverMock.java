@@ -18,7 +18,7 @@ package org.apache.sis.xml;
 
 import java.util.UUID;
 import org.apache.sis.internal.jaxb.Context;
-import org.apache.sis.test.xml.TestCase;
+import org.apache.sis.testmetadata.xml.TestCase;
 
 
 /**

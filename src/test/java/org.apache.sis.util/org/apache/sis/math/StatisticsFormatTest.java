@@ -20,10 +20,10 @@ import java.text.Format;
 import java.text.NumberFormat;
 import java.util.Locale;
 import org.junit.Test;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

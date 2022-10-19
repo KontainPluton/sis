@@ -16,31 +16,30 @@
  */
 package org.apache.sis.storage;
 
-import java.util.Locale;
-import java.util.Map;
-import java.util.IdentityHashMap;
-import java.util.Optional;
-
-import org.apache.sis.storage.*;
-import org.opengis.util.ScopedName;
-import org.opengis.util.GenericName;
-import org.opengis.metadata.Metadata;
-import org.opengis.metadata.Identifier;
-import org.opengis.metadata.citation.Citation;
-import org.opengis.metadata.identification.Identification;
-import org.opengis.parameter.ParameterValueGroup;
-import org.apache.sis.util.Localized;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.collection.TreeTable;
-import org.apache.sis.util.collection.TableColumn;
-import org.apache.sis.internal.storage.StoreUtilities;
 import org.apache.sis.internal.storage.Resources;
+import org.apache.sis.internal.storage.StoreUtilities;
 import org.apache.sis.internal.util.Strings;
 import org.apache.sis.referencing.NamedIdentifier;
 import org.apache.sis.storage.event.CloseEvent;
 import org.apache.sis.storage.event.StoreEvent;
 import org.apache.sis.storage.event.StoreListener;
 import org.apache.sis.storage.event.StoreListeners;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.Localized;
+import org.apache.sis.util.collection.TableColumn;
+import org.apache.sis.util.collection.TreeTable;
+import org.opengis.metadata.Identifier;
+import org.opengis.metadata.Metadata;
+import org.opengis.metadata.citation.Citation;
+import org.opengis.metadata.identification.Identification;
+import org.opengis.parameter.ParameterValueGroup;
+import org.opengis.util.GenericName;
+import org.opengis.util.ScopedName;
+
+import java.util.IdentityHashMap;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Optional;
 
 
 /**

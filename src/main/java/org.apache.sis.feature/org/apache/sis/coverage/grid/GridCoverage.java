@@ -16,36 +16,35 @@
  */
 package org.apache.sis.coverage.grid;
 
-import java.util.List;
-import java.util.Locale;
-import java.util.Optional;
-import java.awt.image.ColorModel;
-import java.awt.image.RenderedImage;
-import org.opengis.geometry.Envelope;
-import org.opengis.geometry.DirectPosition;
-import org.opengis.geometry.MismatchedDimensionException;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
-import org.opengis.referencing.operation.MathTransform1D;
-import org.opengis.referencing.operation.NoninvertibleTransformException;
-import org.apache.sis.internal.util.UnmodifiableArrayList;
-import org.apache.sis.measure.NumberRange;
 import org.apache.sis.coverage.BandedCoverage;
 import org.apache.sis.coverage.SampleDimension;
 import org.apache.sis.coverage.SubspaceNotSpecifiedException;
 import org.apache.sis.image.DataType;
 import org.apache.sis.image.ImageProcessor;
-import org.apache.sis.internal.coverage.j2d.ImageUtilities;
 import org.apache.sis.internal.coverage.j2d.Colorizer;
+import org.apache.sis.internal.coverage.j2d.ImageUtilities;
+import org.apache.sis.internal.util.UnmodifiableArrayList;
+import org.apache.sis.measure.NumberRange;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.Classes;
+import org.apache.sis.util.Debug;
 import org.apache.sis.util.collection.DefaultTreeTable;
 import org.apache.sis.util.collection.TableColumn;
 import org.apache.sis.util.collection.TreeTable;
 import org.apache.sis.util.resources.Vocabulary;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.Classes;
-import org.apache.sis.util.Debug;
-
-// Branch-specific imports
 import org.opengis.coverage.CannotEvaluateException;
+import org.opengis.geometry.DirectPosition;
+import org.opengis.geometry.Envelope;
+import org.opengis.geometry.MismatchedDimensionException;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.referencing.operation.MathTransform1D;
+import org.opengis.referencing.operation.NoninvertibleTransformException;
+
+import java.awt.image.ColorModel;
+import java.awt.image.RenderedImage;
+import java.util.List;
+import java.util.Locale;
+import java.util.Optional;
 
 
 /**

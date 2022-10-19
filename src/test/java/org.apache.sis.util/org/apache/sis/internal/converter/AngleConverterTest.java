@@ -18,10 +18,10 @@ package org.apache.sis.internal.converter;
 
 import org.apache.sis.measure.Angle;
 import org.apache.sis.util.ObjectConverter;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

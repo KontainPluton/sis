@@ -29,8 +29,8 @@ import org.opengis.metadata.acquisition.EnvironmentalRecord;
 import org.opengis.metadata.citation.Citation;
 import org.opengis.metadata.content.CoverageDescription;
 import org.opengis.metadata.content.ImageDescription;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -16,18 +16,19 @@
  */
 package org.apache.sis.internal.coverage;
 
-import java.util.Arrays;
+import org.apache.sis.referencing.operation.transform.AbstractMathTransform;
+import org.apache.sis.referencing.operation.transform.MathTransforms;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.ArraysExt;
+import org.apache.sis.util.ComparisonMode;
+import org.apache.sis.util.Utilities;
 import org.opengis.referencing.operation.MathTransform;
 import org.opengis.referencing.operation.MathTransform1D;
 import org.opengis.referencing.operation.MathTransformFactory;
 import org.opengis.referencing.operation.NoninvertibleTransformException;
 import org.opengis.util.FactoryException;
-import org.apache.sis.referencing.operation.transform.AbstractMathTransform;
-import org.apache.sis.referencing.operation.transform.MathTransforms;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.ComparisonMode;
-import org.apache.sis.util.Utilities;
-import org.apache.sis.util.ArraysExt;
+
+import java.util.Arrays;
 
 
 /**

@@ -20,7 +20,7 @@ import java.io.IOException;
 import org.apache.sis.internal.netcdf.Decoder;
 import org.apache.sis.internal.netcdf.VariableTest;
 import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOn;
 import org.opengis.test.dataset.TestData;
 
 

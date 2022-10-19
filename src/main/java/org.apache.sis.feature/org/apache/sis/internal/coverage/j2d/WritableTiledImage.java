@@ -16,16 +16,12 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.util.Map;
-import java.util.LinkedHashMap;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.image.ColorModel;
-import java.awt.image.Raster;
-import java.awt.image.TileObserver;
-import java.awt.image.WritableRaster;
-import java.awt.image.WritableRenderedImage;
 import org.apache.sis.internal.feature.Resources;
+
+import java.awt.*;
+import java.awt.image.*;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 
 /**

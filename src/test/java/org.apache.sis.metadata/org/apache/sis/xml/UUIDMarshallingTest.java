@@ -20,14 +20,17 @@ import java.lang.reflect.Proxy;
 import javax.xml.bind.JAXBException;
 
 import org.apache.sis.internal.jaxb.gco.PropertyType;
-import org.apache.sis.test.MetadataAssert;
-import org.apache.sis.test.xml.TestCase;
+import org.apache.sis.testmetadata.MetadataAssert;
+import org.apache.sis.testmetadata.xml.TestCase;
 import org.apache.sis.xml.NilReasonMarshallingTest;
 import org.opengis.metadata.citation.Series;
 import org.opengis.metadata.citation.Citation;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOn;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
+import static org.opengis.test.Assert.assertInstanceOf;
 
 
 /**

@@ -16,19 +16,18 @@
  */
 package org.apache.sis.filter;
 
-import java.util.List;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.LinkedHashSet;
-import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.internal.util.CollectionsExt;
 import org.apache.sis.internal.util.UnmodifiableArrayList;
+import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.resources.Errors;
-
-// Branch-dependent imports
 import org.opengis.filter.Filter;
 import org.opengis.filter.LogicalOperator;
 import org.opengis.filter.LogicalOperatorName;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.LinkedHashSet;
+import java.util.List;
 
 
 /**

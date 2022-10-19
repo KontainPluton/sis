@@ -16,16 +16,15 @@
  */
 package org.apache.sis.internal.filter.sqlmm;
 
-import java.util.Optional;
-import javax.measure.Quantity;
-import org.opengis.geometry.Envelope;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.GeometryType;
+import org.opengis.filter.SpatialOperatorName;
+import org.opengis.geometry.Envelope;
+
+import javax.measure.Quantity;
+import java.util.Optional;
 
 import static org.apache.sis.internal.feature.GeometryType.*;
-
-// Branch-dependent imports
-import org.opengis.filter.SpatialOperatorName;
 
 
 /**

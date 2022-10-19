@@ -16,17 +16,18 @@
  */
 package org.apache.sis.internal.storage.xml;
 
-import java.util.Map;
-import java.util.HashMap;
-import java.io.Reader;
-import java.io.IOException;
-import java.nio.ByteBuffer;
+import org.apache.sis.internal.storage.DocumentedStoreProvider;
+import org.apache.sis.internal.storage.io.IOUtilities;
 import org.apache.sis.storage.DataStore;
 import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.StorageConnector;
 import org.apache.sis.storage.ProbeResult;
-import org.apache.sis.internal.storage.io.IOUtilities;
-import org.apache.sis.internal.storage.DocumentedStoreProvider;
+import org.apache.sis.storage.StorageConnector;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.nio.ByteBuffer;
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**

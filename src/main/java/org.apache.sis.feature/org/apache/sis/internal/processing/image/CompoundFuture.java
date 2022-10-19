@@ -16,15 +16,12 @@
  */
 package org.apache.sis.internal.processing.image;
 
-import java.util.Set;
-import java.util.HashSet;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.CancellationException;
-import org.apache.sis.internal.util.CollectionsExt;
 import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.internal.util.CollectionsExt;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.concurrent.*;
 
 
 /**

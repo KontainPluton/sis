@@ -25,8 +25,8 @@ import org.opengis.metadata.identification.OperationMetadata;
 import org.opengis.metadata.identification.DistributedComputingPlatform;
 import org.apache.sis.internal.jaxb.metadata.replace.ServiceParameterTest;
 import org.apache.sis.internal.system.DefaultFactories;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static java.util.Collections.singleton;

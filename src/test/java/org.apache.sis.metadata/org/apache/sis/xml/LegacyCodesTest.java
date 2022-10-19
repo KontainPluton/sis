@@ -16,8 +16,8 @@
  */
 package org.apache.sis.xml;
 
-import org.apache.sis.metadata.src.main.java.org.apache.sis.xml.LegacyCodes;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.xml.LegacyCodes;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

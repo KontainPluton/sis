@@ -18,10 +18,10 @@ package org.apache.sis.measure;
 
 import javax.measure.IncommensurableException;
 import org.junit.Test;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.DependsOn;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

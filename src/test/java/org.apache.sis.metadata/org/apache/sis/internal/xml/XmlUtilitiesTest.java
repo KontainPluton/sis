@@ -20,7 +20,7 @@ import java.util.Date;
 import java.util.Locale;
 import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.datatype.DatatypeConfigurationException;
-import org.apache.sis.test.xml.TestCase;
+import org.apache.sis.testmetadata.xml.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

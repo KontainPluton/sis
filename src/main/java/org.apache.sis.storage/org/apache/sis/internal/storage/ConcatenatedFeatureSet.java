@@ -16,27 +16,22 @@
  */
 package org.apache.sis.internal.storage;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Collection;
-import java.util.OptionalLong;
-import java.util.stream.Stream;
 import org.apache.sis.feature.Features;
-import org.apache.sis.storage.FeatureSet;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.DataStoreContentException;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.collection.BackingStoreException;
 import org.apache.sis.internal.util.CollectionsExt;
 import org.apache.sis.internal.util.UnmodifiableArrayList;
-import org.apache.sis.storage.AbstractFeatureSet;
+import org.apache.sis.storage.*;
 import org.apache.sis.storage.event.StoreListeners;
-import org.apache.sis.storage.Query;
-
-// Branch-dependent imports
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.collection.BackingStoreException;
+import org.apache.sis.util.resources.Errors;
 import org.opengis.feature.Feature;
 import org.opengis.feature.FeatureType;
+
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+import java.util.OptionalLong;
+import java.util.stream.Stream;
 
 
 /**

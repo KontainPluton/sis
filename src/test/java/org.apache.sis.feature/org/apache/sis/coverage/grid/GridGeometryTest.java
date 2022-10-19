@@ -33,11 +33,11 @@ import org.apache.sis.referencing.operation.transform.MathTransforms;
 import org.apache.sis.referencing.operation.HardCodedConversions;
 import org.apache.sis.referencing.crs.HardCodedCRS;
 import org.apache.sis.geometry.GeneralEnvelope;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.ReferencingAssert.*;
+import static org.apache.sis.testreferencing.ReferencingAssert.*;
 
 
 /**

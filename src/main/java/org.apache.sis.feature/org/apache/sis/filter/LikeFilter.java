@@ -16,16 +16,15 @@
  */
 package org.apache.sis.filter;
 
-import java.util.List;
+import org.apache.sis.util.ArgumentChecks;
+import org.opengis.filter.Expression;
+import org.opengis.filter.Filter;
+import org.opengis.filter.LikeOperator;
+
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 import java.util.regex.Pattern;
-import org.apache.sis.util.ArgumentChecks;
-
-// Branch-dependent imports
-import org.opengis.filter.Filter;
-import org.opengis.filter.Expression;
-import org.opengis.filter.LikeOperator;
 
 
 /**

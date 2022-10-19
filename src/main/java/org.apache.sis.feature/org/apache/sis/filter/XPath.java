@@ -16,10 +16,11 @@
  */
 package org.apache.sis.filter;
 
-import java.util.List;
-import java.util.ArrayList;
 import org.apache.sis.util.Static;
 import org.apache.sis.util.resources.Errors;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.apache.sis.util.CharSequences.*;
 

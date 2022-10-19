@@ -16,12 +16,13 @@
  */
 package org.apache.sis.internal.storage.inflater;
 
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.nio.BufferOverflowException;
-import java.util.zip.Inflater;
-import java.util.zip.DataFormatException;
 import org.apache.sis.internal.storage.io.ChannelDataInput;
+
+import java.io.IOException;
+import java.nio.BufferOverflowException;
+import java.nio.ByteBuffer;
+import java.util.zip.DataFormatException;
+import java.util.zip.Inflater;
 
 
 /**

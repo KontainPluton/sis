@@ -20,11 +20,11 @@ import java.util.logging.Level;
 import java.util.logging.LogRecord;
 import org.apache.sis.internal.util.Strings;
 import org.apache.sis.util.CharSequences;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

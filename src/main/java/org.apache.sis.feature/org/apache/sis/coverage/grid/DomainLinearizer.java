@@ -16,17 +16,18 @@
  */
 package org.apache.sis.coverage.grid;
 
-import java.util.Arrays;
-import org.opengis.util.FactoryException;
-import org.opengis.referencing.datum.PixelInCell;
-import org.opengis.referencing.operation.MathTransform;
-import org.opengis.referencing.operation.TransformException;
+import org.apache.sis.geometry.Envelopes;
+import org.apache.sis.geometry.GeneralEnvelope;
 import org.apache.sis.referencing.operation.builder.LinearTransformBuilder;
 import org.apache.sis.referencing.operation.transform.LinearTransform;
 import org.apache.sis.referencing.operation.transform.MathTransforms;
-import org.apache.sis.geometry.GeneralEnvelope;
-import org.apache.sis.geometry.Envelopes;
 import org.apache.sis.util.ArgumentChecks;
+import org.opengis.referencing.datum.PixelInCell;
+import org.opengis.referencing.operation.MathTransform;
+import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.FactoryException;
+
+import java.util.Arrays;
 
 
 /**

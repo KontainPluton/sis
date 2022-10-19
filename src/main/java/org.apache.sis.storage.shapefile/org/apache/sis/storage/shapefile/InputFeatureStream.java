@@ -16,16 +16,6 @@
  */
 package org.apache.sis.storage.shapefile;
 
-import java.io.File;
-import java.io.InputStream;
-import java.sql.SQLFeatureNotSupportedException;
-import java.text.DecimalFormat;
-import java.text.MessageFormat;
-import java.util.List;
-import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import org.apache.sis.feature.DefaultFeatureType;
 import org.apache.sis.internal.shapefile.*;
 import org.apache.sis.internal.shapefile.jdbc.*;
@@ -38,8 +28,17 @@ import org.apache.sis.internal.shapefile.jdbc.sql.SQLUnsupportedParsingFeatureEx
 import org.apache.sis.internal.shapefile.jdbc.statement.DBFStatement;
 import org.apache.sis.internal.system.Modules;
 import org.apache.sis.storage.DataStoreClosedException;
-import org.apache.sis.storage.shapefile.*;
 import org.opengis.feature.Feature;
+
+import java.io.File;
+import java.io.InputStream;
+import java.sql.SQLFeatureNotSupportedException;
+import java.text.DecimalFormat;
+import java.text.MessageFormat;
+import java.util.List;
+import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Input Stream of features.

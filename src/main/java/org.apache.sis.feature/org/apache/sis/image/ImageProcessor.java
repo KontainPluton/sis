@@ -16,51 +16,39 @@
  */
 package org.apache.sis.image;
 
-import java.util.Map;
-import java.util.List;
-import java.util.Arrays;
-import java.util.Objects;
-import java.util.NavigableMap;
-import java.util.function.Function;
-import java.util.logging.LogRecord;
-import java.util.function.DoubleUnaryOperator;
-import java.awt.Color;
-import java.awt.Shape;
-import java.awt.Rectangle;
-import java.awt.image.ColorModel;
-import java.awt.image.SampleModel;
-import java.awt.image.BufferedImage;
-import java.awt.image.RenderedImage;
-import java.awt.image.ImagingOpException;
-import java.awt.image.IndexColorModel;
-import java.awt.image.WritableRenderedImage;
-import javax.measure.Quantity;
 import org.apache.sis.coverage.Category;
-import org.opengis.referencing.operation.MathTransform;
-import org.opengis.referencing.operation.MathTransform1D;
-import org.opengis.referencing.operation.TransformException;
-import org.opengis.referencing.operation.NoninvertibleTransformException;
-import org.apache.sis.referencing.operation.transform.MathTransforms;
+import org.apache.sis.coverage.RegionOfInterest;
 import org.apache.sis.coverage.SampleDimension;
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridCoverageProcessor;
+import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.internal.coverage.j2d.ImageLayout;
 import org.apache.sis.internal.coverage.j2d.ImageUtilities;
-import org.apache.sis.math.Statistics;
-import org.apache.sis.util.ArraysExt;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.collection.WeakHashSet;
-import org.apache.sis.internal.system.Modules;
 import org.apache.sis.internal.coverage.j2d.TiledImage;
-import org.apache.sis.internal.processing.image.Isolines;
 import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.internal.processing.image.Isolines;
+import org.apache.sis.internal.system.Modules;
+import org.apache.sis.math.Statistics;
 import org.apache.sis.measure.NumberRange;
 import org.apache.sis.measure.Units;
+import org.apache.sis.referencing.operation.transform.MathTransforms;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.ArraysExt;
+import org.apache.sis.util.collection.WeakHashSet;
+import org.apache.sis.util.resources.Errors;
+import org.opengis.referencing.operation.MathTransform;
+import org.opengis.referencing.operation.MathTransform1D;
+import org.opengis.referencing.operation.NoninvertibleTransformException;
+import org.opengis.referencing.operation.TransformException;
 
-// For javadoc
-import org.apache.sis.coverage.RegionOfInterest;
-import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.coverage.grid.GridCoverageProcessor;
+import javax.measure.Quantity;
+import java.awt.*;
+import java.awt.image.*;
+import java.util.List;
+import java.util.*;
+import java.util.function.DoubleUnaryOperator;
+import java.util.function.Function;
+import java.util.logging.LogRecord;
 
 
 /**

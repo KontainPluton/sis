@@ -20,11 +20,11 @@ import javax.xml.bind.JAXBException;
 
 import org.apache.sis.internal.xml.LegacyNamespaces;
 import org.opengis.metadata.citation.Role;
-import org.apache.sis.test.xml.TestCase;
+import org.apache.sis.testmetadata.xml.TestCase;
 import org.junit.Test;
 
 import static java.util.Collections.singleton;
-import static org.apache.sis.test.MetadataAssert.*;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
 
 
 /**

@@ -16,22 +16,22 @@
  */
 package org.apache.sis.image;
 
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.image.Raster;
-import java.awt.image.SampleModel;
-import java.awt.image.RenderedImage;
-import java.awt.image.WritableRenderedImage;
-import java.util.function.Consumer;
-import javax.measure.Quantity;
-import org.opengis.referencing.operation.MathTransform;
 import org.apache.sis.internal.coverage.j2d.ImageLayout;
 import org.apache.sis.internal.coverage.j2d.ImageUtilities;
 import org.apache.sis.internal.coverage.j2d.TileOpExecutor;
-import org.apache.sis.internal.util.Numerics;
 import org.apache.sis.internal.jdk9.JDK9;
-import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.internal.util.Numerics;
 import org.apache.sis.measure.Units;
+import org.apache.sis.util.ArgumentChecks;
+import org.opengis.referencing.operation.MathTransform;
+
+import javax.measure.Quantity;
+import java.awt.*;
+import java.awt.image.Raster;
+import java.awt.image.RenderedImage;
+import java.awt.image.SampleModel;
+import java.awt.image.WritableRenderedImage;
+import java.util.function.Consumer;
 
 
 /**

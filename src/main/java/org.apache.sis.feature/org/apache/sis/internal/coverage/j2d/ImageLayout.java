@@ -16,20 +16,15 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.util.Arrays;
-import java.awt.Point;
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.image.ColorModel;
-import java.awt.image.IndexColorModel;
-import java.awt.image.RenderedImage;
-import java.awt.image.SampleModel;
-import java.awt.image.BandedSampleModel;
-import org.apache.sis.math.MathFunctions;
 import org.apache.sis.image.ComputedImage;
+import org.apache.sis.internal.util.Strings;
+import org.apache.sis.math.MathFunctions;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.resources.Errors;
-import org.apache.sis.internal.util.Strings;
+
+import java.awt.*;
+import java.awt.image.*;
+import java.util.Arrays;
 
 
 /**

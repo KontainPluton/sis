@@ -20,8 +20,8 @@ import org.apache.sis.storage.DataStore;
 import org.apache.sis.storage.FeatureNaming;
 import org.apache.sis.storage.IllegalNameException;
 import org.opengis.util.GenericName;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.TestCase;
 import org.apache.sis.util.iso.Names;
 import org.junit.Test;
 

@@ -16,26 +16,16 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Map;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.IdentityHashMap;
+import org.apache.sis.internal.feature.AttributeConvention;
+import org.apache.sis.internal.feature.Resources;
+import org.opengis.feature.*;
+import org.opengis.metadata.Identifier;
 import org.opengis.util.GenericName;
 import org.opengis.util.InternationalString;
-import org.opengis.metadata.Identifier;
-import org.apache.sis.internal.feature.Resources;
-import org.apache.sis.internal.feature.AttributeConvention;
 
-import static org.apache.sis.util.ArgumentChecks.*;
+import java.util.*;
 
-// Branch-dependent imports
-import org.opengis.feature.PropertyType;
-import org.opengis.feature.AttributeType;
-import org.opengis.feature.FeatureType;
-import org.opengis.feature.FeatureAssociation;
-import org.opengis.feature.FeatureAssociationRole;
-import org.opengis.feature.PropertyNotFoundException;
+import static org.apache.sis.util.ArgumentChecks.ensureNonNull;
 
 
 /**

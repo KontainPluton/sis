@@ -16,31 +16,32 @@
  */
 package org.apache.sis.storage.geotiff;
 
-import java.util.List;
-import java.util.Arrays;
-import java.nio.file.Path;
-import java.io.IOException;
-import org.opengis.util.NameSpace;
-import org.opengis.util.FactoryException;
-import org.opengis.geometry.DirectPosition;
-import org.opengis.referencing.datum.PixelInCell;
-import org.opengis.referencing.operation.MathTransform;
-import org.opengis.referencing.operation.TransformException;
-import org.opengis.referencing.operation.CoordinateOperation;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.GridExtent;
 import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.storage.GridCoverageResource;
+import org.apache.sis.internal.referencing.DirectPositionView;
+import org.apache.sis.internal.storage.GridResourceWrapper;
+import org.apache.sis.internal.storage.ResourceOnFileSystem;
+import org.apache.sis.internal.storage.StoreResource;
+import org.apache.sis.referencing.CRS;
+import org.apache.sis.referencing.operation.matrix.MatrixSIS;
 import org.apache.sis.storage.DataStore;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.DataStoreReferencingException;
-import org.apache.sis.internal.storage.StoreResource;
-import org.apache.sis.internal.storage.GridResourceWrapper;
-import org.apache.sis.internal.storage.ResourceOnFileSystem;
-import org.apache.sis.internal.referencing.DirectPositionView;
-import org.apache.sis.referencing.operation.matrix.MatrixSIS;
-import org.apache.sis.referencing.CRS;
+import org.apache.sis.storage.GridCoverageResource;
+import org.opengis.geometry.DirectPosition;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.referencing.datum.PixelInCell;
+import org.opengis.referencing.operation.CoordinateOperation;
+import org.opengis.referencing.operation.MathTransform;
+import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.FactoryException;
+import org.opengis.util.NameSpace;
+
+import java.io.IOException;
+import java.nio.file.Path;
+import java.util.Arrays;
+import java.util.List;
 
 
 /**

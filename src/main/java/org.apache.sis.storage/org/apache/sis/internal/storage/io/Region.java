@@ -18,11 +18,7 @@ package org.apache.sis.internal.storage.io;
 
 import org.apache.sis.io.TableAppender;
 
-import static java.lang.Math.addExact;
-import static java.lang.Math.subtractExact;
-import static java.lang.Math.multiplyExact;
-import static java.lang.Math.incrementExact;
-import static java.lang.Math.toIntExact;
+import static java.lang.Math.*;
 import static org.apache.sis.internal.util.Numerics.ceilDiv;
 
 

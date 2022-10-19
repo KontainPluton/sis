@@ -16,31 +16,31 @@
  */
 package org.apache.sis.coverage.grid;
 
-import java.util.List;
-import java.util.Set;
-import java.util.EnumSet;
-import java.util.Objects;
-import java.util.function.Function;
-import java.awt.Shape;
-import java.awt.Rectangle;
-import java.awt.image.ColorModel;
-import java.awt.image.RenderedImage;
-import javax.measure.Quantity;
-import org.opengis.util.FactoryException;
-import org.opengis.referencing.operation.MathTransform1D;
-import org.opengis.referencing.operation.TransformException;
 import org.apache.sis.coverage.RegionOfInterest;
 import org.apache.sis.coverage.SampleDimension;
 import org.apache.sis.image.DataType;
 import org.apache.sis.image.ImageProcessor;
 import org.apache.sis.image.Interpolation;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.logging.Logging;
-import org.apache.sis.util.collection.WeakHashSet;
 import org.apache.sis.internal.system.Modules;
 import org.apache.sis.internal.util.FinalFieldSetter;
 import org.apache.sis.internal.util.UnmodifiableArrayList;
 import org.apache.sis.measure.NumberRange;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.collection.WeakHashSet;
+import org.apache.sis.util.logging.Logging;
+import org.opengis.referencing.operation.MathTransform1D;
+import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.FactoryException;
+
+import javax.measure.Quantity;
+import java.awt.*;
+import java.awt.image.ColorModel;
+import java.awt.image.RenderedImage;
+import java.util.EnumSet;
+import java.util.List;
+import java.util.Objects;
+import java.util.Set;
+import java.util.function.Function;
 
 import static java.util.logging.Logger.getLogger;
 

@@ -16,11 +16,12 @@
  */
 package org.apache.sis.coverage.grid;
 
-import java.util.Arrays;
-import org.opengis.coverage.grid.GridCoordinates;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.internal.jdk9.JDK9;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.resources.Errors;
+import org.opengis.coverage.grid.GridCoordinates;
+
+import java.util.Arrays;
 
 
 /**

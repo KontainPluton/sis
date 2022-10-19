@@ -46,12 +46,12 @@ import org.apache.sis.metadata.iso.DefaultIdentifier;
 import org.apache.sis.util.SimpleInternationalString;
 import org.apache.sis.util.DefaultInternationalString;
 import org.apache.sis.util.Version;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.TestUtilities;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.TestUtilities;
 import org.junit.Test;
 
-import static org.apache.sis.test.TestUtilities.getSingleton;
-import static org.apache.sis.test.MetadataAssert.*;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
 
 
 /**

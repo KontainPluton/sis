@@ -16,15 +16,14 @@
  */
 package org.apache.sis.storage;
 
-import java.util.List;
-import java.util.Collections;
 import org.apache.sis.coverage.SampleDimension;
-import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.storage.RasterLoadingStrategy;
-import org.apache.sis.storage.UnsupportedQueryException;
+import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.ArraysExt;
+
+import java.util.Collections;
+import java.util.List;
 
 
 /**

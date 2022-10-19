@@ -16,7 +16,7 @@
  */
 package org.apache.sis.metadata.xml;
 
-import org.apache.sis.test.xml.TestCase;
+import org.apache.sis.testmetadata.xml.TestCase;
 
 
 /**

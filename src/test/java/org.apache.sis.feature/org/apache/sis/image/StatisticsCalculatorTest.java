@@ -25,9 +25,9 @@ import java.awt.image.ImagingOpException;
 import java.util.function.DoubleUnaryOperator;
 import org.apache.sis.internal.system.Modules;
 import org.apache.sis.math.Statistics;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.LoggingWatcher;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.LoggingWatcher;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Rule;
 import org.junit.Test;
 

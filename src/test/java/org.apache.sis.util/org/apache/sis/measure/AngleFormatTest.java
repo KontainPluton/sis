@@ -21,13 +21,13 @@ import java.math.RoundingMode;
 import java.text.FieldPosition;
 import java.text.AttributedCharacterIterator;
 import java.text.ParseException;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.DependsOnMethod;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-import static org.apache.sis.test.TestUtilities.*;
+import static org.apache.sis.testutilities.TestUtilities.*;
 
 
 /**

@@ -16,14 +16,14 @@
  */
 package org.apache.sis.internal.feature.j2d;
 
-import java.awt.Rectangle;
-import java.awt.Shape;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.PathIterator;
-import java.awt.geom.AffineTransform;
 import org.apache.sis.internal.feature.AbstractGeometry;
 import org.apache.sis.internal.referencing.j2d.IntervalRectangle;
+
+import java.awt.*;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.PathIterator;
+import java.awt.geom.Point2D;
+import java.awt.geom.Rectangle2D;
 
 
 /**

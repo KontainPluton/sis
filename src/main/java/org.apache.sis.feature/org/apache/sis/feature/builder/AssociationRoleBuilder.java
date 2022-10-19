@@ -16,13 +16,11 @@
  */
 package org.apache.sis.feature.builder;
 
-import org.opengis.util.GenericName;
-import org.apache.sis.feature.Features;
 import org.apache.sis.feature.DefaultAssociationRole;
-
-// Branch-dependent imports
-import org.opengis.feature.FeatureType;
+import org.apache.sis.feature.Features;
 import org.opengis.feature.FeatureAssociationRole;
+import org.opengis.feature.FeatureType;
+import org.opengis.util.GenericName;
 
 
 /**

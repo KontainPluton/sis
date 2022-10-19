@@ -17,8 +17,8 @@
 package org.apache.sis.internal.util;
 
 import org.junit.Test;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.DependsOn;
 
 import static java.lang.String.valueOf;
 import static org.junit.Assert.*;

@@ -22,8 +22,8 @@ import org.opengis.referencing.operation.TransformException;
 import org.apache.sis.referencing.operation.transform.MathTransforms;
 import org.apache.sis.measure.NumberRange;
 import org.apache.sis.math.MathFunctions;
-import org.apache.sis.test.TestUtilities;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestUtilities;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.opengis.test.Assert.*;

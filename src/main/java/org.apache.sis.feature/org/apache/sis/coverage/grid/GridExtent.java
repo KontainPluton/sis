@@ -16,63 +16,56 @@
  */
 package org.apache.sis.coverage.grid;
 
-import java.util.Map;
-import java.util.HashMap;
-import java.util.TreeMap;
-import java.util.SortedMap;
-import java.util.Arrays;
-import java.util.Optional;
-import java.util.Locale;
-import java.io.Serializable;
-import java.io.IOException;
-import java.io.UncheckedIOException;
-import java.awt.Rectangle;
-import org.opengis.util.FactoryException;
-import org.opengis.util.InternationalString;
-import org.opengis.geometry.Envelope;
-import org.opengis.geometry.DirectPosition;
-import org.opengis.metadata.spatial.DimensionNameType;
-import org.opengis.referencing.cs.AxisDirection;
-import org.opengis.referencing.cs.CoordinateSystem;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
-import org.opengis.referencing.datum.PixelInCell;
-import org.opengis.referencing.operation.Matrix;
-import org.opengis.referencing.operation.MathTransform;
-import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.resources.Vocabulary;
-import org.apache.sis.util.collection.WeakValueHashMap;
+import org.apache.sis.coverage.SubspaceNotSpecifiedException;
+import org.apache.sis.geometry.AbstractEnvelope;
+import org.apache.sis.geometry.Envelopes;
+import org.apache.sis.geometry.GeneralEnvelope;
+import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.internal.referencing.AxisDirections;
 import org.apache.sis.internal.referencing.ExtendedPrecisionMatrix;
-import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.internal.system.Modules;
+import org.apache.sis.internal.util.DoubleDouble;
 import org.apache.sis.internal.util.Numerics;
 import org.apache.sis.internal.util.Strings;
-import org.apache.sis.internal.util.DoubleDouble;
-import org.apache.sis.geometry.AbstractEnvelope;
-import org.apache.sis.geometry.GeneralEnvelope;
-import org.apache.sis.geometry.Envelopes;
-import org.apache.sis.coverage.SubspaceNotSpecifiedException;
+import org.apache.sis.io.TableAppender;
+import org.apache.sis.math.MathFunctions;
 import org.apache.sis.referencing.operation.matrix.Matrices;
 import org.apache.sis.referencing.operation.matrix.MatrixSIS;
 import org.apache.sis.referencing.operation.transform.MathTransforms;
 import org.apache.sis.referencing.operation.transform.TransformSeparator;
-import org.apache.sis.math.MathFunctions;
-import org.apache.sis.io.TableAppender;
+import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.ComparisonMode;
 import org.apache.sis.util.LenientComparable;
+import org.apache.sis.util.collection.WeakValueHashMap;
 import org.apache.sis.util.iso.Types;
 import org.apache.sis.util.logging.Logging;
-import org.apache.sis.internal.system.Modules;
-
-import static java.util.logging.Logger.getLogger;
-
-// Branch-dependent imports
-import org.opengis.coverage.grid.GridEnvelope;
-import org.opengis.coverage.grid.GridCoordinates;
+import org.apache.sis.util.resources.Errors;
+import org.apache.sis.util.resources.Vocabulary;
 import org.opengis.coverage.CannotEvaluateException;
 import org.opengis.coverage.PointOutsideCoverageException;
+import org.opengis.coverage.grid.GridCoordinates;
+import org.opengis.coverage.grid.GridEnvelope;
+import org.opengis.geometry.DirectPosition;
+import org.opengis.geometry.Envelope;
+import org.opengis.metadata.spatial.DimensionNameType;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.referencing.cs.AxisDirection;
+import org.opengis.referencing.cs.CoordinateSystem;
+import org.opengis.referencing.datum.PixelInCell;
+import org.opengis.referencing.operation.MathTransform;
+import org.opengis.referencing.operation.Matrix;
+import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.FactoryException;
+import org.opengis.util.InternationalString;
+
+import java.awt.*;
+import java.io.IOException;
+import java.io.Serializable;
+import java.io.UncheckedIOException;
+import java.util.*;
+
+import static java.util.logging.Logger.getLogger;
 
 
 /**

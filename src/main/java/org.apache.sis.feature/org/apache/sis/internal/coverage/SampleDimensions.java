@@ -16,14 +16,15 @@
  */
 package org.apache.sis.internal.coverage;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.function.DoubleUnaryOperator;
-import org.apache.sis.coverage.SampleDimension;
 import org.apache.sis.coverage.Category;
+import org.apache.sis.coverage.SampleDimension;
 import org.apache.sis.image.ImageProcessor;
 import org.apache.sis.measure.NumberRange;
 import org.apache.sis.util.Static;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.function.DoubleUnaryOperator;
 
 
 /**

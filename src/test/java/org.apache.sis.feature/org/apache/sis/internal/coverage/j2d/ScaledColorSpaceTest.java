@@ -24,7 +24,7 @@ import java.awt.image.ComponentColorModel;
 import java.awt.image.DataBuffer;
 import java.awt.image.WritableRaster;
 import org.apache.sis.image.ImageTestCase;
-import org.apache.sis.test.TestUtilities;
+import org.apache.sis.testutilities.TestUtilities;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

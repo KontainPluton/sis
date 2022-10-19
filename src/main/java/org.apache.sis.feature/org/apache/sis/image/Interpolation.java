@@ -16,9 +16,9 @@
  */
 package org.apache.sis.image;
 
-import java.awt.Dimension;
-import java.awt.image.RenderedImage;
+import java.awt.*;
 import java.awt.image.IndexColorModel;
+import java.awt.image.RenderedImage;
 import java.nio.DoubleBuffer;
 
 

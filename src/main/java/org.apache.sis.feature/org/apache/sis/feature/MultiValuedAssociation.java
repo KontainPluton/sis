@@ -16,16 +16,15 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Collection;
+import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.internal.util.CheckedArrayList;
 import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.internal.feature.Resources;
-
-// Branch-dependent imports
 import org.opengis.feature.Feature;
-import org.opengis.feature.FeatureType;
 import org.opengis.feature.FeatureAssociationRole;
+import org.opengis.feature.FeatureType;
 import org.opengis.feature.MultiValuedPropertyException;
+
+import java.util.Collection;
 
 
 /**

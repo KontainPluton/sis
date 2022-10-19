@@ -1,3 +1,5 @@
+import org.apache.sis.SisBuildHelper
+
 //=======================================================================
 //        Gradle Project Build File
 //
@@ -26,9 +28,13 @@ plugins {
     `java`
     `maven-publish`
     //`checkstyle`
-    //id("org.apache.sis.java-conventions")
     war
 }
+
+apply<SisBuildHelper>()
+tasks.get("javaMaker").setProperty("baseDirectory","${project.rootDir.absolutePath}/src/main/java/org.apache.sis.openoffice")
+tasks.get("unopkg").setProperty("baseDirectory","${project.rootDir.absolutePath}/src/main/java/org.apache.sis.openoffice")
+//tasks.get("dist").setProperty("baseDirectory","${project.rootDir.absolutePath}/src/main/java")
 
 //=== REPOSITORIES ====================================================================//
 
@@ -85,6 +91,14 @@ dependencies {
     api(libs.jaxb.api)
     //testImplementation(project(":core:sis-utility", "testArtifact"))
     testRuntimeOnly(libs.jaxb.runtime)
+
+    testImplementation(drivers.h2)
+    testImplementation(drivers.hsqldb)
+    testImplementation(drivers.postgres)
+    testImplementation(drivers.derby)
+    testImplementation(drivers.derbytools)
+    testImplementation(drivers.derbyshared)
+
     testRuntimeOnly(drivers.h2)
     testRuntimeOnly(drivers.hsqldb)
     testRuntimeOnly(drivers.postgres)
@@ -138,11 +152,9 @@ dependencies {
     testCompileOnly("edu.ucar:cdm-core:5.5.3") {
         exclude("com.google.code.findbugs","jsr305")
     }
-    //testImplementation(project(":storage:sis-storage"))
     testImplementation("org.slf4j:slf4j-jdk14:1.7.28")
 
     // STORAGE GEOTIFF
-    //testImplementation(project(":storage:sis-storage"))
     testRuntimeOnly(libs.jaxb.runtime)
 
     // PROFILE FRANCE
@@ -152,7 +164,7 @@ dependencies {
     compileOnly("edu.ucar:cdm-core:5.5.3") {
         exclude("com.google.code.findbugs","jsr305")
     }
-    testCompileOnly("edu.ucar:cdm-core:5.5.3") {
+    testImplementation("edu.ucar:cdm-core:5.5.3") {
         exclude("com.google.code.findbugs","jsr305")
     }
     runtimeOnly("org.slf4j:slf4j-jdk14:1.7.28")
@@ -167,8 +179,6 @@ dependencies {
     //runtimeOnly(project("storage.sis.earthobservation"))
     runtimeOnly(drivers.derby)
     testRuntimeOnly(libs.jaxb.runtime)
-    //testImplementation(project(":core:sis-metadata"))
-    //testImplementation(project(":storage:sis-xmlstore"))
 
     // APPLICATION OPENOFFICE
     implementation("org.opengis:geoapi-pending:4.0-SNAPSHOT")
@@ -194,7 +204,6 @@ dependencies {
 //=== JAVA COMPILATION ====================================================================//
 
 tasks.compileJava {
-    //println(classpath.asPath)
     options.encoding = "UTF-8"
     options.compilerArgs.add("--module-source-path")
     options.compilerArgs.add(files("src/main/java").asPath)
@@ -204,38 +213,50 @@ tasks.compileJava {
 //=== TEST COMPILATION ====================================================================//
 
 tasks.compileTestJava {
-    println(classpath.asPath)
-    // TODO : Path modules dynamically (foreach module, patch)
     options.compilerArgs.add("--module-source-path")
     options.compilerArgs.add(files("src/test/java").asPath)
-    options.compilerArgs.add("--patch-module")
-    options.compilerArgs.add("org.apache.sis.util=${tasks.compileJava.get().destinationDirectory.asFile.get().path}/org.apache.sis.util")
-    options.compilerArgs.add("--patch-module")
-    options.compilerArgs.add("org.apache.sis.metadata=${tasks.compileJava.get().destinationDirectory.asFile.get().path}/org.apache.sis.metadata")
-    options.compilerArgs.add("--patch-module")
-    options.compilerArgs.add("org.apache.sis.referencing=${tasks.compileJava.get().destinationDirectory.asFile.get().path}/org.apache.sis.referencing")
-    options.compilerArgs.add("--patch-module")
-    options.compilerArgs.add("org.apache.sis.feature=${tasks.compileJava.get().destinationDirectory.asFile.get().path}/org.apache.sis.feature")
+
+    File("src/test/java/").list().forEach {
+        options.compilerArgs.add("--patch-module")
+        options.compilerArgs.add("${it}=${tasks.compileJava.get().destinationDirectory.asFile.get().path}/${it}")
+    }
+
+    // Exports from main module, only for testing purpose
+    options.compilerArgs.add("--add-exports")
+    options.compilerArgs.add("org.apache.sis.util/org.apache.sis.internal.temporal=org.apache.sis.metadata")
+
+    options.compilerArgs.add("--add-exports")
+    options.compilerArgs.add("org.apache.sis.util/org.apache.sis.internal.jdk9=org.apache.sis.feature")
+    options.compilerArgs.add("--add-exports")
+    options.compilerArgs.add("org.apache.sis.util/org.apache.sis.internal.jdk9=org.apache.sis.referencing")
+
+    options.compilerArgs.add("--add-exports")
+    options.compilerArgs.add("org.apache.sis.metadata/org.apache.sis.metadata.iso.distribution=org.apache.sis.referencing")
+
+    options.compilerArgs.add("--add-exports")
+    options.compilerArgs.add("org.apache.sis.metadata/org.apache.sis.internal.jaxb.gcx=org.apache.sis.referencing")
+
     options.compilerArgs.add("--module-path=${classpath.asPath}")
 }
 
 //=== TEST EXECUTION ====================================================================//
 
 tasks.test {
-    // TODO : Path modules dynamically (foreach module, patch)
     useJUnit()
     testLogging {
         events("PASSED", "FAILED", "SKIPPED", "STANDARD_OUT")
     }
     maxHeapSize = "1G"
 
-    val args = listOf(
-        "--patch-module","org.apache.sis.util=${tasks.compileJava.get().destinationDirectory.asFile.get().path}/org.apache.sis.util",
-        "--patch-module","org.apache.sis.metadata=${tasks.compileJava.get().destinationDirectory.asFile.get().path}/org.apache.sis.metadata",
-        "--add-modules","org.apache.sis.util",
-        "--add-modules","org.apache.sis.metadata",
-        "--module-path=${classpath.asPath}"
-    )
+    val args = mutableListOf("--module-path=${classpath.asPath}")
+
+    File("src/test/java/").list().forEach {
+        args.add("--patch-module")
+        args.add("${it}=${tasks.compileJava.get().destinationDirectory.asFile.get().path}/${it}")
+        args.add("--add-modules")
+        args.add(it)
+    }
+
     jvmArgs(args)
 }
 

@@ -16,6 +16,12 @@
  */
 package org.apache.sis.internal.shapefile.jdbc.statement;
 
+import org.apache.sis.internal.shapefile.jdbc.SQLConnectionClosedException;
+import org.apache.sis.internal.shapefile.jdbc.connection.DBFConnection;
+import org.apache.sis.internal.shapefile.jdbc.resultset.DBFRecordBasedResultSet;
+import org.apache.sis.internal.shapefile.jdbc.resultset.DBFResultSet;
+import org.apache.sis.internal.shapefile.jdbc.sql.SQLInvalidStatementException;
+
 import java.io.File;
 import java.sql.*;
 import java.text.MessageFormat;
@@ -23,12 +29,6 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.logging.Level;
 import java.util.stream.Collectors;
-
-import org.apache.sis.internal.shapefile.jdbc.SQLConnectionClosedException;
-import org.apache.sis.internal.shapefile.jdbc.connection.DBFConnection;
-import org.apache.sis.internal.shapefile.jdbc.resultset.DBFResultSet;
-import org.apache.sis.internal.shapefile.jdbc.resultset.DBFRecordBasedResultSet;
-import org.apache.sis.internal.shapefile.jdbc.sql.SQLInvalidStatementException;
 
 
 /**

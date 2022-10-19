@@ -16,22 +16,18 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.util.Arrays;
-import java.awt.Point;
-import java.awt.color.ColorSpace;
-import java.awt.image.ColorModel;
-import java.awt.image.SampleModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.awt.image.RenderedImage;
-import java.lang.ref.WeakReference;
+import org.apache.sis.internal.system.ReferenceQueueConsumer;
+import org.apache.sis.internal.util.Numerics;
+import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.Disposable;
 import org.apache.sis.util.Workaround;
-import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.collection.WeakHashSet;
-import org.apache.sis.internal.util.Numerics;
-import org.apache.sis.internal.system.ReferenceQueueConsumer;
+
+import java.awt.*;
+import java.awt.color.ColorSpace;
+import java.awt.image.*;
+import java.lang.ref.WeakReference;
+import java.util.Arrays;
 
 
 /**

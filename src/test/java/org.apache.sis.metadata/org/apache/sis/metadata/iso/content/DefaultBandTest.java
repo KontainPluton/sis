@@ -19,10 +19,10 @@ package org.apache.sis.metadata.iso.content;
 import javax.xml.bind.JAXBException;
 import org.opengis.metadata.content.PolarisationOrientation;
 import org.apache.sis.util.Version;
-import org.apache.sis.test.xml.TestCase;
+import org.apache.sis.testmetadata.xml.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.MetadataAssert.*;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
 
 
 /**

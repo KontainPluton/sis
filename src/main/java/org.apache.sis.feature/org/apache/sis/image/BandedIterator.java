@@ -16,19 +16,12 @@
  */
 package org.apache.sis.image;
 
-import java.nio.FloatBuffer;
-import java.nio.DoubleBuffer;
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.image.DataBuffer;
-import java.awt.image.SampleModel;
-import java.awt.image.BandedSampleModel;
-import java.awt.image.ComponentSampleModel;
-import java.awt.image.Raster;
-import java.awt.image.RenderedImage;
-import java.awt.image.WritableRaster;
-import java.awt.image.WritableRenderedImage;
 import org.opengis.coverage.grid.SequenceType;
+
+import java.awt.*;
+import java.awt.image.*;
+import java.nio.DoubleBuffer;
+import java.nio.FloatBuffer;
 
 
 /**

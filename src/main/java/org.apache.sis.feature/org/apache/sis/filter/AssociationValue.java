@@ -16,24 +16,14 @@
  */
 package org.apache.sis.filter;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Optional;
-import java.util.StringJoiner;
 import org.apache.sis.feature.Features;
 import org.apache.sis.feature.builder.FeatureTypeBuilder;
 import org.apache.sis.feature.builder.PropertyTypeBuilder;
-
-// Branch-dependent imports
-import org.opengis.feature.Feature;
-import org.opengis.feature.FeatureAssociationRole;
-import org.opengis.feature.FeatureType;
-import org.opengis.feature.PropertyType;
-import org.opengis.feature.PropertyNotFoundException;
+import org.opengis.feature.*;
 import org.opengis.filter.Expression;
 import org.opengis.filter.ValueReference;
+
+import java.util.*;
 
 
 /**

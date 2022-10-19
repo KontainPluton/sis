@@ -16,35 +16,23 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Collection;
-import java.util.Collections;
-
-import org.apache.sis.feature.AbstractAssociation;
-import org.apache.sis.feature.AbstractAttribute;
-import org.apache.sis.feature.AbstractFeature;
-import org.opengis.util.GenericName;
-import org.opengis.util.InternationalString;
+import org.apache.sis.metadata.iso.maintenance.DefaultScope;
+import org.apache.sis.metadata.iso.quality.AbstractElement;
+import org.apache.sis.metadata.iso.quality.DefaultConformanceResult;
+import org.apache.sis.metadata.iso.quality.DefaultDataQuality;
+import org.apache.sis.metadata.iso.quality.DefaultDomainConsistency;
+import org.apache.sis.referencing.NamedIdentifier;
+import org.apache.sis.util.resources.Errors;
+import org.opengis.feature.*;
 import org.opengis.metadata.Identifier;
 import org.opengis.metadata.maintenance.ScopeCode;
 import org.opengis.metadata.quality.DataQuality;
 import org.opengis.metadata.quality.EvaluationMethodType;
-import org.apache.sis.metadata.iso.quality.AbstractElement;
-import org.apache.sis.metadata.iso.quality.DefaultDataQuality;
-import org.apache.sis.metadata.iso.quality.DefaultDomainConsistency;
-import org.apache.sis.metadata.iso.quality.DefaultConformanceResult;
-import org.apache.sis.metadata.iso.maintenance.DefaultScope;
-import org.apache.sis.referencing.NamedIdentifier;
-import org.apache.sis.util.resources.Errors;
+import org.opengis.util.GenericName;
+import org.opengis.util.InternationalString;
 
-// Branch-dependent imports
-import org.opengis.feature.Property;
-import org.opengis.feature.PropertyType;
-import org.opengis.feature.Attribute;
-import org.opengis.feature.AttributeType;
-import org.opengis.feature.Feature;
-import org.opengis.feature.FeatureType;
-import org.opengis.feature.FeatureAssociation;
-import org.opengis.feature.FeatureAssociationRole;
+import java.util.Collection;
+import java.util.Collections;
 
 
 /**

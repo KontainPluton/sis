@@ -16,9 +16,10 @@
  */
 package org.apache.sis.storage;
 
-import java.util.Locale;
-import org.opengis.util.FactoryException;
 import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.FactoryException;
+
+import java.util.Locale;
 
 
 /**

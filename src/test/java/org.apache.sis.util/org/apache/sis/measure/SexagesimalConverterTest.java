@@ -19,7 +19,7 @@ package org.apache.sis.measure;
 import javax.measure.Unit;
 import javax.measure.Quantity;
 import javax.measure.UnitConverter;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.apache.sis.measure.SexagesimalConverter.*;

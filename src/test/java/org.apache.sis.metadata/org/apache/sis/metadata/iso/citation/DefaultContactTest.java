@@ -23,8 +23,8 @@ import java.util.logging.LogRecord;
 import org.opengis.metadata.citation.Telephone;
 import org.opengis.metadata.citation.TelephoneType;
 import org.apache.sis.internal.jaxb.Context;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.xml.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testmetadata.xml.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

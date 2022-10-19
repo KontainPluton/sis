@@ -16,24 +16,14 @@
  */
 package org.apache.sis.filter;
 
-import java.util.Map;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.IdentityHashMap;
-import java.util.ConcurrentModificationException;
-import java.util.function.Predicate;
-import org.opengis.util.CodeList;
-import org.apache.sis.util.resources.Errors;
 import org.apache.sis.internal.util.CollectionsExt;
-
-// Branch-dependent imports
-import org.opengis.filter.Filter;
-import org.opengis.filter.Literal;
-import org.opengis.filter.Expression;
-import org.opengis.filter.LogicalOperator;
-import org.opengis.filter.LogicalOperatorName;
+import org.apache.sis.util.resources.Errors;
 import org.opengis.feature.FeatureType;
+import org.opengis.filter.*;
+import org.opengis.util.CodeList;
+
+import java.util.*;
+import java.util.function.Predicate;
 
 
 /**

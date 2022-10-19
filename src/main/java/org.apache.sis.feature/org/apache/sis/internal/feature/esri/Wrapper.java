@@ -16,26 +16,7 @@
  */
 package org.apache.sis.internal.feature.esri;
 
-import java.util.Iterator;
-import java.util.function.Supplier;
-import com.esri.core.geometry.Geometry;
-import com.esri.core.geometry.GeometryEngine;
-import com.esri.core.geometry.Envelope2D;
-import com.esri.core.geometry.MultiPath;
-import com.esri.core.geometry.MultiVertexGeometry;
-import com.esri.core.geometry.Operator;
-import com.esri.core.geometry.Polyline;
-import com.esri.core.geometry.Point;
-import com.esri.core.geometry.Point2D;
-import com.esri.core.geometry.WktImportFlags;
-import com.esri.core.geometry.WktExportFlags;
-import com.esri.core.geometry.OperatorExportToWkt;
-import com.esri.core.geometry.OperatorCentroid2D;
-import com.esri.core.geometry.OperatorIntersects;
-import com.esri.core.geometry.OperatorSimpleRelation;
-import com.esri.core.geometry.ProgressTracker;
-import com.esri.core.geometry.SpatialReference;
-import org.opengis.geometry.DirectPosition;
+import com.esri.core.geometry.*;
 import org.apache.sis.geometry.DirectPosition2D;
 import org.apache.sis.geometry.GeneralEnvelope;
 import org.apache.sis.internal.feature.Geometries;
@@ -43,9 +24,11 @@ import org.apache.sis.internal.feature.GeometryWithCRS;
 import org.apache.sis.internal.feature.GeometryWrapper;
 import org.apache.sis.internal.filter.sqlmm.SQLMM;
 import org.apache.sis.util.Debug;
-
-// Branch-dependent imports
 import org.opengis.filter.SpatialOperatorName;
+import org.opengis.geometry.DirectPosition;
+
+import java.util.Iterator;
+import java.util.function.Supplier;
 
 
 /**

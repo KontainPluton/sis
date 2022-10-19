@@ -16,30 +16,26 @@
  */
 package org.apache.sis.storage;
 
-import java.io.Reader;
-import java.io.InputStream;
-import java.nio.ByteBuffer;
-import javax.imageio.stream.ImageInputStream;
-import java.util.logging.Logger;
-
-import org.apache.sis.storage.CanNotProbeException;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.DataStoreRegistry;
-import org.apache.sis.storage.ForwardOnlyStorageException;
-import org.opengis.parameter.ParameterValueGroup;
-import org.opengis.parameter.ParameterDescriptorGroup;
-import org.opengis.metadata.distribution.Format;
 import org.apache.sis.internal.simple.SimpleFormat;
 import org.apache.sis.internal.storage.URIDataStore;
 import org.apache.sis.internal.storage.io.Markable;
 import org.apache.sis.internal.storage.io.RewindableLineReader;
+import org.apache.sis.measure.Range;
 import org.apache.sis.metadata.iso.citation.DefaultCitation;
 import org.apache.sis.metadata.iso.distribution.DefaultFormat;
-import org.apache.sis.measure.Range;
-import org.apache.sis.util.logging.Logging;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.Version;
+import org.apache.sis.util.logging.Logging;
 import org.apache.sis.util.resources.Errors;
+import org.opengis.metadata.distribution.Format;
+import org.opengis.parameter.ParameterDescriptorGroup;
+import org.opengis.parameter.ParameterValueGroup;
+
+import javax.imageio.stream.ImageInputStream;
+import java.io.InputStream;
+import java.io.Reader;
+import java.nio.ByteBuffer;
+import java.util.logging.Logger;
 
 
 /**

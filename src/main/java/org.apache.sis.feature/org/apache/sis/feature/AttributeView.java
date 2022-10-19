@@ -16,17 +16,14 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Map;
-import java.util.Collection;
-import java.util.Collections;
-
-import org.apache.sis.feature.AbstractFeature;
-import org.opengis.util.GenericName;
-
-// Branch-dependent imports
-import org.opengis.feature.Feature;
 import org.opengis.feature.Attribute;
 import org.opengis.feature.AttributeType;
+import org.opengis.feature.Feature;
+import org.opengis.util.GenericName;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Map;
 
 
 /**

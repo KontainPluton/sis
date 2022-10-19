@@ -16,23 +16,15 @@
  */
 package org.apache.sis.coverage.grid;
 
-import java.util.Vector;
-import java.util.Objects;
-import java.awt.Rectangle;
-import java.awt.image.Raster;
-import java.awt.image.RenderedImage;
-import java.awt.image.SampleModel;
-import java.awt.image.ColorModel;
-import java.awt.image.WritableRaster;
 import org.apache.sis.image.PlanarImage;
 import org.apache.sis.util.ArgumentChecks;
 
-import static java.lang.Math.min;
-import static java.lang.Math.max;
-import static java.lang.Math.addExact;
-import static java.lang.Math.subtractExact;
-import static java.lang.Math.floorDiv;
-import static java.lang.Math.toIntExact;
+import java.awt.*;
+import java.awt.image.*;
+import java.util.Objects;
+import java.util.Vector;
+
+import static java.lang.Math.*;
 
 
 /**

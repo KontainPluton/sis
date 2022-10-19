@@ -16,31 +16,29 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.util.Map;
-import java.util.List;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Collection;
-import java.util.function.Function;
-import java.awt.Color;
-import java.awt.color.ColorSpace;
-import java.awt.image.ColorModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.IndexColorModel;
-import java.awt.image.SampleModel;
-import org.opengis.util.InternationalString;
-import org.opengis.referencing.operation.MathTransform1D;
-import org.opengis.referencing.operation.NoninvertibleTransformException;
-import org.apache.sis.referencing.operation.transform.MathTransforms;
 import org.apache.sis.coverage.Category;
 import org.apache.sis.coverage.SampleDimension;
 import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.internal.util.Numerics;
 import org.apache.sis.measure.NumberRange;
+import org.apache.sis.referencing.operation.transform.MathTransforms;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.resources.Errors;
 import org.apache.sis.util.resources.Vocabulary;
+import org.opengis.referencing.operation.MathTransform1D;
+import org.opengis.referencing.operation.NoninvertibleTransformException;
+import org.opengis.util.InternationalString;
+
+import java.awt.*;
+import java.awt.color.ColorSpace;
+import java.awt.image.ColorModel;
+import java.awt.image.DataBuffer;
+import java.awt.image.IndexColorModel;
+import java.awt.image.SampleModel;
+import java.util.List;
+import java.util.*;
+import java.util.function.Function;
 
 
 /**

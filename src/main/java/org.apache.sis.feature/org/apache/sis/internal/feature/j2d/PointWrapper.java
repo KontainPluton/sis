@@ -16,14 +16,6 @@
  */
 package org.apache.sis.internal.feature.j2d;
 
-import java.awt.Shape;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.util.Iterator;
-import java.util.function.BiPredicate;
-import org.opengis.geometry.DirectPosition;
 import org.apache.sis.geometry.DirectPosition2D;
 import org.apache.sis.geometry.GeneralEnvelope;
 import org.apache.sis.internal.feature.Geometries;
@@ -32,6 +24,13 @@ import org.apache.sis.internal.feature.GeometryWrapper;
 import org.apache.sis.internal.filter.sqlmm.SQLMM;
 import org.apache.sis.util.Debug;
 import org.opengis.filter.SpatialOperatorName;
+import org.opengis.geometry.DirectPosition;
+
+import java.awt.*;
+import java.awt.geom.Point2D;
+import java.awt.geom.Rectangle2D;
+import java.util.Iterator;
+import java.util.function.BiPredicate;
 
 
 /**

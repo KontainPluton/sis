@@ -23,7 +23,7 @@ import org.opengis.test.dataset.TestData;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-import static org.apache.sis.test.TestUtilities.date;
+import static org.apache.sis.testutilities.TestUtilities.date;
 import static org.apache.sis.storage.netcdf.AttributeNames.*;
 
 

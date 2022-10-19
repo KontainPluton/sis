@@ -19,7 +19,7 @@ package org.apache.sis.feature;
 import org.apache.sis.feature.DefaultFeatureTypeTest;
 import org.apache.sis.feature.PropertySingletonTest;
 import org.apache.sis.feature.SingletonAttributeTest;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOn;
 
 
 /**

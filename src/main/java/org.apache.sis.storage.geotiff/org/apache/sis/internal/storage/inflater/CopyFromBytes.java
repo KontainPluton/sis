@@ -16,17 +16,13 @@
  */
 package org.apache.sis.internal.storage.inflater;
 
-import java.io.IOException;
-import java.nio.Buffer;
-import java.nio.ByteBuffer;
-import java.nio.ShortBuffer;
-import java.nio.IntBuffer;
-import java.nio.FloatBuffer;
-import java.nio.DoubleBuffer;
 import org.apache.sis.image.DataType;
 import org.apache.sis.internal.storage.io.ChannelDataInput;
 import org.apache.sis.storage.UnsupportedEncodingException;
 import org.apache.sis.util.resources.Errors;
+
+import java.io.IOException;
+import java.nio.*;
 
 
 /**

@@ -29,7 +29,7 @@ import org.opengis.metadata.citation.Responsibility;
 import org.apache.sis.internal.simple.CitationConstant;
 import org.apache.sis.metadata.iso.citation.Citations;
 import org.apache.sis.metadata.MetadataStandard;
-import org.apache.sis.test.sql.TestDatabase;
+import org.apache.sis.testmetadata.sql.TestDatabase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

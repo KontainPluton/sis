@@ -16,21 +16,17 @@
  */
 package org.apache.sis.index.tree;
 
-import java.io.Serializable;
-import java.util.Optional;
-import java.util.AbstractSet;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
-import org.opengis.geometry.Envelope;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.apache.sis.internal.util.Numerics;
 import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.resources.Errors;
 import org.apache.sis.util.collection.CheckedContainer;
+import org.apache.sis.util.resources.Errors;
+import org.opengis.geometry.Envelope;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+
+import java.io.Serializable;
+import java.util.*;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 
 /**

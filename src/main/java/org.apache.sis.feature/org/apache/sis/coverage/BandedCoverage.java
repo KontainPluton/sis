@@ -16,14 +16,15 @@
  */
 package org.apache.sis.coverage;
 
+import org.opengis.coverage.CannotEvaluateException;
+import org.opengis.coverage.PointOutsideCoverageException;
+import org.opengis.geometry.DirectPosition;
+import org.opengis.geometry.Envelope;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
-import org.opengis.geometry.Envelope;
-import org.opengis.geometry.DirectPosition;
-import org.opengis.coverage.CannotEvaluateException;
-import org.opengis.coverage.PointOutsideCoverageException;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
 
 /**

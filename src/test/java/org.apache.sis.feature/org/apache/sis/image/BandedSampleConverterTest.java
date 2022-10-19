@@ -21,10 +21,10 @@ import java.awt.image.DataBuffer;
 import org.opengis.referencing.operation.MathTransform1D;
 import org.apache.sis.referencing.operation.transform.MathTransforms;
 import org.apache.sis.internal.coverage.j2d.ImageLayout;
-import org.apache.sis.test.TestUtilities;
+import org.apache.sis.testutilities.TestUtilities;
 import org.junit.Test;
 
-import static org.apache.sis.test.FeatureAssert.assertValuesEqual;
+import static org.apache.sis.testfeature.FeatureAssert.assertValuesEqual;
 
 
 /**

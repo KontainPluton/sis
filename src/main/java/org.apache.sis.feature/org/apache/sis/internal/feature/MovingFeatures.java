@@ -16,20 +16,19 @@
  */
 package org.apache.sis.internal.feature;
 
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Collections;
-import java.time.Instant;
-import org.opengis.util.LocalName;
-import org.apache.sis.util.iso.Names;
-import org.apache.sis.math.Vector;
 import org.apache.sis.feature.DefaultAttributeType;
-import org.apache.sis.referencing.crs.DefaultTemporalCRS;
 import org.apache.sis.internal.util.UnmodifiableArrayList;
-
-// Branch-dependent imports
+import org.apache.sis.math.Vector;
+import org.apache.sis.referencing.crs.DefaultTemporalCRS;
+import org.apache.sis.util.iso.Names;
 import org.opengis.feature.Attribute;
 import org.opengis.feature.AttributeType;
+import org.opengis.util.LocalName;
+
+import java.time.Instant;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**

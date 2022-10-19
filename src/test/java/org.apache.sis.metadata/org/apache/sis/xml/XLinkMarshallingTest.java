@@ -21,8 +21,8 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import javax.xml.bind.JAXBException;
 
-import org.apache.sis.test.MetadataAssert;
-import org.apache.sis.test.xml.TestCase;
+import org.apache.sis.testmetadata.MetadataAssert;
+import org.apache.sis.testmetadata.xml.TestCase;
 import org.apache.sis.xml.NilReasonMarshallingTest;
 import org.apache.sis.xml.XLinkTest;
 import org.opengis.metadata.identification.Identification;
@@ -30,10 +30,13 @@ import org.apache.sis.metadata.iso.DefaultMetadata;
 import org.apache.sis.metadata.iso.identification.DefaultDataIdentification;
 import org.apache.sis.util.SimpleInternationalString;
 import org.apache.sis.util.ComparisonMode;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOn;
 import org.junit.Test;
 
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.opengis.test.Assert.assertInstanceOf;
 
 
 /**

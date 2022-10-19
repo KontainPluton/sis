@@ -16,10 +16,10 @@
  */
 package org.apache.sis.internal.shapefile;
 
+import org.apache.sis.storage.shapefile.ShapeTypeEnum;
+
 import java.nio.ByteOrder;
 import java.nio.MappedByteBuffer;
-
-import org.apache.sis.storage.shapefile.ShapeTypeEnum;
 
 /**
  * Shapefile Descriptor.

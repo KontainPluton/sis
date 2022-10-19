@@ -18,13 +18,13 @@ package org.apache.sis.metadata.iso.maintenance;
 
 import org.apache.sis.util.SimpleInternationalString;
 import org.apache.sis.internal.jaxb.Context;
-import org.apache.sis.test.LoggingWatcher;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.LoggingWatcher;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.After;
 import org.junit.Rule;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

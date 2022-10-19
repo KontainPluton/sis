@@ -16,24 +16,20 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Set;
-import java.util.Map;
-import java.util.Collections;
-import java.io.IOException;
-
-import org.apache.sis.feature.AbstractOperation;
-import org.apache.sis.feature.FeatureOperations;
-import org.opengis.parameter.ParameterValueGroup;
-import org.opengis.parameter.ParameterDescriptorGroup;
 import org.apache.sis.internal.feature.FeatureUtilities;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.resources.Errors;
-
-// Branch-dependent imports
 import org.opengis.feature.Feature;
 import org.opengis.feature.IdentifiedType;
 import org.opengis.feature.Property;
 import org.opengis.feature.PropertyType;
+import org.opengis.parameter.ParameterDescriptorGroup;
+import org.opengis.parameter.ParameterValueGroup;
+
+import java.io.IOException;
+import java.util.Collections;
+import java.util.Map;
+import java.util.Set;
 
 
 /**

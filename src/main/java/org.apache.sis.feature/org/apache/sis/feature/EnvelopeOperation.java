@@ -16,43 +16,23 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Arrays;
-import java.util.Set;
-import java.util.Map;
-import java.util.LinkedHashMap;
-import java.util.Objects;
-import java.util.Optional;
-
-import org.apache.sis.feature.DefaultAttributeType;
-import org.apache.sis.feature.FeatureOperationException;
-import org.apache.sis.feature.FeatureOperations;
-import org.apache.sis.feature.StringJoinOperation;
-import org.opengis.util.GenericName;
-import org.opengis.util.FactoryException;
+import org.apache.sis.geometry.Envelopes;
+import org.apache.sis.geometry.GeneralEnvelope;
+import org.apache.sis.internal.feature.*;
+import org.apache.sis.internal.util.CollectionsExt;
+import org.apache.sis.referencing.CRS;
+import org.apache.sis.util.resources.Errors;
+import org.opengis.feature.*;
 import org.opengis.geometry.Envelope;
 import org.opengis.parameter.ParameterDescriptorGroup;
 import org.opengis.parameter.ParameterValueGroup;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.opengis.referencing.operation.CoordinateOperation;
 import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.internal.feature.AttributeConvention;
-import org.apache.sis.internal.feature.FeatureUtilities;
-import org.apache.sis.internal.feature.Geometries;
-import org.apache.sis.internal.util.CollectionsExt;
-import org.apache.sis.geometry.Envelopes;
-import org.apache.sis.geometry.GeneralEnvelope;
-import org.apache.sis.internal.feature.GeometryWrapper;
-import org.apache.sis.internal.feature.Resources;
-import org.apache.sis.referencing.CRS;
-import org.apache.sis.util.resources.Errors;
+import org.opengis.util.FactoryException;
+import org.opengis.util.GenericName;
 
-// Branch-dependent imports
-import org.opengis.feature.Attribute;
-import org.opengis.feature.AttributeType;
-import org.opengis.feature.Feature;
-import org.opengis.feature.IdentifiedType;
-import org.opengis.feature.Property;
-import org.opengis.feature.PropertyType;
+import java.util.*;
 
 
 /**

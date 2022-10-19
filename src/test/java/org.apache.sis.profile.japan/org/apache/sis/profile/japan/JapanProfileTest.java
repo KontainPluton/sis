@@ -20,7 +20,7 @@ import java.util.ServiceLoader;
 import org.apache.sis.internal.earth.netcdf.GCOM_C;
 import org.apache.sis.internal.earth.netcdf.GCOM_W;
 import org.apache.sis.internal.netcdf.Convention;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;

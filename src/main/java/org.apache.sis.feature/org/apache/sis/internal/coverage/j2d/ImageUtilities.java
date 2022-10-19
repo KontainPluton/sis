@@ -16,20 +16,6 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.util.Arrays;
-import java.awt.Rectangle;
-import java.awt.color.ColorSpace;
-import java.awt.geom.AffineTransform;
-import java.awt.image.DataBuffer;
-import java.awt.image.ColorModel;
-import java.awt.image.IndexColorModel;
-import java.awt.image.PackedColorModel;
-import java.awt.image.RenderedImage;
-import java.awt.image.Raster;
-import java.awt.image.RasterFormatException;
-import java.awt.image.SampleModel;
-import java.awt.image.SinglePixelPackedSampleModel;
-import java.awt.image.MultiPixelPackedSampleModel;
 import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.internal.system.Modules;
 import org.apache.sis.internal.util.Numerics;
@@ -37,11 +23,13 @@ import org.apache.sis.util.Numbers;
 import org.apache.sis.util.Static;
 import org.apache.sis.util.resources.Vocabulary;
 
-import static java.lang.Math.abs;
-import static java.lang.Math.rint;
-import static java.lang.Math.floorDiv;
-import static java.lang.Math.addExact;
-import static java.lang.Math.toIntExact;
+import java.awt.*;
+import java.awt.color.ColorSpace;
+import java.awt.geom.AffineTransform;
+import java.awt.image.*;
+import java.util.Arrays;
+
+import static java.lang.Math.*;
 import static java.util.logging.Logger.getLogger;
 import static org.apache.sis.internal.jdk9.JDK9.multiplyFull;
 import static org.apache.sis.internal.util.Numerics.COMPARISON_THRESHOLD;

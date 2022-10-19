@@ -16,22 +16,17 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Map;
-import java.util.Arrays;
-
-import org.apache.sis.feature.AbstractFeature;
-import org.apache.sis.feature.DefaultFeatureType;
-import org.apache.sis.feature.SparseFeature;
-import org.opengis.metadata.maintenance.ScopeCode;
-import org.opengis.metadata.quality.DataQuality;
 import org.apache.sis.internal.util.Cloner;
 import org.apache.sis.util.ArgumentChecks;
-
-// Branch-dependent imports
-import org.opengis.feature.Property;
 import org.opengis.feature.Attribute;
 import org.opengis.feature.FeatureAssociation;
+import org.opengis.feature.Property;
 import org.opengis.feature.PropertyNotFoundException;
+import org.opengis.metadata.maintenance.ScopeCode;
+import org.opengis.metadata.quality.DataQuality;
+
+import java.util.Arrays;
+import java.util.Map;
 
 
 /**

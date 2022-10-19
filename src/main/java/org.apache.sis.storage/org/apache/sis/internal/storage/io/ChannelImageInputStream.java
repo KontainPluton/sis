@@ -16,13 +16,13 @@
  */
 package org.apache.sis.internal.storage.io;
 
+import javax.imageio.stream.IIOByteBuffer;
+import javax.imageio.stream.ImageInputStream;
 import java.io.DataInputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.channels.ReadableByteChannel;
-import javax.imageio.stream.IIOByteBuffer;
-import javax.imageio.stream.ImageInputStream;
 
 
 /**

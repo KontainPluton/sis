@@ -23,12 +23,12 @@ import org.apache.sis.xml.Namespaces;
 import org.opengis.metadata.lineage.Source;
 import org.apache.sis.util.SimpleInternationalString;
 import org.apache.sis.metadata.iso.DefaultIdentifier;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.TestUtilities;
-import org.apache.sis.test.xml.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.TestUtilities;
+import org.apache.sis.testmetadata.xml.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.MetadataAssert.*;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
 
 
 /**

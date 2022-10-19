@@ -37,12 +37,12 @@ import org.apache.sis.metadata.iso.citation.DefaultIndividual;
 import org.apache.sis.metadata.iso.citation.AbstractParty;
 import org.apache.sis.util.collection.TableColumn;
 import org.apache.sis.util.collection.TreeTable;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.MetadataAssert.*;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
 import static java.util.Collections.singleton;
 
 

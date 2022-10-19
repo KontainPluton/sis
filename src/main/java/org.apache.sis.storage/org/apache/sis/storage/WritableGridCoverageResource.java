@@ -18,8 +18,6 @@ package org.apache.sis.storage;
 
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.storage.IncompatibleResourceException;
-import org.apache.sis.storage.ResourceAlreadyExistsException;
 
 
 /**

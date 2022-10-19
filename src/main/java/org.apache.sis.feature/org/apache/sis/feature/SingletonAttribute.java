@@ -16,12 +16,9 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Objects;
-
-// Branch-dependent imports
-import org.apache.sis.feature.DefaultAttributeType;
-import org.apache.sis.feature.MultiValuedAttribute;
 import org.opengis.feature.AttributeType;
+
+import java.util.Objects;
 
 
 /**

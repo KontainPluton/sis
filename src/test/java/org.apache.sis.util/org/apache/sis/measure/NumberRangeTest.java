@@ -19,8 +19,8 @@ package org.apache.sis.measure;
 import org.opengis.referencing.operation.MathTransform1D;
 import org.apache.sis.math.MathFunctions;
 import org.junit.Test;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.DependsOn;
 
 import static org.junit.Assert.*;
 import org.opengis.geometry.DirectPosition;

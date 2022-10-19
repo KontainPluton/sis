@@ -30,15 +30,15 @@ import org.apache.sis.xml.MarshallerPool;
 import org.apache.sis.xml.XML;
 import org.opengis.metadata.Metadata;
 import org.apache.sis.internal.jaxb.cat.CodeListUID;
-import org.apache.sis.test.mock.MetadataMock;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.xml.TestCase;
+import org.apache.sis.testmetadata.mock.MetadataMock;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testmetadata.xml.TestCase;
 import org.junit.BeforeClass;
 import org.junit.AfterClass;
 import org.junit.Test;
 
-import static org.apache.sis.test.MetadataAssert.*;
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
 import static org.apache.sis.internal.util.StandardDateFormat.UTC;
 
 

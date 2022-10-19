@@ -16,11 +16,12 @@
  */
 package org.apache.sis.internal.feature.jts;
 
-import java.io.Serializable;
 import org.locationtech.jts.geom.Coordinate;
-import org.locationtech.jts.geom.Coordinates;
 import org.locationtech.jts.geom.CoordinateSequence;
 import org.locationtech.jts.geom.CoordinateSequenceFactory;
+import org.locationtech.jts.geom.Coordinates;
+
+import java.io.Serializable;
 
 
 /**

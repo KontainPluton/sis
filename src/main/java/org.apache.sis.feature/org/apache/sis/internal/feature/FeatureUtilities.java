@@ -16,21 +16,16 @@
  */
 package org.apache.sis.internal.feature;
 
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Collection;
-import java.util.ConcurrentModificationException;
-import org.opengis.util.GenericName;
+import org.apache.sis.metadata.iso.citation.Citations;
+import org.apache.sis.parameter.DefaultParameterDescriptorGroup;
+import org.apache.sis.util.Static;
+import org.opengis.feature.PropertyType;
 import org.opengis.metadata.Identifier;
 import org.opengis.parameter.ParameterDescriptor;
 import org.opengis.parameter.ParameterDescriptorGroup;
-import org.apache.sis.parameter.DefaultParameterDescriptorGroup;
-import org.apache.sis.metadata.iso.citation.Citations;
-import org.apache.sis.util.Static;
+import org.opengis.util.GenericName;
 
-// Branch-dependent imports
-import org.opengis.feature.PropertyType;
+import java.util.*;
 
 
 /**

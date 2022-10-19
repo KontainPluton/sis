@@ -21,12 +21,12 @@ import javax.xml.bind.JAXBException;
 import org.apache.sis.internal.xml.LegacyNamespaces;
 import org.apache.sis.xml.Namespaces;
 import org.opengis.metadata.constraint.Restriction;
-import org.apache.sis.test.xml.TestCase;
+import org.apache.sis.testmetadata.xml.TestCase;
 import org.junit.Test;
 
 import static java.util.Collections.singleton;
-import static org.apache.sis.test.MetadataAssert.*;
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
 
 
 /**

@@ -16,35 +16,19 @@
  */
 package org.apache.sis.filter;
 
+import org.apache.sis.math.Fraction;
+import org.apache.sis.util.ArgumentChecks;
+import org.opengis.filter.*;
+
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.util.List;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Date;
-import java.util.Calendar;
-import java.time.Instant;
-import java.time.LocalTime;
-import java.time.OffsetTime;
-import java.time.LocalDateTime;
-import java.time.OffsetDateTime;
-import java.time.ZonedDateTime;
-import java.time.ZoneId;
+import java.time.*;
 import java.time.chrono.ChronoLocalDate;
 import java.time.chrono.ChronoLocalDateTime;
 import java.time.chrono.ChronoZonedDateTime;
 import java.time.temporal.ChronoField;
 import java.time.temporal.Temporal;
-import org.apache.sis.math.Fraction;
-import org.apache.sis.util.ArgumentChecks;
-
-// Branch-dependent imports
-import org.opengis.filter.Filter;
-import org.opengis.filter.Expression;
-import org.opengis.filter.MatchAction;
-import org.opengis.filter.ComparisonOperatorName;
-import org.opengis.filter.BinaryComparisonOperator;
-import org.opengis.filter.BetweenComparisonOperator;
+import java.util.*;
 
 
 /**

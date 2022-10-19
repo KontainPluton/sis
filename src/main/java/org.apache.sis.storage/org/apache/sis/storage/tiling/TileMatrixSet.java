@@ -16,11 +16,12 @@
  */
 package org.apache.sis.storage.tiling;
 
-import java.util.Optional;
-import java.util.SortedMap;
 import org.opengis.geometry.Envelope;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.opengis.util.GenericName;
+
+import java.util.Optional;
+import java.util.SortedMap;
 
 
 /**

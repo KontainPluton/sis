@@ -16,15 +16,16 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.util.Map;
-import java.util.Collection;
-import java.util.function.Function;
-import java.awt.Color;
-import java.awt.image.IndexColorModel;
 import org.apache.sis.coverage.Category;
 import org.apache.sis.measure.NumberRange;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.ArraysExt;
+
+import java.awt.*;
+import java.awt.image.IndexColorModel;
+import java.util.Collection;
+import java.util.Map;
+import java.util.function.Function;
 
 
 /**

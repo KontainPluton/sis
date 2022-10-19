@@ -16,21 +16,20 @@
  */
 package org.apache.sis.internal.filter.sqlmm;
 
-import java.util.List;
-import java.util.Arrays;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
-import org.opengis.referencing.operation.TransformException;
 import org.apache.sis.filter.Optimization;
 import org.apache.sis.internal.feature.AttributeConvention;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.GeometryWrapper;
-
-// Branch-dependent imports
 import org.opengis.feature.FeatureType;
 import org.opengis.feature.PropertyNotFoundException;
 import org.opengis.filter.Expression;
 import org.opengis.filter.Literal;
 import org.opengis.filter.ValueReference;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.referencing.operation.TransformException;
+
+import java.util.Arrays;
+import java.util.List;
 
 
 /**

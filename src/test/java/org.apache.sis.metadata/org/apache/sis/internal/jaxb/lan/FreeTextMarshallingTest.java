@@ -23,10 +23,10 @@ import org.apache.sis.internal.xml.LegacyNamespaces;
 import org.apache.sis.xml.Namespaces;
 import org.opengis.metadata.citation.Citation;
 import org.apache.sis.util.DefaultInternationalString;
-import org.apache.sis.test.xml.TestCase;
+import org.apache.sis.testmetadata.xml.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.MetadataAssert.*;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
 
 
 /**

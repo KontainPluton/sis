@@ -17,14 +17,14 @@
 package org.apache.sis.feature;
 
 import java.util.Set;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 import static java.util.Collections.singleton;
 import static java.util.Collections.singletonMap;
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
 
 
 /**

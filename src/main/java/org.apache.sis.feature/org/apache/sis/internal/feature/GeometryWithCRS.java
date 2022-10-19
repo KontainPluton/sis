@@ -16,9 +16,9 @@
  */
 package org.apache.sis.internal.feature;
 
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.apache.sis.geometry.GeneralEnvelope;
 import org.apache.sis.util.ArgumentChecks;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
 
 /**

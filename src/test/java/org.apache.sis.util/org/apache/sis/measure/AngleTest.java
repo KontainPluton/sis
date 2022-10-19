@@ -17,8 +17,8 @@
 package org.apache.sis.measure;
 
 import java.util.Locale;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.DependsOn;
 import org.junit.Test;
 
 import static java.lang.Double.NaN;

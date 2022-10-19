@@ -17,7 +17,7 @@
 package org.apache.sis.filter;
 
 import org.junit.Test;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 
 import static org.junit.Assert.*;
 

@@ -16,21 +16,18 @@
  */
 package org.apache.sis.internal.storage;
 
-import java.util.List;
-import java.util.Arrays;
-import java.awt.image.RenderedImage;
-import org.opengis.referencing.datum.PixelInCell;
 import org.apache.sis.coverage.SampleDimension;
-import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.coverage.grid.GridCoverageBuilder;
-import org.apache.sis.coverage.grid.GridExtent;
-import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.coverage.grid.GridRoundingMode;
+import org.apache.sis.coverage.grid.*;
 import org.apache.sis.image.ImageProcessor;
 import org.apache.sis.internal.util.UnmodifiableArrayList;
 import org.apache.sis.storage.AbstractGridCoverageResource;
 import org.apache.sis.storage.event.StoreListeners;
 import org.apache.sis.util.ArgumentChecks;
+import org.opengis.referencing.datum.PixelInCell;
+
+import java.awt.image.RenderedImage;
+import java.util.Arrays;
+import java.util.List;
 
 
 /**

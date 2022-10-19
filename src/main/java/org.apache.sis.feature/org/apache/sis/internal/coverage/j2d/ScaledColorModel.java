@@ -16,11 +16,12 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.awt.Transparency;
-import java.awt.image.DataBuffer;
-import java.awt.image.ComponentColorModel;
-import java.awt.image.RasterFormatException;
 import org.apache.sis.internal.feature.Resources;
+
+import java.awt.*;
+import java.awt.image.ComponentColorModel;
+import java.awt.image.DataBuffer;
+import java.awt.image.RasterFormatException;
 
 
 /**

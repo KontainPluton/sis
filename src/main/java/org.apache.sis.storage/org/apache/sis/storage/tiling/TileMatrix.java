@@ -16,14 +16,15 @@
  */
 package org.apache.sis.storage.tiling;
 
-import java.util.Optional;
-import java.util.stream.Stream;
 import org.apache.sis.coverage.grid.GridExtent;
 import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.NoSuchDataException;
 import org.opengis.referencing.datum.PixelInCell;
 import org.opengis.util.GenericName;
+
+import java.util.Optional;
+import java.util.stream.Stream;
 
 
 /**

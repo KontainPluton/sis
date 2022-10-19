@@ -16,20 +16,21 @@
  */
 package org.apache.sis.internal.storage.inflater;
 
-import java.util.Arrays;
-import java.io.Closeable;
-import java.io.IOException;
-import java.nio.Buffer;
 import org.apache.sis.image.DataType;
-import org.apache.sis.math.MathFunctions;
-import org.apache.sis.internal.util.Numerics;
 import org.apache.sis.internal.geotiff.Compression;
 import org.apache.sis.internal.geotiff.Predictor;
 import org.apache.sis.internal.geotiff.Resources;
 import org.apache.sis.internal.storage.io.ChannelDataInput;
+import org.apache.sis.internal.util.Numerics;
+import org.apache.sis.math.MathFunctions;
 import org.apache.sis.storage.UnsupportedEncodingException;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.Localized;
+
+import java.io.Closeable;
+import java.io.IOException;
+import java.nio.Buffer;
+import java.util.Arrays;
 
 import static org.apache.sis.internal.util.Numerics.ceilDiv;
 

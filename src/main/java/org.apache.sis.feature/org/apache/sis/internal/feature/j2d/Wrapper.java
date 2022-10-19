@@ -16,31 +16,25 @@
  */
 package org.apache.sis.internal.feature.j2d;
 
-import java.util.List;
-import java.util.Iterator;
-import java.util.function.BiPredicate;
-import java.awt.Shape;
-import java.awt.geom.Area;
-import java.awt.geom.Path2D;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.RectangularShape;
-import java.awt.geom.PathIterator;
-import org.opengis.geometry.DirectPosition;
-import org.apache.sis.geometry.GeneralEnvelope;
 import org.apache.sis.geometry.DirectPosition2D;
+import org.apache.sis.geometry.GeneralEnvelope;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.GeometryWithCRS;
 import org.apache.sis.internal.feature.GeometryWrapper;
 import org.apache.sis.internal.filter.sqlmm.SQLMM;
-import org.apache.sis.internal.referencing.j2d.ShapeUtilities;
-import org.apache.sis.internal.referencing.j2d.AbstractShape;
 import org.apache.sis.internal.jdk9.JDK9;
+import org.apache.sis.internal.referencing.j2d.AbstractShape;
+import org.apache.sis.internal.referencing.j2d.ShapeUtilities;
 import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.Debug;
-
-// Branch-dependent imports
 import org.opengis.filter.SpatialOperatorName;
+import org.opengis.geometry.DirectPosition;
+
+import java.awt.*;
+import java.awt.geom.*;
+import java.util.Iterator;
+import java.util.List;
+import java.util.function.BiPredicate;
 
 
 /**

@@ -24,7 +24,7 @@ import java.io.StringReader;
 import org.apache.sis.xml.Namespaces;
 import org.apache.sis.metadata.xml.TestUsingFile;
 import org.apache.sis.internal.xml.LegacyNamespaces;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOnMethod;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

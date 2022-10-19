@@ -16,23 +16,20 @@
  */
 package org.apache.sis.coverage.grid;
 
-import java.util.Map;
-import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.Optional;
-import java.awt.image.RenderedImage;
-import org.opengis.geometry.DirectPosition;
-import org.opengis.coverage.CannotEvaluateException;
-import org.opengis.referencing.operation.MathTransform1D;
-import org.opengis.referencing.operation.TransformException;
-import org.opengis.referencing.operation.NoninvertibleTransformException;
-import org.apache.sis.referencing.operation.transform.MathTransforms;
 import org.apache.sis.coverage.SampleDimension;
-import org.apache.sis.measure.MeasurementRange;
-import org.apache.sis.measure.NumberRange;
 import org.apache.sis.image.DataType;
 import org.apache.sis.image.ImageProcessor;
+import org.apache.sis.measure.MeasurementRange;
+import org.apache.sis.measure.NumberRange;
+import org.apache.sis.referencing.operation.transform.MathTransforms;
+import org.opengis.coverage.CannotEvaluateException;
+import org.opengis.geometry.DirectPosition;
+import org.opengis.referencing.operation.MathTransform1D;
+import org.opengis.referencing.operation.NoninvertibleTransformException;
+import org.opengis.referencing.operation.TransformException;
+
+import java.awt.image.RenderedImage;
+import java.util.*;
 
 
 /**

@@ -16,12 +16,12 @@
  */
 package org.apache.sis.internal.shapefile.jdbc.resultset;
 
+import org.apache.sis.internal.shapefile.jdbc.statement.DBFStatement;
+
 import java.math.BigDecimal;
 import java.sql.Date;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
-
-import org.apache.sis.internal.shapefile.jdbc.statement.DBFStatement;
 
 
 /**

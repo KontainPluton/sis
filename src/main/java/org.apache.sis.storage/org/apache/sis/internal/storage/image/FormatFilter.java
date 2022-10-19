@@ -16,31 +16,27 @@
  */
 package org.apache.sis.internal.storage.image;
 
-import java.util.Map;
-import java.util.Set;
-import java.util.Iterator;
-import java.util.function.Function;
-import java.net.URI;
-import java.net.URL;
-import java.io.File;
-import java.io.DataInput;
-import java.io.DataOutput;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
-import java.nio.file.Path;
-import java.awt.image.RenderedImage;
+import org.apache.sis.storage.DataStoreException;
+import org.apache.sis.storage.StorageConnector;
+import org.apache.sis.util.ArraysExt;
+
 import javax.imageio.ImageReader;
 import javax.imageio.ImageWriter;
 import javax.imageio.spi.IIORegistry;
 import javax.imageio.spi.ImageReaderSpi;
-import javax.imageio.spi.ImageWriterSpi;
 import javax.imageio.spi.ImageReaderWriterSpi;
+import javax.imageio.spi.ImageWriterSpi;
 import javax.imageio.stream.ImageInputStream;
 import javax.imageio.stream.ImageOutputStream;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.util.ArraysExt;
+import java.awt.image.RenderedImage;
+import java.io.*;
+import java.net.URI;
+import java.net.URL;
+import java.nio.file.Path;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+import java.util.function.Function;
 
 
 /**

@@ -16,39 +16,35 @@
  */
 package org.apache.sis.internal.storage.image;
 
-import java.util.List;
-import java.util.Optional;
-import java.io.IOException;
-import java.lang.ref.SoftReference;
-import java.awt.Rectangle;
-import java.awt.image.RenderedImage;
-import java.awt.image.BandedSampleModel;
-import javax.imageio.ImageReader;
-import javax.imageio.ImageReadParam;
-import javax.imageio.ImageTypeSpecifier;
-import org.opengis.util.GenericName;
-import org.opengis.util.InternationalString;
-import org.apache.sis.image.ImageProcessor;
 import org.apache.sis.coverage.SampleDimension;
-import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.coverage.grid.GridCoverage2D;
-import org.apache.sis.coverage.grid.GridDerivation;
-import org.apache.sis.coverage.grid.GridExtent;
-import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.coverage.grid.GridRoundingMode;
+import org.apache.sis.coverage.grid.*;
+import org.apache.sis.image.ImageProcessor;
+import org.apache.sis.internal.coverage.j2d.ImageUtilities;
+import org.apache.sis.internal.storage.RangeArgument;
+import org.apache.sis.internal.storage.Resources;
+import org.apache.sis.internal.storage.StoreResource;
+import org.apache.sis.internal.storage.io.IOUtilities;
+import org.apache.sis.internal.util.UnmodifiableArrayList;
 import org.apache.sis.storage.AbstractGridCoverageResource;
 import org.apache.sis.storage.DataStore;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.event.StoreListeners;
-import org.apache.sis.internal.storage.Resources;
-import org.apache.sis.internal.storage.StoreResource;
-import org.apache.sis.internal.storage.RangeArgument;
-import org.apache.sis.internal.storage.io.IOUtilities;
-import org.apache.sis.internal.coverage.j2d.ImageUtilities;
-import org.apache.sis.internal.util.UnmodifiableArrayList;
-import org.apache.sis.util.resources.Vocabulary;
 import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.iso.Names;
+import org.apache.sis.util.resources.Vocabulary;
+import org.opengis.util.GenericName;
+import org.opengis.util.InternationalString;
+
+import javax.imageio.ImageReadParam;
+import javax.imageio.ImageReader;
+import javax.imageio.ImageTypeSpecifier;
+import java.awt.*;
+import java.awt.image.BandedSampleModel;
+import java.awt.image.RenderedImage;
+import java.io.IOException;
+import java.lang.ref.SoftReference;
+import java.util.List;
+import java.util.Optional;
 
 import static java.lang.Math.toIntExact;
 

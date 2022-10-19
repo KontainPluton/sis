@@ -16,17 +16,18 @@
  */
 package org.apache.sis.image;
 
-import java.util.Map;
-import java.util.HashMap;
-import java.util.List;
-import java.lang.ref.WeakReference;
-import java.awt.Point;
-import java.awt.image.TileObserver;
-import java.awt.image.ImagingOpException;
-import java.awt.image.WritableRenderedImage;
 import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.internal.system.ReferenceQueueConsumer;
 import org.apache.sis.util.Disposable;
+
+import java.awt.*;
+import java.awt.image.ImagingOpException;
+import java.awt.image.TileObserver;
+import java.awt.image.WritableRenderedImage;
+import java.lang.ref.WeakReference;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 
 /**

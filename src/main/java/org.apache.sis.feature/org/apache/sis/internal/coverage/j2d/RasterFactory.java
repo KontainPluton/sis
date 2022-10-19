@@ -16,29 +16,6 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.awt.Point;
-import java.awt.image.ColorModel;
-import java.awt.image.SampleModel;
-import java.awt.image.BandedSampleModel;
-import java.awt.image.ComponentSampleModel;
-import java.awt.image.PixelInterleavedSampleModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferByte;
-import java.awt.image.DataBufferDouble;
-import java.awt.image.DataBufferFloat;
-import java.awt.image.DataBufferInt;
-import java.awt.image.DataBufferShort;
-import java.awt.image.DataBufferUShort;
-import java.awt.image.RasterFormatException;
-import java.awt.image.WritableRaster;
-import java.awt.image.BufferedImage;
-import java.nio.Buffer;
-import java.nio.ByteBuffer;
-import java.nio.ShortBuffer;
-import java.nio.IntBuffer;
-import java.nio.FloatBuffer;
-import java.nio.DoubleBuffer;
-import java.nio.ReadOnlyBufferException;
 import org.apache.sis.image.DataType;
 import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.util.ArgumentChecks;
@@ -46,6 +23,10 @@ import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.Static;
 import org.apache.sis.util.Workaround;
 import org.apache.sis.util.collection.WeakHashSet;
+
+import java.awt.*;
+import java.awt.image.*;
+import java.nio.*;
 
 
 /**

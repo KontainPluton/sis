@@ -31,8 +31,8 @@ import org.apache.sis.internal.referencing.j2d.AffineTransform2D;
 import org.apache.sis.internal.util.Numerics;
 import org.apache.sis.math.Statistics;
 import org.apache.sis.math.StatisticsFormat;
-import org.apache.sis.test.TestUtilities;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestUtilities;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.opengis.test.Assert.*;

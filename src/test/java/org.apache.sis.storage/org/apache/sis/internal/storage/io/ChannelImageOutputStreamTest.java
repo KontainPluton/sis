@@ -20,8 +20,8 @@ import java.io.IOException;
 import java.io.ByteArrayOutputStream;
 import java.nio.ByteBuffer;
 import javax.imageio.stream.ImageOutputStream;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOn;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -16,11 +16,12 @@
  */
 package org.apache.sis.internal.feature;
 
-import java.util.logging.Level;
-import java.util.logging.LogRecord;
 import org.apache.sis.internal.jdk9.JDK9;
 import org.apache.sis.internal.system.Loggers;
 import org.apache.sis.util.logging.Logging;
+
+import java.util.logging.Level;
+import java.util.logging.LogRecord;
 
 
 /**

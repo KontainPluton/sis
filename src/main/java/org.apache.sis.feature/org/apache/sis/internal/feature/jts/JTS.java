@@ -16,28 +16,29 @@
  */
 package org.apache.sis.internal.feature.jts;
 
-import java.util.Map;
-import java.awt.Shape;
+import org.apache.sis.geometry.GeneralEnvelope;
+import org.apache.sis.internal.system.Loggers;
+import org.apache.sis.internal.util.Constants;
+import org.apache.sis.metadata.iso.citation.Citations;
+import org.apache.sis.metadata.iso.extent.DefaultGeographicBoundingBox;
+import org.apache.sis.referencing.CRS;
+import org.apache.sis.referencing.IdentifiedObjects;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.Static;
+import org.apache.sis.util.Utilities;
+import org.apache.sis.util.logging.Logging;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryFactory;
 import org.opengis.metadata.Identifier;
-import org.opengis.util.FactoryException;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.opengis.referencing.operation.CoordinateOperation;
 import org.opengis.referencing.operation.MathTransform;
 import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.referencing.CRS;
-import org.apache.sis.util.Static;
-import org.apache.sis.util.Utilities;
-import org.apache.sis.util.logging.Logging;
-import org.apache.sis.metadata.iso.citation.Citations;
-import org.apache.sis.metadata.iso.extent.DefaultGeographicBoundingBox;
-import org.apache.sis.geometry.GeneralEnvelope;
-import org.apache.sis.internal.system.Loggers;
-import org.apache.sis.internal.util.Constants;
-import org.apache.sis.referencing.IdentifiedObjects;
-import org.apache.sis.util.ArgumentChecks;
-import org.locationtech.jts.geom.Envelope;
-import org.locationtech.jts.geom.Geometry;
-import org.locationtech.jts.geom.GeometryFactory;
+import org.opengis.util.FactoryException;
+
+import java.awt.*;
+import java.util.Map;
 
 import static java.util.logging.Logger.getLogger;
 

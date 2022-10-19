@@ -16,10 +16,11 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.util.Arrays;
+import org.apache.sis.util.ArraysExt;
+
 import java.awt.image.TileObserver;
 import java.awt.image.WritableRenderedImage;
-import org.apache.sis.util.ArraysExt;
+import java.util.Arrays;
 
 
 /**

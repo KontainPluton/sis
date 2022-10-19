@@ -25,12 +25,12 @@ import org.apache.sis.xml.Namespaces;
 import org.apache.sis.storage.StorageConnector;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.internal.xml.LegacyNamespaces;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.opengis.test.Assert.*;
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
 
 
 /**

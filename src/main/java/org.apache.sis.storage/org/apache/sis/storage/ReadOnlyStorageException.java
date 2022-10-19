@@ -17,8 +17,6 @@
 package org.apache.sis.storage;
 
 
-import org.apache.sis.storage.ForwardOnlyStorageException;
-
 /**
  * Thrown when a {@code DataStore} can not perform a write operation.
  * If a data store does not support any write operation, then it should not implement

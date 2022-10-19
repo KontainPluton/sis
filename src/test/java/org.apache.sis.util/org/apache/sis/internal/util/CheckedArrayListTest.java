@@ -20,11 +20,11 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.Collection;
 import org.apache.sis.util.NullArgumentException;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

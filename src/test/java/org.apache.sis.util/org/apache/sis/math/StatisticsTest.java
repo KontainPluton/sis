@@ -19,12 +19,12 @@ package org.apache.sis.math;
 import java.util.Random;
 import java.io.IOException;
 import org.junit.Test;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 
 import static java.lang.StrictMath.*;
 import static java.lang.Double.NaN;
 import static java.lang.Double.isNaN;
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

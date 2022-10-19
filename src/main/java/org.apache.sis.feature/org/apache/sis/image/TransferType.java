@@ -16,16 +16,17 @@
  */
 package org.apache.sis.image;
 
-import java.nio.Buffer;
-import java.nio.IntBuffer;
-import java.nio.FloatBuffer;
-import java.nio.DoubleBuffer;
-import java.awt.image.Raster;
-import java.awt.image.DataBuffer;
-import java.io.Serializable;
-import java.io.ObjectStreamException;
-import java.io.InvalidObjectException;
 import org.apache.sis.util.resources.Errors;
+
+import java.awt.image.DataBuffer;
+import java.awt.image.Raster;
+import java.io.InvalidObjectException;
+import java.io.ObjectStreamException;
+import java.io.Serializable;
+import java.nio.Buffer;
+import java.nio.DoubleBuffer;
+import java.nio.FloatBuffer;
+import java.nio.IntBuffer;
 
 
 /**

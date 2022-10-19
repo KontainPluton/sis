@@ -16,15 +16,14 @@
  */
 package org.apache.sis.feature.builder;
 
-import java.util.Objects;
-import org.opengis.util.GenericName;
 import org.apache.sis.feature.DefaultAttributeType;
 import org.apache.sis.util.Classes;
 import org.apache.sis.util.ObjectConverters;
 import org.apache.sis.util.UnconvertibleObjectException;
-
-// Branch-dependent imports
 import org.opengis.feature.AttributeType;
+import org.opengis.util.GenericName;
+
+import java.util.Objects;
 
 
 /**

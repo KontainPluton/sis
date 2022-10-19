@@ -19,7 +19,7 @@ package org.apache.sis.internal.util;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Iterator;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

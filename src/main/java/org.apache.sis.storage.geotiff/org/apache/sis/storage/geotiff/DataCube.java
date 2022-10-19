@@ -16,29 +16,26 @@
  */
 package org.apache.sis.storage.geotiff;
 
-import java.util.Locale;
-import java.util.Optional;
-import java.nio.file.Path;
-import java.awt.image.DataBuffer;
-import java.awt.image.SampleModel;
-import java.awt.image.BandedSampleModel;
-
-import org.apache.sis.storage.geotiff.CompressedSubset;
-import org.apache.sis.storage.geotiff.DataSubset;
-import org.apache.sis.storage.geotiff.ImageFileDirectory;
-import org.opengis.util.GenericName;
-import org.apache.sis.storage.DataStore;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.DataStoreContentException;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.internal.geotiff.Resources;
-import org.apache.sis.internal.geotiff.Predictor;
 import org.apache.sis.internal.geotiff.Compression;
-import org.apache.sis.internal.storage.TiledGridResource;
+import org.apache.sis.internal.geotiff.Predictor;
+import org.apache.sis.internal.geotiff.Resources;
 import org.apache.sis.internal.storage.ResourceOnFileSystem;
 import org.apache.sis.internal.storage.StoreResource;
+import org.apache.sis.internal.storage.TiledGridResource;
 import org.apache.sis.math.Vector;
+import org.apache.sis.storage.DataStore;
+import org.apache.sis.storage.DataStoreContentException;
+import org.apache.sis.storage.DataStoreException;
+import org.opengis.util.GenericName;
+
+import java.awt.image.BandedSampleModel;
+import java.awt.image.DataBuffer;
+import java.awt.image.SampleModel;
+import java.nio.file.Path;
+import java.util.Locale;
+import java.util.Optional;
 
 
 /**

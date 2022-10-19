@@ -23,7 +23,7 @@ import org.apache.sis.internal.map.ListChangeEvent;
 import org.apache.sis.measure.NumberRange;
 import org.apache.sis.portrayal.MapLayer;
 import org.apache.sis.portrayal.MapLayers;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import static org.junit.Assert.*;
 import org.junit.Test;
 

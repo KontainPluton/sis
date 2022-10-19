@@ -16,7 +16,7 @@
  */
 package org.apache.sis.image;
 
-import java.awt.Dimension;
+import java.awt.*;
 import java.nio.DoubleBuffer;
 
 

@@ -19,7 +19,7 @@ package org.apache.sis.internal.storage.io;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import javax.imageio.stream.ImageInputStreamImpl;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

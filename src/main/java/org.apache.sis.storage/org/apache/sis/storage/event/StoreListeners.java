@@ -16,34 +16,30 @@
  */
 package org.apache.sis.storage.event;
 
-import java.util.Map;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.Locale;
-import java.util.Optional;
-import java.util.IdentityHashMap;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.util.logging.LogRecord;
-import java.util.logging.Filter;
-import java.util.concurrent.ExecutionException;
-import java.lang.reflect.Method;
-import org.apache.sis.util.ArraysExt;
-import org.apache.sis.util.Localized;
-import org.apache.sis.util.Exceptions;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.logging.Logging;
-import org.apache.sis.util.resources.Vocabulary;
-import org.apache.sis.util.collection.Containers;
 import org.apache.sis.internal.jdk9.JDK9;
-import org.apache.sis.internal.system.Modules;
 import org.apache.sis.internal.storage.Resources;
 import org.apache.sis.internal.storage.StoreResource;
 import org.apache.sis.internal.storage.StoreUtilities;
+import org.apache.sis.internal.system.Modules;
 import org.apache.sis.internal.util.CollectionsExt;
-import org.apache.sis.storage.DataStoreProvider;
 import org.apache.sis.storage.DataStore;
+import org.apache.sis.storage.DataStoreProvider;
 import org.apache.sis.storage.Resource;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.ArraysExt;
+import org.apache.sis.util.Exceptions;
+import org.apache.sis.util.Localized;
+import org.apache.sis.util.collection.Containers;
+import org.apache.sis.util.logging.Logging;
+import org.apache.sis.util.resources.Vocabulary;
+
+import java.lang.reflect.Method;
+import java.util.*;
+import java.util.concurrent.ExecutionException;
+import java.util.logging.Filter;
+import java.util.logging.Level;
+import java.util.logging.LogRecord;
+import java.util.logging.Logger;
 
 
 /**

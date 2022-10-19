@@ -22,12 +22,12 @@ import org.apache.sis.referencing.gazetteer.AbstractLocationType;
 import org.apache.sis.referencing.gazetteer.FinalLocationType;
 import org.apache.sis.referencing.gazetteer.ModifiableLocationType;
 import org.opengis.metadata.extent.GeographicDescription;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.TestUtilities;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.TestUtilities;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 // Branch-dependent imports
 import org.opengis.referencing.gazetteer.LocationType;

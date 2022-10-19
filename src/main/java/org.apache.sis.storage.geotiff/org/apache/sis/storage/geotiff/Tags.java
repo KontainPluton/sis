@@ -16,9 +16,6 @@
  */
 package org.apache.sis.storage.geotiff;
 
-import org.apache.sis.storage.geotiff.CRSBuilder;
-import org.apache.sis.storage.geotiff.GeoKeys;
-
 import java.lang.reflect.Field;
 
 

@@ -19,8 +19,8 @@ package org.apache.sis.feature;
 import org.apache.sis.feature.DefaultAttributeTypeTest;
 import org.apache.sis.feature.DefaultFeatureTypeTest;
 import org.apache.sis.feature.SingletonAttributeTest;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

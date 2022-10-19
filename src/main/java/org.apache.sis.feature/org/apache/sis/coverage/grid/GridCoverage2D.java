@@ -16,51 +16,47 @@
  */
 package org.apache.sis.coverage.grid;
 
-import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.concurrent.atomic.AtomicReference;
-import java.text.NumberFormat;
-import java.text.FieldPosition;
-import java.io.IOException;
-import java.io.UncheckedIOException;
-import java.awt.Rectangle;
-import java.awt.image.BufferedImage;
-import java.awt.image.RenderedImage;
-import java.awt.image.SampleModel;
-import org.opengis.metadata.spatial.DimensionNameType;
-import org.opengis.util.NameFactory;
-import org.opengis.util.InternationalString;
-import org.opengis.util.FactoryException;
-import org.opengis.geometry.DirectPosition;
-import org.opengis.geometry.MismatchedDimensionException;
-import org.opengis.referencing.datum.PixelInCell;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
-import org.opengis.referencing.operation.NoninvertibleTransformException;
-import org.opengis.referencing.operation.TransformException;
-import org.opengis.referencing.operation.MathTransform1D;
-import org.apache.sis.image.DataType;
 import org.apache.sis.coverage.SampleDimension;
+import org.apache.sis.image.DataType;
 import org.apache.sis.internal.coverage.j2d.ImageUtilities;
 import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.internal.system.DefaultFactories;
-import org.apache.sis.util.collection.TableColumn;
-import org.apache.sis.util.collection.TreeTable;
-import org.apache.sis.util.resources.Vocabulary;
-import org.apache.sis.util.resources.Errors;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.Debug;
-
-import static java.lang.Math.min;
-import static java.lang.Math.addExact;
-import static java.lang.Math.subtractExact;
-import static java.lang.Math.toIntExact;
-
-// Branch-specific imports
+import org.apache.sis.util.collection.TableColumn;
+import org.apache.sis.util.collection.TreeTable;
+import org.apache.sis.util.resources.Errors;
+import org.apache.sis.util.resources.Vocabulary;
 import org.opengis.coverage.CannotEvaluateException;
 import org.opengis.coverage.PointOutsideCoverageException;
+import org.opengis.geometry.DirectPosition;
+import org.opengis.geometry.MismatchedDimensionException;
+import org.opengis.metadata.spatial.DimensionNameType;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.referencing.datum.PixelInCell;
+import org.opengis.referencing.operation.MathTransform1D;
+import org.opengis.referencing.operation.NoninvertibleTransformException;
+import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.FactoryException;
+import org.opengis.util.InternationalString;
+import org.opengis.util.NameFactory;
+
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.awt.image.RenderedImage;
+import java.awt.image.SampleModel;
+import java.io.IOException;
+import java.io.UncheckedIOException;
+import java.text.FieldPosition;
+import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
+
+import static java.lang.Math.*;
 
 
 /**

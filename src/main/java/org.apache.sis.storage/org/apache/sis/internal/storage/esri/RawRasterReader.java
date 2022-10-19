@@ -16,35 +16,28 @@
  */
 package org.apache.sis.internal.storage.esri;
 
-import java.io.IOException;
-import java.nio.Buffer;
-import java.awt.image.DataBuffer;
-import java.awt.image.SampleModel;
-import java.awt.image.BandedSampleModel;
-import java.awt.image.ComponentSampleModel;
-import java.awt.image.MultiPixelPackedSampleModel;
-import java.awt.image.WritableRaster;
-import org.apache.sis.image.DataType;
+import org.apache.sis.coverage.grid.GridDerivation;
 import org.apache.sis.coverage.grid.GridExtent;
 import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.coverage.grid.GridDerivation;
+import org.apache.sis.image.DataType;
+import org.apache.sis.internal.coverage.j2d.ImageUtilities;
+import org.apache.sis.internal.coverage.j2d.RasterFactory;
 import org.apache.sis.internal.storage.RangeArgument;
 import org.apache.sis.internal.storage.io.ChannelDataInput;
 import org.apache.sis.internal.storage.io.HyperRectangleReader;
 import org.apache.sis.internal.storage.io.Region;
-import org.apache.sis.internal.coverage.j2d.ImageUtilities;
-import org.apache.sis.internal.coverage.j2d.RasterFactory;
-import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.DataStoreContentException;
+import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.util.ArraysExt;
 
-import static java.lang.Math.floorDiv;
-import static java.lang.Math.addExact;
-import static java.lang.Math.multiplyExact;
-import static java.lang.Math.incrementExact;
+import java.awt.image.*;
+import java.io.IOException;
+import java.nio.Buffer;
+
+import static java.lang.Math.*;
+import static org.apache.sis.internal.jdk9.JDK9.multiplyFull;
 import static org.apache.sis.internal.util.Numerics.ceilDiv;
 import static org.apache.sis.internal.util.Numerics.wholeDiv;
-import static org.apache.sis.internal.jdk9.JDK9.multiplyFull;
 
 
 /**

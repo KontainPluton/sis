@@ -17,7 +17,7 @@
 package org.apache.sis.coverage.grid;
 
 import org.apache.sis.referencing.cs.AxesConvention;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

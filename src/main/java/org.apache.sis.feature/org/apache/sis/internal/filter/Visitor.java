@@ -16,23 +16,15 @@
  */
 package org.apache.sis.internal.filter;
 
-import java.util.Map;
-import java.util.HashMap;
+import org.apache.sis.internal.feature.Resources;
+import org.opengis.filter.*;
+import org.opengis.util.CodeList;
+
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.function.BiConsumer;
-import org.opengis.util.CodeList;
-import org.apache.sis.internal.feature.Resources;
-
-// Branch-dependent imports
-import org.opengis.filter.Filter;
-import org.opengis.filter.Expression;
-import org.opengis.filter.LogicalOperator;
-import org.opengis.filter.LogicalOperatorName;
-import org.opengis.filter.SpatialOperatorName;
-import org.opengis.filter.DistanceOperatorName;
-import org.opengis.filter.TemporalOperatorName;
-import org.opengis.filter.ComparisonOperatorName;
 
 
 /**

@@ -20,9 +20,9 @@ import java.nio.file.Path;
 import java.nio.file.Files;
 import org.apache.sis.metadata.iso.ISOMetadata;
 import org.apache.sis.internal.system.DataDirectory;
-import org.apache.sis.test.ProjectDirectories;
-import org.apache.sis.test.xml.SchemaCompliance;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.ProjectDirectories;
+import org.apache.sis.testmetadata.xml.SchemaCompliance;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assume.*;

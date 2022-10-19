@@ -20,7 +20,7 @@ import java.sql.*;
 import java.util.Properties;
 
 import org.apache.sis.internal.shapefile.jdbc.connection.DBFConnection;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOnMethod;
 import org.junit.*;
 
 import static org.junit.Assert.*;

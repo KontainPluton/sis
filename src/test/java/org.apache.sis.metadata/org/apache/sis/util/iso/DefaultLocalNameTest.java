@@ -18,11 +18,11 @@ package org.apache.sis.util.iso;
 
 import org.apache.sis.util.iso.DefaultNameSpace;
 import org.apache.sis.util.iso.DefaultNameFactoryTest;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.opengis.test.Validators.*;
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 import static org.apache.sis.internal.util.Constants.EPSG;
 
 

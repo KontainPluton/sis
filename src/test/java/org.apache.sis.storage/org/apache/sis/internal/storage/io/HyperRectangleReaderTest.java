@@ -24,10 +24,10 @@ import java.nio.ShortBuffer;
 import java.io.IOException;
 import org.apache.sis.util.Numbers;
 import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.TestUtilities;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.TestUtilities;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

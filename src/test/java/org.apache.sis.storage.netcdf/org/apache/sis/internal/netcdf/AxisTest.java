@@ -17,7 +17,7 @@
 package org.apache.sis.internal.netcdf;
 
 import org.opengis.referencing.cs.AxisDirection;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

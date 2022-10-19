@@ -76,7 +76,9 @@ dependencyResolutionManagement {
     versionCatalogs {
 
         create("drivers") {
-            library("derby", "org.apache.derby:derby:10.14.2.0")
+            library("derby", "org.apache.derby:derby:10.15.1.3")
+            library("derbytools", "org.apache.derby:derbytools:10.15.1.3")
+            library("derbyshared", "org.apache.derby:derbyshared:10.15.1.3")
             library("hsqldb", "org.hsqldb:hsqldb:2.6.1")
             library("h2", "com.h2database:h2:2.1.212")
             library("postgres", "org.postgresql:postgresql:42.3.5")

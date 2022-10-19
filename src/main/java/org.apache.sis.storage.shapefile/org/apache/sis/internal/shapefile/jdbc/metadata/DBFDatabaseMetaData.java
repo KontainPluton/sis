@@ -16,15 +16,17 @@
  */
 package org.apache.sis.internal.shapefile.jdbc.metadata;
 
-import java.io.File;
-import java.sql.*;
-import java.util.Arrays;
-import java.util.Objects;
-
 import org.apache.sis.internal.shapefile.jdbc.SQLConnectionClosedException;
 import org.apache.sis.internal.shapefile.jdbc.connection.DBFConnection;
 import org.apache.sis.internal.shapefile.jdbc.resultset.*;
 import org.apache.sis.internal.shapefile.jdbc.statement.DBFStatement;
+
+import java.io.File;
+import java.sql.Connection;
+import java.sql.DatabaseMetaData;
+import java.sql.ResultSet;
+import java.util.Arrays;
+import java.util.Objects;
 
 /**
  * Database Metadata.

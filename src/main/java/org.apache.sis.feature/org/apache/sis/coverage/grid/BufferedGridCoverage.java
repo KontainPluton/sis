@@ -16,32 +16,23 @@
  */
 package org.apache.sis.coverage.grid;
 
-import java.util.List;
-import java.util.function.Function;
-import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferByte;
-import java.awt.image.DataBufferDouble;
-import java.awt.image.DataBufferFloat;
-import java.awt.image.DataBufferInt;
-import java.awt.image.DataBufferShort;
-import java.awt.image.DataBufferUShort;
-import java.awt.image.RasterFormatException;
-import java.awt.image.RenderedImage;
-import org.opengis.util.FactoryException;
+import org.apache.sis.coverage.SampleDimension;
+import org.apache.sis.image.DataType;
+import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.internal.jdk9.JDK9;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.collection.Cache;
+import org.apache.sis.util.resources.Errors;
+import org.opengis.coverage.CannotEvaluateException;
+import org.opengis.coverage.PointOutsideCoverageException;
 import org.opengis.geometry.DirectPosition;
 import org.opengis.geometry.MismatchedDimensionException;
 import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.coverage.SampleDimension;
-import org.apache.sis.internal.feature.Resources;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.collection.Cache;
-import org.apache.sis.image.DataType;
+import org.opengis.util.FactoryException;
 
-// Branch-specific imports
-import org.apache.sis.internal.jdk9.JDK9;
-import org.opengis.coverage.CannotEvaluateException;
-import org.opengis.coverage.PointOutsideCoverageException;
+import java.awt.image.*;
+import java.util.List;
+import java.util.function.Function;
 
 
 /**

@@ -16,33 +16,32 @@
  */
 package org.apache.sis.storage;
 
-import java.util.Locale;
-import java.util.Optional;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.util.logging.LogRecord;
-import java.util.concurrent.TimeUnit;
-import java.math.RoundingMode;
-import java.awt.image.RasterFormatException;
-
-import org.apache.sis.storage.DataStoreReferencingException;
+import org.apache.sis.coverage.grid.DisjointExtentException;
+import org.apache.sis.coverage.grid.GridExtent;
+import org.apache.sis.coverage.grid.GridGeometry;
+import org.apache.sis.internal.jdk9.JDK9;
+import org.apache.sis.internal.storage.MetadataBuilder;
+import org.apache.sis.internal.storage.Resources;
+import org.apache.sis.internal.storage.io.IOUtilities;
+import org.apache.sis.internal.util.StandardDateFormat;
+import org.apache.sis.measure.AngleFormat;
+import org.apache.sis.measure.Latitude;
+import org.apache.sis.measure.Longitude;
+import org.apache.sis.storage.event.StoreListeners;
+import org.apache.sis.util.logging.PerformanceLevel;
 import org.opengis.geometry.Envelope;
 import org.opengis.metadata.Metadata;
 import org.opengis.referencing.operation.TransformException;
 import org.opengis.util.FactoryException;
-import org.apache.sis.storage.event.StoreListeners;
-import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.coverage.grid.GridExtent;
-import org.apache.sis.coverage.grid.DisjointExtentException;
-import org.apache.sis.measure.Latitude;
-import org.apache.sis.measure.Longitude;
-import org.apache.sis.measure.AngleFormat;
-import org.apache.sis.util.logging.PerformanceLevel;
-import org.apache.sis.internal.storage.io.IOUtilities;
-import org.apache.sis.internal.util.StandardDateFormat;
-import org.apache.sis.internal.jdk9.JDK9;
-import org.apache.sis.internal.storage.MetadataBuilder;
-import org.apache.sis.internal.storage.Resources;
+
+import java.awt.image.RasterFormatException;
+import java.math.RoundingMode;
+import java.util.Locale;
+import java.util.Optional;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.LogRecord;
+import java.util.logging.Logger;
 
 
 /**

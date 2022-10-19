@@ -16,29 +16,18 @@
  */
 package org.apache.sis.filter;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-import java.util.Collection;
-import java.util.Collections;
 import org.apache.sis.feature.Features;
+import org.apache.sis.feature.builder.AttributeTypeBuilder;
+import org.apache.sis.feature.builder.FeatureTypeBuilder;
+import org.apache.sis.feature.builder.PropertyTypeBuilder;
 import org.apache.sis.util.ObjectConverter;
 import org.apache.sis.util.ObjectConverters;
 import org.apache.sis.util.UnconvertibleObjectException;
-import org.apache.sis.feature.builder.FeatureTypeBuilder;
-import org.apache.sis.feature.builder.PropertyTypeBuilder;
-import org.apache.sis.feature.builder.AttributeTypeBuilder;
 import org.apache.sis.util.resources.Errors;
-
-// Branch-dependent imports
-import org.opengis.feature.Feature;
-import org.opengis.feature.FeatureType;
-import org.opengis.feature.PropertyType;
-import org.opengis.feature.AttributeType;
-import org.opengis.feature.IdentifiedType;
-import org.opengis.feature.Operation;
-import org.opengis.feature.PropertyNotFoundException;
+import org.opengis.feature.*;
 import org.opengis.filter.ValueReference;
+
+import java.util.*;
 
 
 /**

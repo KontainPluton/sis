@@ -16,11 +16,12 @@
  */
 package org.apache.sis.internal.storage;
 
-import java.util.Map;
-import java.awt.Rectangle;
+import org.apache.sis.internal.coverage.j2d.BatchComputedImage;
+
+import java.awt.*;
 import java.awt.image.ColorModel;
 import java.awt.image.Raster;
-import org.apache.sis.internal.coverage.j2d.BatchComputedImage;
+import java.util.Map;
 
 
 /**

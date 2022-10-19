@@ -20,11 +20,11 @@ import java.util.Random;
 import java.awt.Rectangle;
 import java.awt.image.DataBuffer;
 import org.apache.sis.internal.coverage.j2d.ImageUtilities;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.TestUtilities;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.TestUtilities;
 import org.junit.Test;
 
-import static org.apache.sis.test.FeatureAssert.assertValuesEqual;
+import static org.apache.sis.testfeature.FeatureAssert.assertValuesEqual;
 
 
 /**

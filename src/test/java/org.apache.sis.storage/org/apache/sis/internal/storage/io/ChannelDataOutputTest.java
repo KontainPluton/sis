@@ -25,7 +25,7 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.ByteChannel;
 import javax.imageio.stream.ImageOutputStream;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOnMethod;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

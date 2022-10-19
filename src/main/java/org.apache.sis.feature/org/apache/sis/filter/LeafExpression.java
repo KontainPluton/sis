@@ -16,24 +16,23 @@
  */
 package org.apache.sis.filter;
 
-import java.util.List;
-import java.util.Collection;
-import java.util.Collections;
+import org.apache.sis.feature.builder.FeatureTypeBuilder;
+import org.apache.sis.feature.builder.PropertyTypeBuilder;
+import org.apache.sis.internal.feature.FeatureExpression;
+import org.apache.sis.internal.filter.Node;
 import org.apache.sis.util.Classes;
-import org.apache.sis.util.iso.Names;
-import org.apache.sis.util.resources.Errors;
 import org.apache.sis.util.ObjectConverters;
 import org.apache.sis.util.UnconvertibleObjectException;
 import org.apache.sis.util.collection.WeakValueHashMap;
-import org.apache.sis.internal.feature.FeatureExpression;
-import org.apache.sis.internal.filter.Node;
-import org.apache.sis.feature.builder.FeatureTypeBuilder;
-import org.apache.sis.feature.builder.PropertyTypeBuilder;
-
-// Branch-dependent imports
-import org.opengis.feature.FeatureType;
+import org.apache.sis.util.iso.Names;
+import org.apache.sis.util.resources.Errors;
 import org.opengis.feature.AttributeType;
+import org.opengis.feature.FeatureType;
 import org.opengis.filter.Expression;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 
 /**

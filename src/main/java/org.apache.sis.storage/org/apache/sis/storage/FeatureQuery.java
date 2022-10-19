@@ -16,48 +16,29 @@
  */
 package org.apache.sis.storage;
 
-import java.util.Arrays;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.LinkedHashMap;
-import java.util.Objects;
-import java.util.OptionalLong;
-import java.io.Serializable;
-import javax.measure.Quantity;
-import javax.measure.quantity.Length;
-
-import org.apache.sis.storage.CoverageQuery;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.FeatureSubset;
-import org.apache.sis.storage.GridCoverageResource;
-import org.opengis.util.GenericName;
-import org.opengis.geometry.Envelope;
 import org.apache.sis.feature.builder.FeatureTypeBuilder;
 import org.apache.sis.feature.builder.PropertyTypeBuilder;
+import org.apache.sis.filter.DefaultFilterFactory;
+import org.apache.sis.filter.Optimization;
 import org.apache.sis.internal.feature.AttributeConvention;
 import org.apache.sis.internal.feature.FeatureExpression;
 import org.apache.sis.internal.filter.SortByComparator;
 import org.apache.sis.internal.storage.Resources;
-import org.apache.sis.filter.DefaultFilterFactory;
-import org.apache.sis.filter.Optimization;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.CharSequences;
 import org.apache.sis.util.collection.Containers;
 import org.apache.sis.util.iso.Names;
 import org.apache.sis.util.resources.Vocabulary;
-
-// Branch-dependent imports
 import org.opengis.feature.Feature;
 import org.opengis.feature.FeatureType;
-import org.opengis.filter.FilterFactory;
-import org.opengis.filter.Filter;
-import org.opengis.filter.Expression;
-import org.opengis.filter.Literal;
-import org.opengis.filter.ValueReference;
-import org.opengis.filter.SortBy;
-import org.opengis.filter.SortProperty;
-import org.opengis.filter.InvalidFilterValueException;
+import org.opengis.filter.*;
+import org.opengis.geometry.Envelope;
+import org.opengis.util.GenericName;
+
+import javax.measure.Quantity;
+import javax.measure.quantity.Length;
+import java.io.Serializable;
+import java.util.*;
 
 
 /**

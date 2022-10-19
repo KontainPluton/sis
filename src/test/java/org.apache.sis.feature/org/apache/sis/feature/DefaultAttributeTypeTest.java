@@ -24,12 +24,12 @@ import org.apache.sis.feature.CharacteristicTypeMapTest;
 import org.opengis.util.LocalName;
 import org.opengis.util.GenericName;
 import org.opengis.util.InternationalString;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static java.util.Collections.singletonMap;
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

@@ -17,10 +17,10 @@
 package org.apache.sis.filter;
 
 import org.junit.Test;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.apache.sis.internal.filter.FunctionNames;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 // Branch-dependent imports
 import org.opengis.feature.Feature;

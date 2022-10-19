@@ -26,8 +26,8 @@ import org.opengis.annotation.UML;
 import org.opengis.util.ControlledVocabulary;
 import org.apache.sis.internal.jaxb.Context;
 import org.apache.sis.metadata.MetadataStandard;
-import org.apache.sis.test.LoggingWatcher;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.LoggingWatcher;
+import org.apache.sis.testutilities.DependsOn;
 import org.junit.Rule;
 import org.junit.Test;
 

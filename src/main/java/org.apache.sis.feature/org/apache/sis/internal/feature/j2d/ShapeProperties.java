@@ -16,15 +16,16 @@
  */
 package org.apache.sis.internal.feature.j2d;
 
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.List;
-import java.lang.reflect.Array;
-import java.awt.Shape;
-import java.awt.geom.PathIterator;
-import java.awt.geom.IllegalPathStateException;
 import org.apache.sis.internal.referencing.j2d.AbstractShape;
 import org.apache.sis.util.StringBuilders;
+
+import java.awt.*;
+import java.awt.geom.IllegalPathStateException;
+import java.awt.geom.PathIterator;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 /**

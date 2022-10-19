@@ -34,12 +34,12 @@ import org.apache.sis.internal.sql.feature.TableReference;
 import org.apache.sis.storage.sql.ResourceDefinition;
 import org.apache.sis.storage.sql.SQLStore;
 import org.apache.sis.storage.sql.SQLStoreProvider;
-import org.apache.sis.test.sql.TestDatabase;
-import org.apache.sis.test.TestUtilities;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testmetadata.sql.TestDatabase;
+import org.apache.sis.testutilities.TestUtilities;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 // Branch-dependent imports
 import org.opengis.feature.Feature;

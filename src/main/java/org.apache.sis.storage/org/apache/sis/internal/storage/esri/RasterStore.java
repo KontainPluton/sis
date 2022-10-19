@@ -16,46 +16,39 @@
  */
 package org.apache.sis.internal.storage.esri;
 
-import java.util.List;
-import java.util.Arrays;
-import java.util.Optional;
-import java.util.Hashtable;
-import java.util.logging.Level;
-import java.io.IOException;
-import java.io.FileNotFoundException;
-import java.nio.file.NoSuchFileException;
-import java.nio.file.Path;
-import java.awt.image.ColorModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.SampleModel;
-import java.awt.image.BufferedImage;
-import java.awt.image.WritableRaster;
+import org.apache.sis.coverage.SampleDimension;
+import org.apache.sis.coverage.grid.GridCoverage2D;
+import org.apache.sis.coverage.grid.GridGeometry;
+import org.apache.sis.image.PlanarImage;
+import org.apache.sis.internal.coverage.j2d.ColorModelFactory;
+import org.apache.sis.internal.coverage.j2d.ImageUtilities;
+import org.apache.sis.internal.storage.MetadataBuilder;
+import org.apache.sis.internal.storage.PRJDataStore;
+import org.apache.sis.internal.storage.RangeArgument;
+import org.apache.sis.internal.storage.Resources;
+import org.apache.sis.internal.util.Numerics;
+import org.apache.sis.internal.util.UnmodifiableArrayList;
+import org.apache.sis.math.Statistics;
+import org.apache.sis.metadata.sql.MetadataStoreException;
+import org.apache.sis.storage.*;
+import org.apache.sis.util.ArraysExt;
+import org.apache.sis.util.CharSequences;
+import org.apache.sis.util.resources.Vocabulary;
 import org.opengis.geometry.Envelope;
 import org.opengis.metadata.Metadata;
 import org.opengis.metadata.maintenance.ScopeCode;
 import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.metadata.sql.MetadataStoreException;
-import org.apache.sis.coverage.SampleDimension;
-import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.coverage.grid.GridCoverage2D;
-import org.apache.sis.image.PlanarImage;
-import org.apache.sis.storage.GridCoverageResource;
-import org.apache.sis.storage.DataStoreProvider;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.DataStoreReferencingException;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.internal.storage.PRJDataStore;
-import org.apache.sis.internal.storage.MetadataBuilder;
-import org.apache.sis.internal.coverage.j2d.ColorModelFactory;
-import org.apache.sis.internal.coverage.j2d.ImageUtilities;
-import org.apache.sis.internal.storage.RangeArgument;
-import org.apache.sis.internal.storage.Resources;
-import org.apache.sis.internal.util.UnmodifiableArrayList;
-import org.apache.sis.internal.util.Numerics;
-import org.apache.sis.util.resources.Vocabulary;
-import org.apache.sis.util.CharSequences;
-import org.apache.sis.util.ArraysExt;
-import org.apache.sis.math.Statistics;
+
+import java.awt.image.*;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.NoSuchFileException;
+import java.nio.file.Path;
+import java.util.Arrays;
+import java.util.Hashtable;
+import java.util.List;
+import java.util.Optional;
+import java.util.logging.Level;
 
 
 /**

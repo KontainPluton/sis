@@ -16,15 +16,12 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Map;
-import java.util.Iterator;
-
-import org.apache.sis.feature.AbstractIdentifiedType;
-import org.opengis.util.GenericName;
 import org.apache.sis.util.resources.Errors;
-
-// Branch-dependent imports
 import org.opengis.feature.PropertyType;
+import org.opengis.util.GenericName;
+
+import java.util.Iterator;
+import java.util.Map;
 
 
 /**

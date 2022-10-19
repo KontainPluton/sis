@@ -16,9 +16,10 @@
  */
 package org.apache.sis.internal.storage.inflater;
 
+import org.apache.sis.internal.storage.io.ChannelDataInput;
+
 import java.io.IOException;
 import java.nio.ByteBuffer;
-import org.apache.sis.internal.storage.io.ChannelDataInput;
 
 
 /**

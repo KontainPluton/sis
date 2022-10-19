@@ -16,33 +16,34 @@
  */
 package org.apache.sis.internal.storage.esri;
 
-import java.util.Map;
-import java.util.List;
-import java.util.StringJoiner;
-import java.io.IOException;
-import java.nio.file.StandardOpenOption;
-import java.awt.image.RenderedImage;
-import java.awt.image.DataBufferFloat;
-import java.awt.image.BandedSampleModel;
-import java.awt.image.WritableRaster;
-import org.opengis.metadata.Metadata;
-import org.opengis.referencing.datum.PixelInCell;
 import org.apache.sis.coverage.SampleDimension;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.GridExtent;
 import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.math.Statistics;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.DataStoreClosedException;
-import org.apache.sis.storage.DataStoreContentException;
 import org.apache.sis.internal.storage.RangeArgument;
 import org.apache.sis.internal.storage.Resources;
 import org.apache.sis.internal.storage.io.ChannelDataInput;
+import org.apache.sis.math.Statistics;
 import org.apache.sis.measure.NumberRange;
 import org.apache.sis.referencing.operation.matrix.Matrix3;
 import org.apache.sis.referencing.operation.transform.MathTransforms;
+import org.apache.sis.storage.DataStoreClosedException;
+import org.apache.sis.storage.DataStoreContentException;
+import org.apache.sis.storage.DataStoreException;
+import org.apache.sis.storage.StorageConnector;
 import org.apache.sis.util.resources.Errors;
+import org.opengis.metadata.Metadata;
+import org.opengis.referencing.datum.PixelInCell;
+
+import java.awt.image.BandedSampleModel;
+import java.awt.image.DataBufferFloat;
+import java.awt.image.RenderedImage;
+import java.awt.image.WritableRaster;
+import java.io.IOException;
+import java.nio.file.StandardOpenOption;
+import java.util.List;
+import java.util.Map;
+import java.util.StringJoiner;
 
 
 /**

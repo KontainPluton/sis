@@ -16,35 +16,36 @@
  */
 package org.apache.sis.coverage.grid;
 
-import java.util.Arrays;
-import java.util.Objects;
-import java.util.function.Supplier;
-import javax.measure.Quantity;
-import javax.measure.quantity.Length;
-import org.opengis.geometry.Envelope;
-import org.opengis.util.FactoryException;
-import org.opengis.geometry.DirectPosition;
-import org.opengis.referencing.datum.PixelInCell;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
-import org.opengis.referencing.operation.CoordinateOperation;
-import org.opengis.referencing.operation.MathTransform;
-import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.util.collection.BackingStoreException;
-import org.apache.sis.internal.referencing.CoordinateOperations;
-import org.apache.sis.internal.referencing.WraparoundApplicator;
-import org.apache.sis.metadata.iso.extent.DefaultGeographicBoundingBox;
-import org.apache.sis.referencing.operation.transform.MathTransforms;
-import org.apache.sis.referencing.operation.transform.WraparoundTransform;
 import org.apache.sis.geometry.AbstractDirectPosition;
 import org.apache.sis.geometry.Envelopes;
 import org.apache.sis.image.ImageProcessor;
-import org.apache.sis.measure.Quantities;
-import org.apache.sis.measure.Units;
-import org.apache.sis.util.ArraysExt;
-import org.apache.sis.referencing.CRS;
-import org.apache.sis.util.logging.Logging;
+import org.apache.sis.internal.referencing.CoordinateOperations;
+import org.apache.sis.internal.referencing.WraparoundApplicator;
 import org.apache.sis.internal.system.Modules;
 import org.apache.sis.internal.util.Numerics;
+import org.apache.sis.measure.Quantities;
+import org.apache.sis.measure.Units;
+import org.apache.sis.metadata.iso.extent.DefaultGeographicBoundingBox;
+import org.apache.sis.referencing.CRS;
+import org.apache.sis.referencing.operation.transform.MathTransforms;
+import org.apache.sis.referencing.operation.transform.WraparoundTransform;
+import org.apache.sis.util.ArraysExt;
+import org.apache.sis.util.collection.BackingStoreException;
+import org.apache.sis.util.logging.Logging;
+import org.opengis.geometry.DirectPosition;
+import org.opengis.geometry.Envelope;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.referencing.datum.PixelInCell;
+import org.opengis.referencing.operation.CoordinateOperation;
+import org.opengis.referencing.operation.MathTransform;
+import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.FactoryException;
+
+import javax.measure.Quantity;
+import javax.measure.quantity.Length;
+import java.util.Arrays;
+import java.util.Objects;
+import java.util.function.Supplier;
 
 import static java.util.logging.Logger.getLogger;
 

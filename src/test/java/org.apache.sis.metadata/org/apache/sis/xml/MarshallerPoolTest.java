@@ -19,7 +19,7 @@ package org.apache.sis.xml;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

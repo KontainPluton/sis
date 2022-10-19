@@ -20,8 +20,8 @@ import javax.xml.bind.JAXBException;
 
 import org.apache.sis.internal.xml.LegacyNamespaces;
 import org.apache.sis.util.iso.Types;
-import org.apache.sis.test.MetadataAssert;
-import org.apache.sis.test.xml.TestCase;
+import org.apache.sis.testmetadata.MetadataAssert;
+import org.apache.sis.testmetadata.xml.TestCase;
 import org.opengis.metadata.citation.Address;
 import org.opengis.metadata.Identifier;
 import org.opengis.metadata.acquisition.Instrument;
@@ -29,8 +29,11 @@ import org.opengis.metadata.identification.DataIdentification;
 import org.opengis.metadata.identification.InitiativeType;
 import org.apache.sis.internal.jaxb.metadata.replace.ReferenceSystemMetadata;
 import org.apache.sis.internal.metadata.SensorType;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOnMethod;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
+import static org.opengis.test.Assert.assertInstanceOf;
 
 
 /**

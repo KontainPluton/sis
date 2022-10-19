@@ -26,12 +26,12 @@ import org.apache.sis.internal.simple.SimpleAttributeType;
 
 // Test imports
 import org.junit.Test;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.DependsOnMethod;
 
-import static org.apache.sis.test.Assert.*;
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testutilities.Assert.*;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
 
 
 /**

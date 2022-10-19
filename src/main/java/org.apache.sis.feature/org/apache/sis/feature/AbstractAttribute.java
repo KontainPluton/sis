@@ -16,28 +16,21 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Map;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.io.Serializable;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.InvalidObjectException;
-import java.io.IOException;
-
-import org.apache.sis.feature.*;
-import org.opengis.util.GenericName;
-import org.opengis.metadata.quality.DataQuality;
-import org.opengis.metadata.maintenance.ScopeCode;
-import org.apache.sis.util.Classes;
 import org.apache.sis.util.ArgumentChecks;
-
-// Branch-dependent imports
+import org.apache.sis.util.Classes;
 import org.opengis.feature.Attribute;
 import org.opengis.feature.AttributeType;
 import org.opengis.feature.InvalidPropertyValueException;
 import org.opengis.feature.MultiValuedPropertyException;
+import org.opengis.metadata.maintenance.ScopeCode;
+import org.opengis.metadata.quality.DataQuality;
+import org.opengis.util.GenericName;
+
+import java.io.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Map;
 
 
 /**

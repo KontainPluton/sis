@@ -16,11 +16,12 @@
  */
 package org.apache.sis.internal.feature.j2d;
 
-import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.awt.Shape;
 import org.opengis.referencing.operation.TransformException;
+
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 /**

@@ -16,15 +16,15 @@
  */
 package org.apache.sis.internal.shapefile.jdbc;
 
+import org.apache.sis.internal.shapefile.jdbc.resultset.SQLIllegalColumnIndexException;
+import org.apache.sis.internal.shapefile.jdbc.resultset.SQLNoSuchFieldException;
+import org.opengis.feature.Feature;
+
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-
-import org.apache.sis.internal.shapefile.jdbc.resultset.SQLIllegalColumnIndexException;
-import org.apache.sis.internal.shapefile.jdbc.resultset.SQLNoSuchFieldException;
-import org.opengis.feature.Feature;
 
 /**
  * Database byte reader contract. Used to allow refactoring of core byte management of a DBase file.

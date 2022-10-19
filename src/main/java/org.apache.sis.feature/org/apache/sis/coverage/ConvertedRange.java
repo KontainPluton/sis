@@ -16,10 +16,11 @@
  */
 package org.apache.sis.coverage;
 
-import javax.measure.Unit;
-import org.apache.sis.measure.Range;
-import org.apache.sis.measure.NumberRange;
 import org.apache.sis.measure.MeasurementRange;
+import org.apache.sis.measure.NumberRange;
+import org.apache.sis.measure.Range;
+
+import javax.measure.Unit;
 
 
 /**

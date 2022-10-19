@@ -16,16 +16,17 @@
  */
 package org.apache.sis.image;
 
-import java.util.Objects;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import org.opengis.referencing.operation.MathTransform;
-import org.opengis.referencing.operation.TransformException;
-import org.opengis.referencing.operation.NoninvertibleTransformException;
 import org.apache.sis.internal.coverage.j2d.ColorModelFactory;
 import org.apache.sis.internal.coverage.j2d.ImageUtilities;
 import org.apache.sis.internal.system.Modules;
 import org.apache.sis.util.logging.Logging;
+import org.opengis.referencing.operation.MathTransform;
+import org.opengis.referencing.operation.NoninvertibleTransformException;
+import org.opengis.referencing.operation.TransformException;
+
+import java.awt.image.Raster;
+import java.awt.image.WritableRaster;
+import java.util.Objects;
 
 import static java.util.logging.Logger.getLogger;
 

@@ -33,9 +33,9 @@ import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.collection.CheckedContainer;
 import org.apache.sis.internal.util.CollectionsExt;
 import org.apache.sis.internal.metadata.Dependencies;
-import org.apache.sis.test.xml.AnnotationConsistencyCheck;
-import org.apache.sis.test.TestUtilities;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testmetadata.xml.AnnotationConsistencyCheck;
+import org.apache.sis.testutilities.TestUtilities;
+import org.apache.sis.testutilities.DependsOn;
 import org.junit.Test;
 
 

@@ -16,23 +16,22 @@
  */
 package org.apache.sis.internal.storage.csv;
 
-import java.util.Date;
-import java.util.Objects;
-import java.util.logging.Level;
-import java.util.logging.LogRecord;
-import java.util.function.Consumer;
-import java.lang.reflect.Array;
-import java.time.Instant;
-import org.apache.sis.math.Vector;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.MovingFeatures;
 import org.apache.sis.internal.storage.Resources;
-import org.apache.sis.util.CorruptedObjectException;
 import org.apache.sis.internal.util.UnmodifiableArrayList;
-
-// Branch-dependent imports
+import org.apache.sis.math.Vector;
+import org.apache.sis.util.CorruptedObjectException;
 import org.opengis.feature.Attribute;
 import org.opengis.feature.Feature;
+
+import java.lang.reflect.Array;
+import java.time.Instant;
+import java.util.Date;
+import java.util.Objects;
+import java.util.function.Consumer;
+import java.util.logging.Level;
+import java.util.logging.LogRecord;
 
 
 /**

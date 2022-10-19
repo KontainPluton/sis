@@ -16,39 +16,33 @@
  */
 package org.apache.sis.image;
 
-import java.util.Objects;
-import java.lang.ref.Reference;
-import java.nio.DoubleBuffer;
-import java.awt.Point;
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.geom.Rectangle2D;
-import java.awt.image.ColorModel;
-import java.awt.image.Raster;
-import java.awt.image.RenderedImage;
-import java.awt.image.WritableRaster;
-import java.awt.image.ImagingOpException;
-import java.awt.image.SampleModel;
-import javax.measure.Quantity;
-import javax.measure.Unit;
-import javax.measure.quantity.Length;
-import org.opengis.referencing.operation.MathTransform;
-import org.opengis.referencing.operation.MathTransform2D;
-import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.referencing.operation.transform.MathTransforms;
-import org.apache.sis.internal.coverage.j2d.ImageUtilities;
+import org.apache.sis.geometry.Shapes2D;
 import org.apache.sis.internal.coverage.j2d.FillValues;
+import org.apache.sis.internal.coverage.j2d.ImageUtilities;
 import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.internal.system.Modules;
 import org.apache.sis.internal.util.Numerics;
-import org.apache.sis.util.ArraysExt;
-import org.apache.sis.util.Disposable;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.logging.Logging;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.geometry.Shapes2D;
 import org.apache.sis.measure.Quantities;
 import org.apache.sis.measure.Units;
+import org.apache.sis.referencing.operation.transform.MathTransforms;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.ArraysExt;
+import org.apache.sis.util.Disposable;
+import org.apache.sis.util.logging.Logging;
+import org.apache.sis.util.resources.Errors;
+import org.opengis.referencing.operation.MathTransform;
+import org.opengis.referencing.operation.MathTransform2D;
+import org.opengis.referencing.operation.TransformException;
+
+import javax.measure.Quantity;
+import javax.measure.Unit;
+import javax.measure.quantity.Length;
+import java.awt.*;
+import java.awt.geom.Rectangle2D;
+import java.awt.image.*;
+import java.lang.ref.Reference;
+import java.nio.DoubleBuffer;
+import java.util.Objects;
 
 import static java.util.logging.Logger.getLogger;
 

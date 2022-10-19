@@ -21,15 +21,15 @@ import org.opengis.util.GenericName;
 import org.opengis.util.NameFactory;
 import org.opengis.feature.FeatureAssociationRole;
 import org.apache.sis.internal.system.DefaultFactories;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static java.util.Collections.singletonMap;
 import static org.apache.sis.feature.DefaultAssociationRole.NAME_KEY;
-import static org.apache.sis.test.TestUtilities.getSingleton;
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
+import static org.apache.sis.testutilities.Assert.*;
 
 // Branch-dependent imports
 import org.opengis.feature.FeatureType;

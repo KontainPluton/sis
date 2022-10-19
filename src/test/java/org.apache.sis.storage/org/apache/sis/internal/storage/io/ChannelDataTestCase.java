@@ -19,8 +19,8 @@ package org.apache.sis.internal.storage.io;
 
 import java.util.Random;
 import java.io.IOException;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.TestUtilities;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.TestUtilities;
 import org.apache.sis.util.Debug;
 
 

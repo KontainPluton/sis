@@ -16,10 +16,11 @@
  */
 package org.apache.sis.internal.storage.image;
 
-import java.io.IOException;
 import org.apache.sis.storage.Aggregate;
-import org.apache.sis.storage.WritableAggregate;
 import org.apache.sis.storage.DataStoreException;
+import org.apache.sis.storage.WritableAggregate;
+
+import java.io.IOException;
 
 
 /**

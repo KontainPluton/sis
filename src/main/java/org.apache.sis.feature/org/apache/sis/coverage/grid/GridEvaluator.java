@@ -16,38 +16,35 @@
  */
 package org.apache.sis.coverage.grid;
 
-import java.util.Map;
-import java.util.Arrays;
-import java.util.TreeMap;
-import java.util.Objects;
-import java.awt.image.RenderedImage;
-import org.opengis.util.FactoryException;
-import org.opengis.geometry.DirectPosition;
-import org.opengis.metadata.extent.GeographicBoundingBox;
-import org.opengis.referencing.datum.PixelInCell;
-import org.opengis.referencing.operation.Matrix;
-import org.opengis.referencing.operation.MathTransform;
-import org.opengis.referencing.operation.TransformException;
-import org.opengis.referencing.operation.CoordinateOperation;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
-import org.opengis.referencing.operation.NoninvertibleTransformException;
-import org.opengis.coverage.CannotEvaluateException;
-import org.opengis.coverage.PointOutsideCoverageException;
 import org.apache.sis.coverage.SampleDimension;
-import org.apache.sis.internal.feature.Resources;
-import org.apache.sis.internal.util.CollectionsExt;
 import org.apache.sis.internal.coverage.j2d.ImageUtilities;
+import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.internal.referencing.DirectPositionView;
 import org.apache.sis.internal.referencing.WraparoundAxesFinder;
+import org.apache.sis.internal.system.Modules;
+import org.apache.sis.internal.util.CollectionsExt;
+import org.apache.sis.referencing.CRS;
 import org.apache.sis.referencing.operation.matrix.Matrices;
 import org.apache.sis.referencing.operation.matrix.MatrixSIS;
 import org.apache.sis.referencing.operation.transform.MathTransforms;
 import org.apache.sis.referencing.operation.transform.TransformSeparator;
-import org.apache.sis.referencing.CRS;
-import org.apache.sis.internal.system.Modules;
-import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.logging.Logging;
+import org.opengis.coverage.CannotEvaluateException;
+import org.opengis.coverage.PointOutsideCoverageException;
+import org.opengis.geometry.DirectPosition;
+import org.opengis.metadata.extent.GeographicBoundingBox;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.referencing.datum.PixelInCell;
+import org.opengis.referencing.operation.*;
+import org.opengis.util.FactoryException;
+
+import java.awt.image.RenderedImage;
+import java.util.Arrays;
+import java.util.Map;
+import java.util.Objects;
+import java.util.TreeMap;
 
 import static java.util.logging.Logger.getLogger;
 

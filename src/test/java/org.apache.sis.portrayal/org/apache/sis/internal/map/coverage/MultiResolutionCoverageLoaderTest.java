@@ -32,7 +32,7 @@ import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.referencing.operation.transform.MathTransforms;
 import org.apache.sis.storage.AbstractGridCoverageResource;
 import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.apache.sis.util.iso.Names;
 import org.junit.Test;
 

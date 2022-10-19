@@ -16,38 +16,28 @@
  */
 package org.apache.sis.internal.storage;
 
-import java.util.Map;
-import java.util.Locale;
-import java.io.IOException;
-import java.awt.Point;
-import java.awt.image.DataBuffer;
-import java.awt.image.ColorModel;
-import java.awt.image.SampleModel;
-import java.awt.image.MultiPixelPackedSampleModel;
-import java.awt.image.RenderedImage;
-import java.awt.image.Raster;
-import org.opengis.util.GenericName;
-import org.opengis.coverage.CannotEvaluateException;
-import org.opengis.geometry.MismatchedDimensionException;
+import org.apache.sis.coverage.grid.DisjointExtentException;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.GridExtent;
-import org.apache.sis.coverage.grid.DisjointExtentException;
 import org.apache.sis.internal.coverage.j2d.DeferredProperty;
 import org.apache.sis.internal.coverage.j2d.TiledImage;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.tiling.TileMatrixSet;
 import org.apache.sis.util.collection.WeakValueHashMap;
 import org.apache.sis.util.resources.Errors;
+import org.opengis.coverage.CannotEvaluateException;
+import org.opengis.geometry.MismatchedDimensionException;
+import org.opengis.util.GenericName;
 
-import static java.lang.Math.addExact;
-import static java.lang.Math.subtractExact;
-import static java.lang.Math.multiplyExact;
-import static java.lang.Math.incrementExact;
-import static java.lang.Math.decrementExact;
-import static java.lang.Math.toIntExact;
-import static java.lang.Math.floorDiv;
-import static org.apache.sis.internal.util.Numerics.ceilDiv;
+import java.awt.*;
+import java.awt.image.*;
+import java.io.IOException;
+import java.util.Locale;
+import java.util.Map;
+
+import static java.lang.Math.*;
 import static org.apache.sis.internal.jdk9.JDK9.multiplyFull;
+import static org.apache.sis.internal.util.Numerics.ceilDiv;
 
 
 /**

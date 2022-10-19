@@ -16,28 +16,29 @@
  */
 package org.apache.sis.coverage.grid;
 
-import java.util.function.Function;
-import java.awt.image.RenderedImage;
-import java.awt.image.ImagingOpException;
-import org.opengis.util.FactoryException;
-import org.opengis.referencing.datum.PixelInCell;
-import org.opengis.referencing.operation.Matrix;
-import org.opengis.referencing.operation.MathTransform;
-import org.opengis.referencing.operation.MathTransformFactory;
-import org.opengis.referencing.operation.TransformException;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
-import org.apache.sis.referencing.operation.transform.MathTransforms;
-import org.apache.sis.referencing.operation.transform.LinearTransform;
-import org.apache.sis.referencing.operation.transform.TransformSeparator;
-import org.apache.sis.referencing.CRS;
 import org.apache.sis.geometry.GeneralEnvelope;
 import org.apache.sis.geometry.ImmutableEnvelope;
 import org.apache.sis.internal.referencing.DirectPositionView;
 import org.apache.sis.internal.referencing.MathTransformsOrFactory;
 import org.apache.sis.internal.util.Numerics;
-import org.apache.sis.util.ComparisonMode;
+import org.apache.sis.referencing.CRS;
+import org.apache.sis.referencing.operation.transform.LinearTransform;
+import org.apache.sis.referencing.operation.transform.MathTransforms;
+import org.apache.sis.referencing.operation.transform.TransformSeparator;
 import org.apache.sis.util.ArraysExt;
+import org.apache.sis.util.ComparisonMode;
 import org.apache.sis.util.resources.Errors;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.referencing.datum.PixelInCell;
+import org.opengis.referencing.operation.MathTransform;
+import org.opengis.referencing.operation.MathTransformFactory;
+import org.opengis.referencing.operation.Matrix;
+import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.FactoryException;
+
+import java.awt.image.ImagingOpException;
+import java.awt.image.RenderedImage;
+import java.util.function.Function;
 
 
 /**

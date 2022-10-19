@@ -29,7 +29,7 @@ import org.apache.sis.storage.ProbeResult;
 import org.apache.sis.storage.StorageConnector;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.util.Version;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOn;
 import org.opengis.test.dataset.TestData;
 import org.junit.Test;
 

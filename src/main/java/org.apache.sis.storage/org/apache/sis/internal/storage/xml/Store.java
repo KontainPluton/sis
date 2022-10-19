@@ -16,32 +16,33 @@
  */
 package org.apache.sis.internal.storage.xml;
 
-import java.util.Map;
-import java.util.Collections;
-import java.util.logging.Filter;
-import java.util.logging.LogRecord;
-import java.io.Closeable;
-import java.io.Reader;
-import java.io.InputStream;
-import java.io.IOException;
-import javax.xml.bind.JAXBException;
-import javax.xml.transform.stream.StreamSource;
-import org.opengis.metadata.Metadata;
-import org.opengis.util.FactoryException;
-import org.opengis.referencing.ReferenceSystem;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
-import org.apache.sis.xml.XML;
-import org.apache.sis.storage.StorageConnector;
+import org.apache.sis.internal.referencing.DefinitionVerifier;
+import org.apache.sis.internal.storage.MetadataBuilder;
+import org.apache.sis.internal.storage.URIDataStore;
+import org.apache.sis.internal.system.Loggers;
+import org.apache.sis.metadata.iso.DefaultMetadata;
+import org.apache.sis.setup.OptionKey;
 import org.apache.sis.storage.DataStoreException;
+import org.apache.sis.storage.StorageConnector;
 import org.apache.sis.storage.UnsupportedStorageException;
 import org.apache.sis.storage.event.WarningEvent;
-import org.apache.sis.metadata.iso.DefaultMetadata;
 import org.apache.sis.util.resources.Errors;
-import org.apache.sis.internal.system.Loggers;
-import org.apache.sis.internal.storage.URIDataStore;
-import org.apache.sis.internal.storage.MetadataBuilder;
-import org.apache.sis.internal.referencing.DefinitionVerifier;
-import org.apache.sis.setup.OptionKey;
+import org.apache.sis.xml.XML;
+import org.opengis.metadata.Metadata;
+import org.opengis.referencing.ReferenceSystem;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.util.FactoryException;
+
+import javax.xml.bind.JAXBException;
+import javax.xml.transform.stream.StreamSource;
+import java.io.Closeable;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.Reader;
+import java.util.Collections;
+import java.util.Map;
+import java.util.logging.Filter;
+import java.util.logging.LogRecord;
 
 
 /**

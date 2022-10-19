@@ -16,10 +16,11 @@
  */
 package org.apache.sis.image;
 
+import org.apache.sis.internal.system.Modules;
+
+import java.awt.image.ImagingOpException;
 import java.util.logging.LogRecord;
 import java.util.logging.SimpleFormatter;
-import java.awt.image.ImagingOpException;
-import org.apache.sis.internal.system.Modules;
 
 import static java.util.logging.Logger.getLogger;
 

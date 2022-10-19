@@ -33,7 +33,7 @@ import org.opengis.referencing.cs.AxisDirection;
 import org.opengis.parameter.ParameterDirection;
 import org.apache.sis.util.SimpleInternationalString;
 import org.apache.sis.util.DefaultInternationalString;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.opengis.test.Assert.*;

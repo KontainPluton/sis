@@ -16,21 +16,16 @@
  */
 package org.apache.sis.storage;
 
-import java.util.OptionalLong;
-import java.util.stream.Stream;
 import org.apache.sis.internal.feature.FeatureUtilities;
 import org.apache.sis.internal.storage.Resources;
-
-// Branch-dependent imports
-import org.apache.sis.storage.AbstractFeatureSet;
-import org.apache.sis.storage.AbstractResource;
-import org.apache.sis.storage.DataStoreContentException;
-import org.apache.sis.storage.DataStoreException;
 import org.opengis.feature.Feature;
 import org.opengis.feature.FeatureType;
-import org.opengis.filter.Filter;
 import org.opengis.filter.Expression;
+import org.opengis.filter.Filter;
 import org.opengis.filter.SortBy;
+
+import java.util.OptionalLong;
+import java.util.stream.Stream;
 
 
 /**

@@ -16,12 +16,11 @@
  */
 package org.apache.sis.storage;
 
-import java.util.Collection;
-
-import org.apache.sis.storage.*;
-import org.apache.sis.util.Static;
 import org.apache.sis.internal.system.Modules;
 import org.apache.sis.internal.system.SystemListener;
+import org.apache.sis.util.Static;
+
+import java.util.Collection;
 
 
 /**

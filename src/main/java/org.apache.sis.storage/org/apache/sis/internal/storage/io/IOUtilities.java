@@ -16,36 +16,23 @@
  */
 package org.apache.sis.internal.storage.io;
 
-import java.util.Locale;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.LineNumberReader;
-import java.io.Reader;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URL;
-import java.net.URLDecoder;
-import java.net.URISyntaxException;
-import java.net.MalformedURLException;
-import java.nio.channels.ReadableByteChannel;
-import java.nio.channels.WritableByteChannel;
-import java.nio.channels.SeekableByteChannel;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.OpenOption;
-import java.nio.file.StandardOpenOption;
-import java.nio.file.FileSystemNotFoundException;
-import java.nio.charset.StandardCharsets;
-import javax.imageio.stream.ImageInputStream;
-import javax.xml.stream.Location;
-import javax.xml.stream.XMLStreamReader;
+import org.apache.sis.internal.storage.Resources;
 import org.apache.sis.util.CharSequences;
 import org.apache.sis.util.Exceptions;
 import org.apache.sis.util.Static;
 import org.apache.sis.util.resources.Errors;
-import org.apache.sis.internal.storage.Resources;
+
+import javax.imageio.stream.ImageInputStream;
+import javax.xml.stream.Location;
+import javax.xml.stream.XMLStreamReader;
+import java.io.*;
+import java.net.*;
+import java.nio.channels.ReadableByteChannel;
+import java.nio.channels.SeekableByteChannel;
+import java.nio.channels.WritableByteChannel;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.util.Locale;
 
 
 /**

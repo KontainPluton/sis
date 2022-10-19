@@ -16,11 +16,10 @@
  */
 package org.apache.sis.filter;
 
-import java.util.function.Predicate;
 import org.apache.sis.internal.filter.Node;
-
-// Branch-dependent imports
 import org.opengis.filter.Filter;
+
+import java.util.function.Predicate;
 
 
 /**

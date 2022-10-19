@@ -18,8 +18,8 @@ package org.apache.sis.internal.util;
 
 import java.util.Random;
 import org.apache.sis.math.MathFunctions;
-import org.apache.sis.test.TestUtilities;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestUtilities;
+import org.apache.sis.testutilities.TestCase;
 import org.apache.sis.util.ComparisonMode;
 import org.junit.Test;
 

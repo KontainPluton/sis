@@ -16,19 +16,18 @@
  */
 package org.apache.sis.internal.filter.sqlmm;
 
-import java.util.List;
-import java.util.Arrays;
-import org.opengis.util.FactoryException;
+import org.apache.sis.internal.feature.Geometries;
+import org.apache.sis.internal.feature.GeometryWrapper;
+import org.apache.sis.util.collection.BackingStoreException;
+import org.opengis.filter.Expression;
+import org.opengis.filter.InvalidFilterValueException;
+import org.opengis.filter.Literal;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.internal.feature.GeometryWrapper;
-import org.apache.sis.internal.feature.Geometries;
-import org.apache.sis.util.collection.BackingStoreException;
+import org.opengis.util.FactoryException;
 
-// Branch-dependent imports
-import org.opengis.filter.Expression;
-import org.opengis.filter.Literal;
-import org.opengis.filter.InvalidFilterValueException;
+import java.util.Arrays;
+import java.util.List;
 
 
 /**

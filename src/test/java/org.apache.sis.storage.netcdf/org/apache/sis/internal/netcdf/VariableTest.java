@@ -25,7 +25,7 @@ import org.apache.sis.util.Workaround;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.internal.netcdf.ucar.DecoderWrapper;
 import org.apache.sis.measure.Units;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOn;
 import org.opengis.test.dataset.TestData;
 import org.junit.Test;
 

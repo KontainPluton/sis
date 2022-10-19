@@ -32,12 +32,12 @@ import org.apache.sis.metadata.iso.citation.HardCodedCitations;
 import org.apache.sis.util.collection.CheckedContainer;
 import org.apache.sis.measure.ValueRange;
 import org.apache.sis.measure.Range;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
 import org.junit.Test;
 
-import static org.apache.sis.test.MetadataAssert.*;
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
 
 
 /**

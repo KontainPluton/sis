@@ -18,10 +18,10 @@ package org.apache.sis.internal.feature.j2d;
 
 import java.awt.geom.Path2D;
 import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.FeatureAssert.*;
+import static org.apache.sis.testfeature.FeatureAssert.*;
 
 
 /**

@@ -16,16 +16,17 @@
  */
 package org.apache.sis.storage.geotiff;
 
+import org.apache.sis.internal.geotiff.Compression;
+import org.apache.sis.internal.geotiff.Resources;
+import org.apache.sis.internal.storage.MetadataBuilder;
+import org.apache.sis.measure.Units;
+import org.apache.sis.storage.DataStoreException;
+import org.apache.sis.storage.event.StoreListeners;
+import org.apache.sis.util.CharSequences;
+import org.apache.sis.util.resources.Errors;
+
 import javax.measure.Unit;
 import javax.measure.quantity.Length;
-import org.apache.sis.internal.geotiff.Resources;
-import org.apache.sis.internal.geotiff.Compression;
-import org.apache.sis.internal.storage.MetadataBuilder;
-import org.apache.sis.storage.event.StoreListeners;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.CharSequences;
-import org.apache.sis.measure.Units;
 
 
 /**

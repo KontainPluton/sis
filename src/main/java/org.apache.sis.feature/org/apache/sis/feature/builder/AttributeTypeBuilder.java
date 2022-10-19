@@ -16,32 +16,25 @@
  */
 package org.apache.sis.feature.builder;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.Objects;
-import java.lang.reflect.Array;
-import javax.measure.Unit;
-import org.opengis.util.GenericName;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.apache.sis.feature.DefaultAttributeType;
 import org.apache.sis.feature.FeatureOperations;
-import org.apache.sis.internal.util.CollectionsExt;
-import org.apache.sis.internal.util.SetOfUnknownSize;
-import org.apache.sis.internal.util.AbstractIterator;
 import org.apache.sis.internal.feature.AttributeConvention;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.Resources;
-import org.apache.sis.util.resources.Errors;
+import org.apache.sis.internal.util.AbstractIterator;
+import org.apache.sis.internal.util.CollectionsExt;
+import org.apache.sis.internal.util.SetOfUnknownSize;
 import org.apache.sis.util.Classes;
 import org.apache.sis.util.ObjectConverters;
 import org.apache.sis.util.UnconvertibleObjectException;
-
-// Branch-dependent imports
+import org.apache.sis.util.resources.Errors;
 import org.opengis.feature.AttributeType;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.util.GenericName;
+
+import javax.measure.Unit;
+import java.lang.reflect.Array;
+import java.util.*;
 
 
 /**

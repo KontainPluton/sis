@@ -16,17 +16,16 @@
  */
 package org.apache.sis.filter;
 
-import java.util.Iterator;
-import java.util.Collections;
-import java.io.Serializable;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.collection.Containers;
 import org.apache.sis.util.resources.Errors;
-
-// Branch-dependent imports
 import org.opengis.filter.SortOrder;
 import org.opengis.filter.SortProperty;
 import org.opengis.filter.ValueReference;
+
+import java.io.Serializable;
+import java.util.Collections;
+import java.util.Iterator;
 
 
 /**

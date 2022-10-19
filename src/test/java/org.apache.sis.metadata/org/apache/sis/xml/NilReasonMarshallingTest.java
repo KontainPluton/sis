@@ -18,15 +18,18 @@ package org.apache.sis.xml;
 
 import javax.xml.bind.JAXBException;
 
-import org.apache.sis.test.MetadataAssert;
-import org.apache.sis.test.xml.TestCase;
+import org.apache.sis.testmetadata.MetadataAssert;
+import org.apache.sis.testmetadata.xml.TestCase;
 import org.opengis.metadata.content.Band;
 import org.opengis.metadata.citation.Series;
 import org.opengis.metadata.citation.Citation;
 import org.opengis.metadata.spatial.Dimension;
 import org.opengis.metadata.quality.ConformanceResult;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOnMethod;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
+import static org.opengis.test.Assert.assertInstanceOf;
 
 
 /**

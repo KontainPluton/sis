@@ -16,16 +16,12 @@
  */
 package org.apache.sis.image;
 
-import java.util.Vector;
-import java.awt.Image;
-import java.awt.Rectangle;
-import java.awt.image.ColorModel;
-import java.awt.image.SampleModel;
-import java.awt.image.RenderedImage;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.Disposable;
+
+import java.awt.*;
+import java.awt.image.*;
+import java.util.Vector;
 
 
 /**

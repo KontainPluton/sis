@@ -16,22 +16,21 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Map;
-import java.util.Locale;
-import java.util.Objects;
-import java.io.Serializable;
-import org.opengis.util.NameFactory;
-import org.opengis.util.GenericName;
-import org.opengis.util.InternationalString;
 import org.apache.sis.internal.system.DefaultFactories;
-import org.apache.sis.util.resources.Errors;
 import org.apache.sis.util.Deprecable;
 import org.apache.sis.util.iso.Types;
+import org.apache.sis.util.resources.Errors;
+import org.opengis.feature.IdentifiedType;
+import org.opengis.util.GenericName;
+import org.opengis.util.InternationalString;
+import org.opengis.util.NameFactory;
+
+import java.io.Serializable;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Objects;
 
 import static org.apache.sis.util.ArgumentChecks.ensureNonNull;
-
-// Branch-dependent imports
-import org.opengis.feature.IdentifiedType;
 
 
 /**

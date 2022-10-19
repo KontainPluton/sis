@@ -18,9 +18,9 @@ package org.apache.sis.internal.metadata.sql;
 
 import java.sql.Connection;
 import java.sql.SQLException;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.TestStep;
-import org.apache.sis.test.sql.TestDatabase;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.TestStep;
+import org.apache.sis.testmetadata.sql.TestDatabase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -28,16 +28,16 @@ import org.apache.sis.math.Statistics;
 import org.apache.sis.math.StatisticsFormat;
 import org.apache.sis.internal.util.StandardDateFormat;
 import org.apache.sis.util.CharSequences;
-import org.apache.sis.test.TestUtilities;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.Performance;
+import org.apache.sis.testutilities.TestUtilities;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.Performance;
 import org.junit.Test;
 
 import static java.lang.StrictMath.*;
 import static java.util.Collections.singleton;
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

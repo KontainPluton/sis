@@ -23,7 +23,7 @@ import org.apache.sis.coverage.grid.GridExtent;
 import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.storage.AbstractGridCoverageResource;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.apache.sis.util.Localized;
 import org.junit.Test;
 

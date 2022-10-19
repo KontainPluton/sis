@@ -16,12 +16,13 @@
  */
 package org.apache.sis.storage.geotiff;
 
+import org.apache.sis.internal.storage.io.ChannelDataInput;
+import org.apache.sis.util.resources.Errors;
+
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.ReadableByteChannel;
 import java.nio.channels.SeekableByteChannel;
-import org.apache.sis.internal.storage.io.ChannelDataInput;
-import org.apache.sis.util.resources.Errors;
 
 
 /**

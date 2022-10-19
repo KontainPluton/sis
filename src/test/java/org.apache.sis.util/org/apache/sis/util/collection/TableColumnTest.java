@@ -19,10 +19,10 @@ package org.apache.sis.util.collection;
 import java.util.Locale;
 import org.opengis.util.InternationalString;
 import org.junit.Test;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 
-import static org.apache.sis.test.Assert.*;
-import org.apache.sis.test.foreigner.SerializableTableColumn;
+import static org.apache.sis.testutilities.Assert.*;
+import org.apache.sis.testutilities.foreigner.SerializableTableColumn;
 import static org.apache.sis.util.collection.TableColumn.*;
 
 

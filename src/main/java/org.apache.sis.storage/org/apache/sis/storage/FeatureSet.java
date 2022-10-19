@@ -16,17 +16,11 @@
  */
 package org.apache.sis.storage;
 
-import java.util.stream.Stream;
-
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.FeatureQuery;
-import org.apache.sis.storage.GridCoverageResource;
-import org.apache.sis.storage.UnsupportedQueryException;
 import org.apache.sis.util.ArgumentChecks;
-
-// Branch-dependent imports
 import org.opengis.feature.Feature;
 import org.opengis.feature.FeatureType;
+
+import java.util.stream.Stream;
 
 
 /**

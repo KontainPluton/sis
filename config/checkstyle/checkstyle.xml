@@ -86,4 +86,7 @@ page at http://checkstyle.sourceforge.net/config.html -->
         </module>
     </module>
     <module name="UniqueProperties"/>                 <!-- No duplicated keys in *.properties files. -->
+    <module name="BeforeExecutionExclusionFileFilter"><!-- Exclude module-info.java, as of october 21, 2022 checkstyle does not support the module syntax -->
+        <property name="fileNamePattern" value="module\-info\.java$"/>
+    </module>
 </module>

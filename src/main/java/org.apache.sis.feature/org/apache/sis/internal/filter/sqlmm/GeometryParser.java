@@ -16,14 +16,12 @@
  */
 package org.apache.sis.internal.filter.sqlmm;
 
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.GeometryWrapper;
 import org.apache.sis.util.resources.Errors;
-
-// Branch-dependent imports
 import org.opengis.filter.Expression;
 import org.opengis.filter.InvalidFilterValueException;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
 
 /**

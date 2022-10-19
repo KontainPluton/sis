@@ -16,9 +16,9 @@
  */
 package org.apache.sis.internal.shapefile.jdbc.resultset;
 
-import java.util.logging.Level;
-
 import org.apache.sis.internal.shapefile.jdbc.statement.DBFStatement;
+
+import java.util.logging.Level;
 
 /**
  * Special ResultSet listing tables types contained in this DBase 3 (only tables).

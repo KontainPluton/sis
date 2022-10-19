@@ -16,36 +16,25 @@
  */
 package org.apache.sis.image;
 
-import java.util.Arrays;
-import java.util.Optional;
-import java.nio.Buffer;
-import java.nio.IntBuffer;
-import java.nio.FloatBuffer;
-import java.nio.DoubleBuffer;
-import java.awt.Point;
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.image.DataBuffer;
-import java.awt.image.Raster;
-import java.awt.image.BufferedImage;
-import java.awt.image.RenderedImage;
-import java.awt.image.WritableRaster;
-import java.awt.image.WritableRenderedImage;
-import java.awt.image.SampleModel;
-import java.awt.image.ComponentSampleModel;
-import java.awt.image.MultiPixelPackedSampleModel;
-import java.awt.image.SinglePixelPackedSampleModel;
-import java.awt.image.RasterFormatException;
-import java.util.NoSuchElementException;
-import org.opengis.coverage.grid.SequenceType;
-import org.apache.sis.util.resources.Messages;
-import org.apache.sis.util.resources.Errors;
+import org.apache.sis.internal.coverage.j2d.ImageUtilities;
+import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.internal.util.Numerics;
+import org.apache.sis.measure.NumberRange;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.ArraysExt;
-import org.apache.sis.measure.NumberRange;
-import org.apache.sis.internal.util.Numerics;
-import org.apache.sis.internal.feature.Resources;
-import org.apache.sis.internal.coverage.j2d.ImageUtilities;
+import org.apache.sis.util.resources.Errors;
+import org.apache.sis.util.resources.Messages;
+import org.opengis.coverage.grid.SequenceType;
+
+import java.awt.*;
+import java.awt.image.*;
+import java.nio.Buffer;
+import java.nio.DoubleBuffer;
+import java.nio.FloatBuffer;
+import java.nio.IntBuffer;
+import java.util.Arrays;
+import java.util.NoSuchElementException;
+import java.util.Optional;
 
 import static java.lang.Math.floorDiv;
 import static org.apache.sis.internal.util.Numerics.ceilDiv;

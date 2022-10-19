@@ -16,41 +16,36 @@
  */
 package org.apache.sis.storage.geotiff;
 
-import java.util.Arrays;
-import java.util.Locale;
-import java.nio.Buffer;
-import java.io.Closeable;
-import java.io.IOException;
-import java.awt.Point;
+import org.apache.sis.image.DataType;
+import org.apache.sis.internal.coverage.j2d.ImageUtilities;
+import org.apache.sis.internal.coverage.j2d.RasterFactory;
+import org.apache.sis.internal.coverage.j2d.TilePlaceholder;
+import org.apache.sis.internal.geotiff.Resources;
+import org.apache.sis.internal.storage.TiledGridCoverage;
+import org.apache.sis.internal.storage.TiledGridResource;
+import org.apache.sis.internal.storage.io.ChannelDataInput;
+import org.apache.sis.internal.storage.io.HyperRectangleReader;
+import org.apache.sis.internal.storage.io.Region;
+import org.apache.sis.math.Vector;
+import org.apache.sis.storage.DataStoreContentException;
+import org.apache.sis.storage.DataStoreException;
+import org.apache.sis.util.Localized;
+import org.apache.sis.util.resources.Errors;
+import org.opengis.util.GenericName;
+
+import java.awt.*;
 import java.awt.image.BandedSampleModel;
 import java.awt.image.DataBuffer;
 import java.awt.image.Raster;
+import java.io.Closeable;
+import java.io.IOException;
+import java.nio.Buffer;
+import java.util.Arrays;
+import java.util.Locale;
 
-import org.apache.sis.storage.geotiff.ImageFileDirectory;
-import org.apache.sis.storage.geotiff.ReversedBitsChannel;
-import org.opengis.util.GenericName;
-import org.apache.sis.image.DataType;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.DataStoreContentException;
-import org.apache.sis.internal.storage.io.Region;
-import org.apache.sis.internal.storage.io.HyperRectangleReader;
-import org.apache.sis.internal.storage.TiledGridCoverage;
-import org.apache.sis.internal.storage.TiledGridResource;
-import org.apache.sis.internal.coverage.j2d.TilePlaceholder;
-import org.apache.sis.internal.coverage.j2d.ImageUtilities;
-import org.apache.sis.internal.coverage.j2d.RasterFactory;
-import org.apache.sis.internal.storage.io.ChannelDataInput;
-import org.apache.sis.internal.geotiff.Resources;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.Localized;
-import org.apache.sis.math.Vector;
-
-import static java.lang.Math.addExact;
-import static java.lang.Math.subtractExact;
-import static java.lang.Math.multiplyExact;
+import static java.lang.Math.*;
 import static org.apache.sis.internal.jdk9.JDK9.multiplyFull;
 import static org.apache.sis.internal.util.Numerics.ceilDiv;
-import static java.lang.Math.toIntExact;
 
 
 /**

@@ -16,12 +16,10 @@
  */
 package org.apache.sis.feature;
 
-import org.opengis.util.InternationalString;
 import org.apache.sis.util.LocalizedException;
-
-// Branch-dependent imports
 import org.opengis.feature.Feature;
 import org.opengis.feature.InvalidPropertyValueException;
+import org.opengis.util.InternationalString;
 
 
 /**

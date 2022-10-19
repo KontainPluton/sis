@@ -16,22 +16,21 @@
  */
 package org.apache.sis.filter;
 
-import java.util.List;
-import java.util.Arrays;
-import java.util.Collection;
-import javax.measure.Quantity;
-import javax.measure.quantity.Length;
-import org.opengis.geometry.Geometry;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.GeometryWrapper;
 import org.apache.sis.internal.feature.SpatialOperationContext;
 import org.apache.sis.util.ArgumentChecks;
-
-// Branch-dependent imports
-import org.opengis.filter.Literal;
-import org.opengis.filter.Expression;
 import org.opengis.filter.DistanceOperator;
 import org.opengis.filter.DistanceOperatorName;
+import org.opengis.filter.Expression;
+import org.opengis.filter.Literal;
+import org.opengis.geometry.Geometry;
+
+import javax.measure.Quantity;
+import javax.measure.quantity.Length;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
 
 
 /**

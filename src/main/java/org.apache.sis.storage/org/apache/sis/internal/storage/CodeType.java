@@ -16,12 +16,13 @@
  */
 package org.apache.sis.internal.storage;
 
+import org.apache.sis.internal.util.DefinitionURI;
+import org.apache.sis.util.CharSequences;
+
 import java.io.File;
-import java.util.Map;
 import java.util.HashMap;
 import java.util.Locale;
-import org.apache.sis.util.CharSequences;
-import org.apache.sis.internal.util.DefinitionURI;
+import java.util.Map;
 
 
 /**

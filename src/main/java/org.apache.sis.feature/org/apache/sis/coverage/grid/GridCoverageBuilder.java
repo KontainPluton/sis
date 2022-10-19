@@ -16,23 +16,6 @@
  */
 package org.apache.sis.coverage.grid;
 
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Hashtable;
-import java.awt.Point;
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.image.BufferedImage;
-import java.awt.image.ColorModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.Raster;
-import java.awt.image.RenderedImage;
-import java.awt.image.SampleModel;
-import java.awt.image.WritableRaster;
-import org.opengis.geometry.Envelope;
-import org.opengis.referencing.operation.TransformException;
 import org.apache.sis.coverage.SampleDimension;
 import org.apache.sis.internal.coverage.j2d.Colorizer;
 import org.apache.sis.internal.coverage.j2d.ImageUtilities;
@@ -44,6 +27,13 @@ import org.apache.sis.referencing.operation.matrix.MatrixSIS;
 import org.apache.sis.referencing.operation.transform.MathTransforms;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.resources.Errors;
+import org.opengis.geometry.Envelope;
+import org.opengis.referencing.operation.TransformException;
+
+import java.awt.*;
+import java.awt.image.*;
+import java.util.List;
+import java.util.*;
 
 
 /**

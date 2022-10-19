@@ -16,22 +16,19 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Map;
-import java.util.HashMap;
-
-import org.apache.sis.feature.AbstractIdentifiedType;
-import org.opengis.util.ScopedName;
-import org.opengis.util.GenericName;
 import org.apache.sis.internal.util.AbstractMap;
 import org.apache.sis.internal.util.CollectionsExt;
 import org.apache.sis.util.collection.Containers;
 import org.apache.sis.util.collection.WeakValueHashMap;
 import org.apache.sis.util.resources.Errors;
+import org.opengis.feature.AttributeType;
+import org.opengis.util.GenericName;
+import org.opengis.util.ScopedName;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static org.apache.sis.util.ArgumentChecks.ensureNonNullElement;
-
-// Branch-dependent imports
-import org.opengis.feature.AttributeType;
 
 
 /**

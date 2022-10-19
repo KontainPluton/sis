@@ -16,15 +16,10 @@
  */
 package org.apache.sis.internal.shapefile;
 
-import java.io.*;
-import java.nio.ByteOrder;
-import java.nio.MappedByteBuffer;
-import java.nio.channels.FileChannel;
-import java.text.MessageFormat;
-import java.util.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
+import com.esri.core.geometry.Geometry;
+import com.esri.core.geometry.Point;
+import com.esri.core.geometry.Polygon;
+import com.esri.core.geometry.Polyline;
 import org.apache.sis.feature.DefaultAttributeType;
 import org.apache.sis.feature.DefaultFeatureType;
 import org.apache.sis.internal.shapefile.jdbc.*;
@@ -32,7 +27,17 @@ import org.apache.sis.storage.shapefile.InvalidShapefileFormatException;
 import org.apache.sis.storage.shapefile.ShapeTypeEnum;
 import org.opengis.feature.Feature;
 
-import com.esri.core.geometry.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.ByteOrder;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
+import java.text.MessageFormat;
+import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Reader of a Shapefile Binary content by the way of a {@link MappedByteBuffer}

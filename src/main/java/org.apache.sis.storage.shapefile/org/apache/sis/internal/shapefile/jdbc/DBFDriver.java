@@ -16,6 +16,9 @@
  */
 package org.apache.sis.internal.shapefile.jdbc;
 
+import org.apache.sis.internal.shapefile.jdbc.connection.DBFConnection;
+import org.apache.sis.internal.system.Modules;
+
 import java.io.File;
 import java.sql.Connection;
 import java.sql.Driver;
@@ -23,9 +26,6 @@ import java.sql.DriverPropertyInfo;
 import java.util.Objects;
 import java.util.Properties;
 import java.util.logging.Logger;
-
-import org.apache.sis.internal.shapefile.jdbc.connection.DBFConnection;
-import org.apache.sis.internal.system.Modules;
 
 
 /**

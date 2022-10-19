@@ -35,8 +35,8 @@ import org.opengis.util.InternationalString;
 import org.apache.sis.metadata.iso.citation.DefaultCitation;
 import org.apache.sis.metadata.iso.extent.AbstractGeographicExtent;
 import org.apache.sis.metadata.iso.extent.DefaultGeographicDescription;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -16,10 +16,9 @@
  */
 package org.apache.sis.coverage.grid;
 
-import java.awt.image.RenderedImage;
-
-// Branch-dependent imports
 import org.opengis.coverage.CannotEvaluateException;
+
+import java.awt.image.RenderedImage;
 
 
 /**

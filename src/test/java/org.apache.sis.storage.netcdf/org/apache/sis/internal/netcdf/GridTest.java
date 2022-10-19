@@ -20,13 +20,13 @@ import java.io.IOException;
 import org.opengis.referencing.crs.ProjectedCRS;
 import org.opengis.parameter.ParameterValueGroup;
 import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.DependsOnMethod;
 import org.opengis.test.dataset.TestData;
 import org.junit.Test;
 
 import static org.opengis.test.Assert.*;
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
 
 
 /**

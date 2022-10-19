@@ -34,9 +34,9 @@ import org.apache.sis.metadata.iso.citation.DefaultIndividual;
 import org.apache.sis.metadata.iso.citation.DefaultResponsibility;
 import org.apache.sis.metadata.iso.acquisition.DefaultInstrument;
 import org.apache.sis.metadata.iso.acquisition.DefaultPlatform;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static java.util.Collections.singleton;

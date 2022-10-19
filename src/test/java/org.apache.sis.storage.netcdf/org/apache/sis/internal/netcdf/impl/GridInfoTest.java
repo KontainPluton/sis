@@ -22,7 +22,7 @@ import org.apache.sis.internal.netcdf.Grid;
 import org.apache.sis.internal.netcdf.GridTest;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.util.ArraysExt;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOn;
 
 // Branch-specific imports
 import org.opengis.test.dataset.TestData;

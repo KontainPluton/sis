@@ -41,10 +41,10 @@ import org.apache.sis.geometry.GeneralEnvelope;
 import org.apache.sis.internal.referencing.provider.TransverseMercator;
 import org.apache.sis.measure.Quantities;
 import org.apache.sis.referencing.CommonCRS;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.TestUtilities;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.TestUtilities;
 import org.junit.Test;
 
 import static org.apache.sis.internal.metadata.ReferencingServices.NAUTICAL_MILE;

@@ -20,7 +20,7 @@ import java.awt.image.Raster;
 import java.io.IOException;
 import java.io.ByteArrayOutputStream;
 import org.apache.sis.internal.storage.io.ChannelDataOutput;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

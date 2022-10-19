@@ -16,26 +16,21 @@
  */
 package org.apache.sis.feature.builder;
 
-import java.util.Map;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Objects;
-import org.opengis.util.ScopedName;
-import org.opengis.util.GenericName;
-import org.opengis.util.InternationalString;
-import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.feature.AbstractIdentifiedType;
-import org.apache.sis.util.resources.Vocabulary;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.NullArgumentException;
+import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.util.Classes;
 import org.apache.sis.util.Deprecable;
 import org.apache.sis.util.Localized;
-import org.apache.sis.util.Classes;
-
-// Branch-dependent imports
+import org.apache.sis.util.NullArgumentException;
+import org.apache.sis.util.resources.Errors;
+import org.apache.sis.util.resources.Vocabulary;
 import org.opengis.feature.IdentifiedType;
 import org.opengis.feature.PropertyNotFoundException;
+import org.opengis.util.GenericName;
+import org.opengis.util.InternationalString;
+import org.opengis.util.ScopedName;
+
+import java.util.*;
 
 
 /**

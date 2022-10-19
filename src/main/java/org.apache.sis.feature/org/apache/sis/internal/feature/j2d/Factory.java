@@ -16,16 +16,6 @@
  */
 package org.apache.sis.internal.feature.j2d;
 
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.Collection;
-import java.awt.Shape;
-import java.awt.geom.Line2D;
-import java.awt.geom.Path2D;
-import java.awt.geom.Point2D;
-import java.nio.ByteBuffer;
-import java.io.ObjectStreamException;
-import org.apache.sis.setup.GeometryLibrary;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.GeometryType;
 import org.apache.sis.internal.feature.GeometryWrapper;
@@ -33,7 +23,18 @@ import org.apache.sis.internal.referencing.j2d.AbstractShape;
 import org.apache.sis.internal.referencing.j2d.ShapeUtilities;
 import org.apache.sis.internal.util.CollectionsExt;
 import org.apache.sis.math.Vector;
+import org.apache.sis.setup.GeometryLibrary;
 import org.apache.sis.util.UnsupportedImplementationException;
+
+import java.awt.*;
+import java.awt.geom.Line2D;
+import java.awt.geom.Path2D;
+import java.awt.geom.Point2D;
+import java.io.ObjectStreamException;
+import java.nio.ByteBuffer;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
 
 
 /**

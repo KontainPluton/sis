@@ -16,14 +16,11 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Objects;
-
-// Branch-dependent imports
-import org.apache.sis.feature.DefaultAssociationRole;
-import org.apache.sis.feature.MultiValuedAssociation;
 import org.opengis.feature.Feature;
 import org.opengis.feature.FeatureAssociationRole;
 import org.opengis.feature.InvalidPropertyValueException;
+
+import java.util.Objects;
 
 
 /**

@@ -16,25 +16,20 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Map;
-
-import org.apache.sis.feature.AbstractIdentifiedType;
-import org.apache.sis.feature.DefaultAttributeType;
-import org.apache.sis.feature.StringJoinOperation;
-import org.opengis.util.GenericName;
-import org.opengis.util.FactoryException;
-import org.opengis.util.InternationalString;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.Static;
 import org.apache.sis.util.UnconvertibleObjectException;
 import org.apache.sis.util.collection.WeakHashSet;
 import org.apache.sis.util.resources.Errors;
-
-// Branch-dependent imports
+import org.opengis.feature.FeatureAssociationRole;
 import org.opengis.feature.Operation;
 import org.opengis.feature.PropertyType;
-import org.opengis.feature.FeatureAssociationRole;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.util.FactoryException;
+import org.opengis.util.GenericName;
+import org.opengis.util.InternationalString;
+
+import java.util.Map;
 
 
 /**

@@ -17,7 +17,7 @@
 package org.apache.sis.io;
 
 import java.io.IOException;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOn;
 import org.junit.Before;
 import org.junit.Test;
 

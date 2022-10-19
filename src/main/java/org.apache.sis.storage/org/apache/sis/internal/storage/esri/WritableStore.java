@@ -16,33 +16,28 @@
  */
 package org.apache.sis.internal.storage.esri;
 
-import java.util.Map;
-import java.util.LinkedHashMap;
-import java.io.IOException;
-import java.awt.image.DataBuffer;
-import java.awt.image.RenderedImage;
-import java.awt.geom.AffineTransform;
-import org.opengis.referencing.datum.PixelInCell;
-import org.opengis.referencing.operation.Matrix;
-import org.opengis.referencing.operation.MathTransform;
-import org.opengis.referencing.operation.TransformException;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.DataStoreReferencingException;
-import org.apache.sis.storage.WritableGridCoverageResource;
+import org.apache.sis.image.PixelIterator;
 import org.apache.sis.internal.storage.WritableResourceSupport;
 import org.apache.sis.internal.storage.io.ChannelDataOutput;
 import org.apache.sis.referencing.operation.matrix.Matrices;
 import org.apache.sis.referencing.operation.transform.MathTransforms;
-import org.apache.sis.storage.IncompatibleResourceException;
-import org.apache.sis.image.PixelIterator;
+import org.apache.sis.storage.*;
 import org.apache.sis.util.CharSequences;
 import org.apache.sis.util.StringBuilders;
-
-// Branch-dependent imports
 import org.opengis.coverage.grid.SequenceType;
+import org.opengis.referencing.datum.PixelInCell;
+import org.opengis.referencing.operation.MathTransform;
+import org.opengis.referencing.operation.Matrix;
+import org.opengis.referencing.operation.TransformException;
+
+import java.awt.geom.AffineTransform;
+import java.awt.image.DataBuffer;
+import java.awt.image.RenderedImage;
+import java.io.IOException;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 
 /**

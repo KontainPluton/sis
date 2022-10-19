@@ -16,11 +16,11 @@
  */
 package org.apache.sis.internal.shapefile.jdbc.statement;
 
+import org.apache.sis.internal.shapefile.jdbc.AbstractJDBC;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-
-import org.apache.sis.internal.shapefile.jdbc.AbstractJDBC;
 
 
 /**

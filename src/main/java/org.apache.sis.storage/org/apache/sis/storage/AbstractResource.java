@@ -16,27 +16,26 @@
  */
 package org.apache.sis.storage;
 
-import java.util.Locale;
-import java.util.Optional;
-
-import org.apache.sis.storage.DataStoreException;
-import org.opengis.util.GenericName;
-import org.opengis.metadata.Metadata;
-import org.opengis.geometry.Envelope;
-import org.opengis.referencing.operation.TransformException;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
-import org.apache.sis.metadata.iso.DefaultMetadata;
-import org.apache.sis.referencing.IdentifiedObjects;
 import org.apache.sis.geometry.Envelopes;
+import org.apache.sis.internal.storage.MetadataBuilder;
+import org.apache.sis.internal.storage.Resources;
+import org.apache.sis.metadata.iso.DefaultMetadata;
 import org.apache.sis.referencing.CRS;
+import org.apache.sis.referencing.IdentifiedObjects;
 import org.apache.sis.storage.event.StoreEvent;
 import org.apache.sis.storage.event.StoreListener;
 import org.apache.sis.storage.event.StoreListeners;
-import org.apache.sis.internal.storage.Resources;
-import org.apache.sis.internal.storage.MetadataBuilder;
-import org.apache.sis.util.resources.Errors;
 import org.apache.sis.util.logging.Logging;
+import org.apache.sis.util.resources.Errors;
 import org.apache.sis.xml.NilReason;
+import org.opengis.geometry.Envelope;
+import org.opengis.metadata.Metadata;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.GenericName;
+
+import java.util.Locale;
+import java.util.Optional;
 
 
 /**

@@ -16,14 +16,15 @@
  */
 package org.apache.sis.image;
 
-import java.util.Set;
+import org.apache.sis.internal.coverage.j2d.ColorModelFactory;
+import org.apache.sis.internal.jdk9.JDK9;
+import org.opengis.referencing.operation.MathTransform;
+import org.opengis.referencing.operation.TransformException;
+
 import java.awt.image.DataBuffer;
 import java.awt.image.Raster;
 import java.awt.image.WritableRaster;
-import org.opengis.referencing.operation.MathTransform;
-import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.internal.coverage.j2d.ColorModelFactory;
-import org.apache.sis.internal.jdk9.JDK9;
+import java.util.Set;
 
 
 /**

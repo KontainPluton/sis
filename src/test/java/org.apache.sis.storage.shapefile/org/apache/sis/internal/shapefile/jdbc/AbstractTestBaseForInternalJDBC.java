@@ -28,7 +28,7 @@ import java.sql.SQLException;
 import java.util.logging.Logger;
 
 import org.apache.sis.storage.shapefile.ShapeFileTest;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Before;
 
 /**

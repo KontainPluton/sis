@@ -16,13 +16,14 @@
  */
 package org.apache.sis.internal.storage;
 
+import org.apache.sis.util.resources.IndexedResourceBundle;
+import org.apache.sis.util.resources.KeyConstants;
+import org.apache.sis.util.resources.ResourceInternationalString;
+import org.opengis.util.InternationalString;
+
 import java.net.URL;
 import java.util.Locale;
 import java.util.MissingResourceException;
-import org.opengis.util.InternationalString;
-import org.apache.sis.util.resources.KeyConstants;
-import org.apache.sis.util.resources.IndexedResourceBundle;
-import org.apache.sis.util.resources.ResourceInternationalString;
 
 
 /**

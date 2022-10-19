@@ -25,8 +25,8 @@ import org.apache.sis.feature.builder.FeatureTypeBuilder;
 import org.apache.sis.filter.DefaultFilterFactory;
 import org.apache.sis.filter.Optimization;
 import org.apache.sis.referencing.crs.HardCodedCRS;
-import org.apache.sis.test.sql.TestDatabase;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testmetadata.sql.TestDatabase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

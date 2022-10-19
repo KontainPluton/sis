@@ -16,61 +16,36 @@
  */
 package org.apache.sis.storage;
 
-import java.util.Map;
-import java.util.Iterator;
-import java.util.Collections;
-import java.util.IdentityHashMap;
-import java.io.Reader;
-import java.io.DataInput;
-import java.io.DataOutput;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.IOException;
-import java.io.LineNumberReader;
-import java.io.InputStreamReader;
-import java.io.BufferedInputStream;
-import java.io.Serializable;
-import java.nio.ByteBuffer;
-import java.nio.channels.Channel;
-import java.nio.channels.ReadableByteChannel;
-import java.nio.channels.WritableByteChannel;
-import java.nio.channels.SeekableByteChannel;
-import java.nio.file.NoSuchFileException;
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.stream.ImageOutputStream;
-import javax.imageio.ImageIO;
-import java.sql.Connection;
-import java.sql.SQLException;
-import javax.sql.DataSource;
-
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.DataStoreProvider;
-import org.apache.sis.storage.ForwardOnlyStorageException;
-import org.apache.sis.storage.UnsupportedStorageException;
-import org.apache.sis.util.Debug;
-import org.apache.sis.util.Classes;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.ObjectConverters;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.logging.Logging;
-import org.apache.sis.util.collection.TreeTable;
-import org.apache.sis.util.collection.TableColumn;
-import org.apache.sis.util.collection.DefaultTreeTable;
-import org.apache.sis.util.UnconvertibleObjectException;
 import org.apache.sis.internal.storage.Resources;
 import org.apache.sis.internal.storage.StoreUtilities;
-import org.apache.sis.internal.storage.io.IOUtilities;
-import org.apache.sis.internal.storage.io.ChannelFactory;
-import org.apache.sis.internal.storage.io.ChannelDataInput;
-import org.apache.sis.internal.storage.io.ChannelDataOutput;
-import org.apache.sis.internal.storage.io.ChannelImageInputStream;
-import org.apache.sis.internal.storage.io.ChannelImageOutputStream;
-import org.apache.sis.internal.storage.io.InputStreamAdapter;
-import org.apache.sis.internal.storage.io.RewindableLineReader;
-import org.apache.sis.internal.storage.io.InternalOptionKey;
+import org.apache.sis.internal.storage.io.*;
 import org.apache.sis.internal.util.Strings;
 import org.apache.sis.io.InvalidSeekException;
 import org.apache.sis.setup.OptionKey;
+import org.apache.sis.util.*;
+import org.apache.sis.util.collection.DefaultTreeTable;
+import org.apache.sis.util.collection.TableColumn;
+import org.apache.sis.util.collection.TreeTable;
+import org.apache.sis.util.logging.Logging;
+import org.apache.sis.util.resources.Errors;
+
+import javax.imageio.ImageIO;
+import javax.imageio.stream.ImageInputStream;
+import javax.imageio.stream.ImageOutputStream;
+import javax.sql.DataSource;
+import java.io.*;
+import java.nio.ByteBuffer;
+import java.nio.channels.Channel;
+import java.nio.channels.ReadableByteChannel;
+import java.nio.channels.SeekableByteChannel;
+import java.nio.channels.WritableByteChannel;
+import java.nio.file.NoSuchFileException;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.Collections;
+import java.util.IdentityHashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 
 /**

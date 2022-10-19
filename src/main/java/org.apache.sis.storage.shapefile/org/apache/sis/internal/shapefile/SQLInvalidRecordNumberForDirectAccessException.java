@@ -30,7 +30,7 @@ import java.sql.SQLNonTransientException;
 public class SQLInvalidRecordNumberForDirectAccessException extends SQLNonTransientException {
     /** Serial UID. */
     private static final long serialVersionUID = 6828362742568015813L;
-    
+
     /** Wrong record number. */
     private int wrongRecordNumber;
 
@@ -54,7 +54,7 @@ public class SQLInvalidRecordNumberForDirectAccessException extends SQLNonTransi
         super(message, cause);
         this.wrongRecordNumber = number;
     }
-    
+
     /**
      * Returns the wrong record number value.
      * @return Record number.

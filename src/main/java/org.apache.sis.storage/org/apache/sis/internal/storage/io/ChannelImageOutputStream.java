@@ -16,14 +16,15 @@
  */
 package org.apache.sis.internal.storage.io;
 
+import org.apache.sis.internal.storage.Resources;
+
+import javax.imageio.stream.ImageOutputStream;
 import java.io.Closeable;
 import java.io.DataOutput;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.channels.WritableByteChannel;
-import javax.imageio.stream.ImageOutputStream;
-import org.apache.sis.internal.storage.Resources;
 
 
 /**

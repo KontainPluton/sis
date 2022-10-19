@@ -16,16 +16,12 @@
  */
 package org.apache.sis.storage;
 
-import java.util.Optional;
-
-import org.apache.sis.storage.Aggregate;
-import org.apache.sis.storage.DataStore;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.FeatureSet;
-import org.opengis.util.GenericName;
-import org.opengis.metadata.Metadata;
 import org.apache.sis.storage.event.StoreEvent;
 import org.apache.sis.storage.event.StoreListener;
+import org.opengis.metadata.Metadata;
+import org.opengis.util.GenericName;
+
+import java.util.Optional;
 
 
 /**

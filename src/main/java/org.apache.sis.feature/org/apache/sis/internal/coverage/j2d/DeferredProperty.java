@@ -16,13 +16,14 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.util.Map;
-import java.util.Collections;
-import java.util.function.Function;
-import java.awt.image.RenderedImage;
-import org.apache.sis.image.PlanarImage;
 import org.apache.sis.coverage.grid.GridExtent;
 import org.apache.sis.coverage.grid.GridGeometry;
+import org.apache.sis.image.PlanarImage;
+
+import java.awt.image.RenderedImage;
+import java.util.Collections;
+import java.util.Map;
+import java.util.function.Function;
 
 
 /**

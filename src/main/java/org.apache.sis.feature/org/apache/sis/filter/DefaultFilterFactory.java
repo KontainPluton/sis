@@ -16,29 +16,28 @@
  */
 package org.apache.sis.filter;
 
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Collection;
-import java.util.ServiceLoader;
-import java.time.Instant;
-import javax.measure.Quantity;
-import javax.measure.quantity.Length;
-import org.opengis.geometry.Envelope;
-import org.opengis.geometry.Geometry;
-import org.apache.sis.setup.GeometryLibrary;
+import org.apache.sis.geometry.WraparoundMethod;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.Resources;
-import org.apache.sis.internal.filter.sqlmm.Registry;
 import org.apache.sis.internal.filter.FunctionRegister;
-import org.apache.sis.geometry.WraparoundMethod;
-import org.apache.sis.util.iso.AbstractFactory;
+import org.apache.sis.internal.filter.sqlmm.Registry;
+import org.apache.sis.setup.GeometryLibrary;
 import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.iso.AbstractFactory;
 import org.apache.sis.util.resources.Errors;
-
-// Branch-dependent imports
-import org.opengis.filter.*;
 import org.opengis.feature.Feature;
+import org.opengis.filter.*;
 import org.opengis.filter.capability.FilterCapabilities;
+import org.opengis.geometry.Envelope;
+import org.opengis.geometry.Geometry;
+
+import javax.measure.Quantity;
+import javax.measure.quantity.Length;
+import java.time.Instant;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.ServiceLoader;
 
 
 /**

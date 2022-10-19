@@ -16,9 +16,9 @@
  */
 package org.apache.sis.internal.shapefile.jdbc.metadata;
 
-import java.sql.*;
-
 import org.apache.sis.internal.shapefile.jdbc.AbstractJDBC;
+
+import java.sql.*;
 
 /**
  * Unimplemented methods of DatabaseMetaData.

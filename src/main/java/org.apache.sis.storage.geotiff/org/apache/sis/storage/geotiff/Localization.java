@@ -16,21 +16,16 @@
  */
 package org.apache.sis.storage.geotiff;
 
-import java.util.Arrays;
-import java.util.Set;
-import java.util.Map;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-
-import org.apache.sis.storage.geotiff.ImageFileDirectory;
+import org.apache.sis.math.Vector;
+import org.apache.sis.referencing.operation.builder.LocalizationGridBuilder;
+import org.apache.sis.referencing.operation.transform.LinearTransform;
+import org.apache.sis.referencing.operation.transform.MathTransforms;
 import org.opengis.geometry.Envelope;
-import org.opengis.util.FactoryException;
 import org.opengis.referencing.operation.MathTransform;
 import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.referencing.operation.transform.MathTransforms;
-import org.apache.sis.referencing.operation.transform.LinearTransform;
-import org.apache.sis.referencing.operation.builder.LocalizationGridBuilder;
-import org.apache.sis.math.Vector;
+import org.opengis.util.FactoryException;
+
+import java.util.*;
 
 
 /**

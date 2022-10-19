@@ -16,18 +16,19 @@
  */
 package org.apache.sis.image;
 
-import java.awt.Shape;
+import org.apache.sis.internal.coverage.j2d.ImageUtilities;
+import org.apache.sis.math.Statistics;
+import org.apache.sis.util.ArraysExt;
+import org.apache.sis.util.resources.Vocabulary;
+
+import java.awt.*;
+import java.awt.image.ImagingOpException;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
-import java.awt.image.ImagingOpException;
 import java.util.Arrays;
 import java.util.function.DoubleConsumer;
 import java.util.function.DoubleUnaryOperator;
 import java.util.stream.Collector;
-import org.apache.sis.math.Statistics;
-import org.apache.sis.util.ArraysExt;
-import org.apache.sis.util.resources.Vocabulary;
-import org.apache.sis.internal.coverage.j2d.ImageUtilities;
 
 
 /**

@@ -16,27 +16,24 @@
  */
 package org.apache.sis.internal.storage.wkt;
 
-import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.Locale;
-import java.util.TimeZone;
-import java.io.Reader;
-import java.io.IOException;
-import java.text.ParsePosition;
-import java.text.ParseException;
-import org.opengis.metadata.Metadata;
-import org.opengis.referencing.ReferenceSystem;
-import org.apache.sis.internal.storage.Resources;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.DataStoreContentException;
 import org.apache.sis.internal.storage.MetadataBuilder;
+import org.apache.sis.internal.storage.Resources;
 import org.apache.sis.internal.storage.URIDataStore;
 import org.apache.sis.referencing.IdentifiedObjects;
 import org.apache.sis.setup.GeometryLibrary;
 import org.apache.sis.setup.OptionKey;
+import org.apache.sis.storage.DataStoreContentException;
+import org.apache.sis.storage.DataStoreException;
+import org.apache.sis.storage.StorageConnector;
 import org.apache.sis.util.CharSequences;
+import org.opengis.metadata.Metadata;
+import org.opengis.referencing.ReferenceSystem;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.text.ParseException;
+import java.text.ParsePosition;
+import java.util.*;
 
 
 /**

@@ -16,13 +16,14 @@
  */
 package org.apache.sis.storage;
 
-import java.lang.ref.SoftReference;
-import java.awt.image.RenderedImage;
-import java.awt.image.ImagingOpException;
-import org.opengis.coverage.CannotEvaluateException;
+import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.GridExtent;
 import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.coverage.grid.GridCoverage;
+import org.opengis.coverage.CannotEvaluateException;
+
+import java.awt.image.ImagingOpException;
+import java.awt.image.RenderedImage;
+import java.lang.ref.SoftReference;
 
 
 /**

@@ -16,44 +16,21 @@
  */
 package org.apache.sis.feature;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.LinkedHashMap;
-import java.util.IdentityHashMap;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.Objects;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-
-import org.apache.sis.feature.AbstractIdentifiedType;
-import org.apache.sis.feature.DefaultAssociationRole;
-import org.apache.sis.feature.DefaultAttributeType;
-import org.opengis.util.NameFactory;
-import org.opengis.util.ScopedName;
-import org.opengis.util.GenericName;
-import org.opengis.util.InternationalString;
-import org.opengis.parameter.ParameterDescriptorGroup;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.collection.Containers;
+import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.internal.util.CollectionsExt;
 import org.apache.sis.internal.util.UnmodifiableArrayList;
-import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.collection.Containers;
+import org.opengis.feature.*;
+import org.opengis.parameter.ParameterDescriptorGroup;
+import org.opengis.util.GenericName;
+import org.opengis.util.InternationalString;
+import org.opengis.util.NameFactory;
+import org.opengis.util.ScopedName;
 
-// Branch-dependent imports
-import org.opengis.feature.IdentifiedType;
-import org.opengis.feature.PropertyType;
-import org.opengis.feature.AttributeType;
-import org.opengis.feature.Feature;
-import org.opengis.feature.FeatureType;
-import org.opengis.feature.FeatureAssociationRole;
-import org.opengis.feature.Operation;
-import org.opengis.feature.FeatureInstantiationException;
-import org.opengis.feature.PropertyNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.util.*;
 
 
 /**

@@ -16,19 +16,13 @@
  */
 package org.apache.sis.internal.storage.io;
 
+import org.apache.sis.util.Classes;
+import org.apache.sis.util.resources.Errors;
+
 import java.io.EOFException;
 import java.io.IOException;
-import java.nio.Buffer;
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.DoubleBuffer;
-import java.nio.FloatBuffer;
-import java.nio.IntBuffer;
-import java.nio.LongBuffer;
-import java.nio.ShortBuffer;
+import java.nio.*;
 import java.nio.channels.ReadableByteChannel;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.Classes;
 
 
 /**

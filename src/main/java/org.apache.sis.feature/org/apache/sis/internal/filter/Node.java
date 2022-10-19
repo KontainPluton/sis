@@ -16,33 +16,32 @@
  */
 package org.apache.sis.internal.filter;
 
-import java.util.Map;
-import java.util.IdentityHashMap;
-import java.util.Collection;
-import java.io.Serializable;
-import java.util.Collections;
-import java.util.function.Predicate;
-import java.util.logging.Logger;
-import org.opengis.util.CodeList;
-import org.opengis.util.LocalName;
-import org.opengis.util.ScopedName;
 import org.apache.sis.feature.DefaultAttributeType;
-import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.GeometryWrapper;
-import org.apache.sis.util.iso.Names;
+import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.internal.system.Loggers;
 import org.apache.sis.util.collection.DefaultTreeTable;
 import org.apache.sis.util.collection.TableColumn;
 import org.apache.sis.util.collection.TreeTable;
-import org.apache.sis.util.resources.Vocabulary;
+import org.apache.sis.util.iso.Names;
 import org.apache.sis.util.logging.Logging;
-import org.apache.sis.internal.system.Loggers;
-
-// Branch-dependent imports
-import org.opengis.filter.Filter;
-import org.opengis.filter.Expression;
-import org.opengis.filter.InvalidFilterValueException;
+import org.apache.sis.util.resources.Vocabulary;
 import org.opengis.feature.AttributeType;
+import org.opengis.filter.Expression;
+import org.opengis.filter.Filter;
+import org.opengis.filter.InvalidFilterValueException;
+import org.opengis.util.CodeList;
+import org.opengis.util.LocalName;
+import org.opengis.util.ScopedName;
+
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.IdentityHashMap;
+import java.util.Map;
+import java.util.function.Predicate;
+import java.util.logging.Logger;
 
 
 /**

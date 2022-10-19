@@ -22,10 +22,11 @@ import java.util.HashMap;
 import org.apache.sis.metadata.PropertyAccessorTest;
 import org.opengis.metadata.citation.Citation;
 import org.opengis.metadata.acquisition.EnvironmentalRecord;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
+import static org.apache.sis.metadata.KeyNamePolicy.*;
 import static org.junit.Assert.*;
 import static java.util.AbstractMap.SimpleEntry;
 

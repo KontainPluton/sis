@@ -23,10 +23,10 @@ import java.awt.image.BufferedImage;
 import org.opengis.referencing.operation.MathTransform;
 import org.apache.sis.internal.referencing.j2d.AffineTransform2D;
 import org.apache.sis.referencing.operation.transform.MathTransforms;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOn;
 import org.junit.Test;
 
-import static org.apache.sis.test.FeatureAssert.*;
+import static org.apache.sis.testfeature.FeatureAssert.*;
 
 
 /**

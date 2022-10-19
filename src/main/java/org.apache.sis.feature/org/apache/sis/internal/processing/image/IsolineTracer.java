@@ -16,20 +16,14 @@
  */
 package org.apache.sis.internal.processing.image;
 
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.IdentityHashMap;
-import java.util.Collections;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.Shape;
-import org.opengis.referencing.operation.MathTransform;
-import org.opengis.referencing.operation.TransformException;
 import org.apache.sis.internal.feature.j2d.PathBuilder;
 import org.apache.sis.internal.util.Numerics;
 import org.apache.sis.util.ArraysExt;
+import org.opengis.referencing.operation.MathTransform;
+import org.opengis.referencing.operation.TransformException;
+
+import java.awt.*;
+import java.util.*;
 
 
 /**

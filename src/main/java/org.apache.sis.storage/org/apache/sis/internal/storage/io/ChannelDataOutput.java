@@ -16,21 +16,15 @@
  */
 package org.apache.sis.internal.storage.io;
 
-import java.util.Arrays;
+import org.apache.sis.internal.storage.Resources;
+import org.apache.sis.internal.util.Numerics;
+
 import java.io.Flushable;
 import java.io.IOException;
-import java.nio.Buffer;
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.DoubleBuffer;
-import java.nio.FloatBuffer;
-import java.nio.IntBuffer;
-import java.nio.LongBuffer;
-import java.nio.ShortBuffer;
+import java.nio.*;
 import java.nio.channels.SeekableByteChannel;
 import java.nio.channels.WritableByteChannel;
-import org.apache.sis.internal.util.Numerics;
-import org.apache.sis.internal.storage.Resources;
+import java.util.Arrays;
 
 import static org.apache.sis.util.ArgumentChecks.ensureBetween;
 

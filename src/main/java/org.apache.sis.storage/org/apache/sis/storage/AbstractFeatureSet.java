@@ -16,17 +16,14 @@
  */
 package org.apache.sis.storage;
 
+import org.apache.sis.internal.storage.MetadataBuilder;
+import org.apache.sis.storage.event.StoreListeners;
+import org.opengis.feature.FeatureType;
+import org.opengis.metadata.Metadata;
+import org.opengis.util.GenericName;
+
 import java.util.Optional;
 import java.util.OptionalLong;
-
-import org.apache.sis.storage.DataStoreException;
-import org.opengis.util.GenericName;
-import org.opengis.metadata.Metadata;
-import org.apache.sis.storage.event.StoreListeners;
-import org.apache.sis.internal.storage.MetadataBuilder;
-
-// Branch-dependent imports
-import org.opengis.feature.FeatureType;
 
 
 /**

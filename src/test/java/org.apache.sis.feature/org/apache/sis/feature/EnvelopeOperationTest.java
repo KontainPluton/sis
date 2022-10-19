@@ -31,10 +31,10 @@ import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.GeometryWrapper;
 
 // Test dependencies
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.ReferencingAssert.*;
+import static org.apache.sis.testreferencing.ReferencingAssert.*;
 
 // Branch-dependent imports
 import org.opengis.feature.Attribute;

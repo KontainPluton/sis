@@ -16,30 +16,26 @@
  */
 package org.apache.sis.storage;
 
-import java.util.List;
-import java.util.Arrays;
-import java.util.Objects;
-import java.io.Serializable;
-import java.math.RoundingMode;
-
-import org.apache.sis.storage.CoverageSubset;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.GridCoverageResource;
-import org.apache.sis.storage.UnsupportedQueryException;
-import org.opengis.util.GenericName;
-import org.opengis.util.InternationalString;
-import org.opengis.geometry.Envelope;
-import org.opengis.metadata.extent.GeographicBoundingBox;
-import org.apache.sis.measure.Angle;
-import org.apache.sis.measure.Latitude;
-import org.apache.sis.measure.Longitude;
-import org.apache.sis.measure.AngleFormat;
 import org.apache.sis.coverage.SampleDimension;
 import org.apache.sis.coverage.grid.GridGeometry;
 import org.apache.sis.coverage.grid.GridRoundingMode;
+import org.apache.sis.measure.Angle;
+import org.apache.sis.measure.AngleFormat;
+import org.apache.sis.measure.Latitude;
+import org.apache.sis.measure.Longitude;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.resources.Errors;
 import org.apache.sis.util.resources.Vocabulary;
+import org.opengis.geometry.Envelope;
+import org.opengis.metadata.extent.GeographicBoundingBox;
+import org.opengis.util.GenericName;
+import org.opengis.util.InternationalString;
+
+import java.io.Serializable;
+import java.math.RoundingMode;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Objects;
 
 
 /**

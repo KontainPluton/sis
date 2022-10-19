@@ -16,11 +16,12 @@
  */
 package org.apache.sis.storage.tiling;
 
-import java.util.stream.Stream;
 import org.apache.sis.coverage.grid.GridExtent;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.IncompatibleResourceException;
 import org.apache.sis.storage.ReadOnlyStorageException;
+
+import java.util.stream.Stream;
 
 
 /**

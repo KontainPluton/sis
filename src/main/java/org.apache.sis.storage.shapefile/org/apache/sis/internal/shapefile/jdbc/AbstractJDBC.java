@@ -16,11 +16,14 @@
  */
 package org.apache.sis.internal.shapefile.jdbc;
 
-import java.io.File;
-import java.sql.*;
-import java.util.logging.Level;
-
 import org.apache.sis.internal.shapefile.AutoChecker;
+
+import java.io.File;
+import java.sql.SQLException;
+import java.sql.SQLFeatureNotSupportedException;
+import java.sql.SQLWarning;
+import java.sql.Wrapper;
+import java.util.logging.Level;
 
 
 /**

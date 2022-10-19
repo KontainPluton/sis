@@ -16,29 +16,14 @@
  */
 package org.apache.sis.feature;
 
-import java.util.List;
-import java.util.Objects;
-import java.util.Iterator;
-import java.util.Collection;
-import java.util.Collections;
-import java.io.Serializable;
-
-import org.apache.sis.feature.AbstractFeature;
-import org.apache.sis.feature.AssociationView;
-import org.apache.sis.feature.AttributeView;
+import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.util.Classes;
 import org.apache.sis.util.collection.CheckedContainer;
 import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.Classes;
-import org.apache.sis.internal.feature.Resources;
+import org.opengis.feature.*;
 
-// Branch-dependent imports
-import org.opengis.feature.Feature;
-import org.opengis.feature.Property;
-import org.opengis.feature.Operation;
-import org.opengis.feature.PropertyType;
-import org.opengis.feature.AttributeType;
-import org.opengis.feature.FeatureAssociationRole;
-import org.opengis.feature.MultiValuedPropertyException;
+import java.io.Serializable;
+import java.util.*;
 
 
 /**

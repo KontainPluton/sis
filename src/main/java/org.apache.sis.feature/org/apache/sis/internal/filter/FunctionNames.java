@@ -16,8 +16,8 @@
  */
 package org.apache.sis.internal.filter;
 
-import org.apache.sis.util.Static;
 import org.apache.sis.internal.filter.sqlmm.SQLMM;
+import org.apache.sis.util.Static;
 
 
 /**

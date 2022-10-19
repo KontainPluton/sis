@@ -16,9 +16,10 @@
  */
 package org.apache.sis.storage.tiling;
 
-import java.util.Collection;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.Resource;
+
+import java.util.Collection;
 
 
 /**

@@ -61,13 +61,13 @@ import org.apache.sis.metadata.iso.citation.DefaultCitation;
 import org.apache.sis.metadata.iso.citation.HardCodedCitations;
 import org.apache.sis.metadata.iso.content.DefaultCoverageDescription;
 import org.apache.sis.metadata.iso.identification.DefaultDataIdentification;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.MetadataAssert.*;
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
 import static org.apache.sis.metadata.PropertyAccessor.APPEND;
 import static org.apache.sis.metadata.PropertyAccessor.RETURN_NULL;
 import static org.apache.sis.metadata.PropertyAccessor.RETURN_PREVIOUS;

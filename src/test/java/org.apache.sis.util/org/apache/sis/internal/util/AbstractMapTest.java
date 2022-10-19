@@ -25,8 +25,8 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.AbstractMap.SimpleEntry;
 import java.util.NoSuchElementException;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

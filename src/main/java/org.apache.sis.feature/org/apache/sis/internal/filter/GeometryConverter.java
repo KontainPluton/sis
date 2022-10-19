@@ -16,24 +16,23 @@
  */
 package org.apache.sis.internal.filter;
 
-import java.util.List;
-import java.util.Collection;
-import java.util.Collections;
-import org.opengis.util.ScopedName;
-import org.opengis.geometry.Envelope;
-import org.opengis.metadata.extent.GeographicBoundingBox;
-import org.apache.sis.util.Classes;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.internal.feature.Geometries;
-import org.apache.sis.internal.feature.GeometryWrapper;
+import org.apache.sis.filter.Optimization;
 import org.apache.sis.geometry.ImmutableEnvelope;
 import org.apache.sis.geometry.WraparoundMethod;
-import org.apache.sis.filter.Optimization;
-
-// Branch-dependent imports
+import org.apache.sis.internal.feature.Geometries;
+import org.apache.sis.internal.feature.GeometryWrapper;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.Classes;
+import org.apache.sis.util.resources.Errors;
 import org.opengis.filter.Expression;
 import org.opengis.filter.InvalidFilterValueException;
+import org.opengis.geometry.Envelope;
+import org.opengis.metadata.extent.GeographicBoundingBox;
+import org.opengis.util.ScopedName;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 
 /**

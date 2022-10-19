@@ -36,13 +36,13 @@ import static java.util.logging.Logger.getLogger;
 
 // Test dependencies
 import org.apache.sis.referencing.crs.HardCodedCRS;
-import org.apache.sis.test.LoggingWatcher;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.LoggingWatcher;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 import org.junit.Rule;
 import org.junit.After;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 // Branch-dependent imports
 import org.opengis.feature.Feature;

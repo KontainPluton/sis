@@ -16,9 +16,10 @@
  */
 package org.apache.sis.internal.storage.io;
 
-import java.util.function.UnaryOperator;
 import org.apache.sis.setup.OptionKey;
 import org.apache.sis.storage.StorageConnector;
+
+import java.util.function.UnaryOperator;
 
 
 /**

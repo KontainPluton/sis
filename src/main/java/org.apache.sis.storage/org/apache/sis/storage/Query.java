@@ -16,12 +16,8 @@
  */
 package org.apache.sis.storage;
 
-import org.apache.sis.storage.FeatureSet;
-import org.apache.sis.storage.GridCoverageResource;
-import org.opengis.geometry.Envelope;
-
-// Branch-dependent imports
 import org.opengis.filter.QueryExpression;
+import org.opengis.geometry.Envelope;
 
 
 /**

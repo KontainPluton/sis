@@ -16,16 +16,17 @@
  */
 package org.apache.sis.image;
 
-import java.util.Set;
-import java.util.Objects;
-import java.awt.Rectangle;
-import java.awt.image.ColorModel;
-import java.awt.image.SampleModel;
-import java.awt.image.RenderedImage;
+import org.apache.sis.internal.jdk9.JDK9;
 import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.Disposable;
 import org.apache.sis.util.Workaround;
-import org.apache.sis.internal.jdk9.JDK9;
+
+import java.awt.*;
+import java.awt.image.ColorModel;
+import java.awt.image.RenderedImage;
+import java.awt.image.SampleModel;
+import java.util.Objects;
+import java.util.Set;
 
 
 /**

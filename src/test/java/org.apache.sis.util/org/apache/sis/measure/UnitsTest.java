@@ -21,13 +21,13 @@ import javax.measure.Quantity;
 import javax.measure.quantity.*;
 import javax.measure.quantity.Angle;
 import javax.measure.IncommensurableException;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.apache.sis.measure.SexagesimalConverter.*;
 import static org.apache.sis.measure.Units.*;
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

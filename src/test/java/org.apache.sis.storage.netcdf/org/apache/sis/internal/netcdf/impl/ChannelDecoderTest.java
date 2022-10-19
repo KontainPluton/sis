@@ -25,7 +25,7 @@ import org.apache.sis.internal.netcdf.DecoderTest;
 import org.apache.sis.internal.storage.io.ChannelDataInput;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.setup.GeometryLibrary;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOn;
 import org.opengis.test.dataset.TestData;
 
 

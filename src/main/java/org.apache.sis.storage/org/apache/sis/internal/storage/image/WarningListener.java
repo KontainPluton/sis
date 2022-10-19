@@ -16,11 +16,12 @@
  */
 package org.apache.sis.internal.storage.image;
 
+import org.apache.sis.storage.event.StoreListeners;
+
 import javax.imageio.ImageReader;
 import javax.imageio.ImageWriter;
 import javax.imageio.event.IIOReadWarningListener;
 import javax.imageio.event.IIOWriteWarningListener;
-import org.apache.sis.storage.event.StoreListeners;
 
 
 /**

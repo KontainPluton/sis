@@ -16,21 +16,21 @@
  */
 package org.apache.sis.image;
 
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.geom.Point2D;
-import java.awt.geom.AffineTransform;
-import java.awt.image.ImagingOpException;
-import org.opengis.referencing.operation.Matrix;
-import org.opengis.referencing.operation.MathTransform2D;
-import org.opengis.referencing.operation.TransformException;
-import org.apache.sis.referencing.operation.matrix.Matrix2;
-import org.apache.sis.referencing.operation.transform.MathTransforms;
-import org.apache.sis.referencing.operation.transform.AbstractMathTransform2D;
 import org.apache.sis.internal.referencing.j2d.AffineTransform2D;
+import org.apache.sis.io.wkt.Formatter;
+import org.apache.sis.referencing.operation.matrix.Matrix2;
+import org.apache.sis.referencing.operation.transform.AbstractMathTransform2D;
+import org.apache.sis.referencing.operation.transform.MathTransforms;
 import org.apache.sis.util.collection.Cache;
 import org.apache.sis.util.resources.Errors;
-import org.apache.sis.io.wkt.Formatter;
+import org.opengis.referencing.operation.MathTransform2D;
+import org.opengis.referencing.operation.Matrix;
+import org.opengis.referencing.operation.TransformException;
+
+import java.awt.*;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.Point2D;
+import java.awt.image.ImagingOpException;
 
 import static java.lang.Math.abs;
 

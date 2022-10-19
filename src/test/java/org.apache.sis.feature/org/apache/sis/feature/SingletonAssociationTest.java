@@ -17,12 +17,12 @@
 package org.apache.sis.feature;
 
 import org.apache.sis.feature.DefaultAssociationRoleTest;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static java.util.Collections.singletonMap;
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 // Branch-dependent imports
 import org.opengis.feature.Feature;

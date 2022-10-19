@@ -16,30 +16,31 @@
  */
 package org.apache.sis.storage.geotiff;
 
-import java.util.NoSuchElementException;
-import org.opengis.util.FactoryException;
-import org.opengis.util.NoSuchIdentifierException;
+import org.apache.sis.coverage.grid.GridExtent;
+import org.apache.sis.coverage.grid.GridGeometry;
+import org.apache.sis.coverage.grid.GridOrientation;
+import org.apache.sis.geometry.GeneralEnvelope;
+import org.apache.sis.internal.geotiff.Resources;
+import org.apache.sis.internal.storage.MetadataBuilder;
+import org.apache.sis.internal.system.DefaultFactories;
+import org.apache.sis.internal.util.DoubleDouble;
+import org.apache.sis.math.Vector;
+import org.apache.sis.referencing.operation.matrix.Matrices;
+import org.apache.sis.referencing.operation.matrix.MatrixSIS;
 import org.opengis.metadata.spatial.CellGeometry;
-import org.opengis.metadata.spatial.PixelOrientation;
 import org.opengis.metadata.spatial.DimensionNameType;
+import org.opengis.metadata.spatial.PixelOrientation;
 import org.opengis.parameter.ParameterNotFoundException;
-import org.opengis.referencing.datum.PixelInCell;
+import org.opengis.referencing.NoSuchAuthorityCodeException;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.referencing.datum.PixelInCell;
 import org.opengis.referencing.operation.MathTransform;
 import org.opengis.referencing.operation.MathTransformFactory;
 import org.opengis.referencing.operation.TransformException;
-import org.opengis.referencing.NoSuchAuthorityCodeException;
-import org.apache.sis.referencing.operation.matrix.MatrixSIS;
-import org.apache.sis.referencing.operation.matrix.Matrices;
-import org.apache.sis.internal.storage.MetadataBuilder;
-import org.apache.sis.internal.system.DefaultFactories;
-import org.apache.sis.internal.geotiff.Resources;
-import org.apache.sis.internal.util.DoubleDouble;
-import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.coverage.grid.GridExtent;
-import org.apache.sis.coverage.grid.GridOrientation;
-import org.apache.sis.geometry.GeneralEnvelope;
-import org.apache.sis.math.Vector;
+import org.opengis.util.FactoryException;
+import org.opengis.util.NoSuchIdentifierException;
+
+import java.util.NoSuchElementException;
 
 
 /**

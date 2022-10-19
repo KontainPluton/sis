@@ -16,15 +16,16 @@
  */
 package org.apache.sis.internal.storage.xml;
 
-import java.util.Collection;
-import java.util.Collections;
-import javax.xml.bind.annotation.XmlTransient;
 import org.apache.sis.geometry.AbstractEnvelope;
+import org.apache.sis.referencing.CommonCRS;
 import org.opengis.metadata.extent.Extent;
 import org.opengis.metadata.extent.GeographicBoundingBox;
 import org.opengis.metadata.extent.GeographicExtent;
-import org.apache.sis.referencing.CommonCRS;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
+
+import javax.xml.bind.annotation.XmlTransient;
+import java.util.Collection;
+import java.util.Collections;
 
 
 /**

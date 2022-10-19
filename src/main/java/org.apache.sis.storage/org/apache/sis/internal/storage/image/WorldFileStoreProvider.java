@@ -16,20 +16,17 @@
  */
 package org.apache.sis.internal.storage.image;
 
-import java.util.Set;
-import java.util.HashSet;
-import java.io.IOException;
-import javax.imageio.spi.ImageReaderSpi;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.StorageConnector;
 import org.apache.sis.internal.storage.Capability;
-import org.apache.sis.internal.storage.StoreMetadata;
 import org.apache.sis.internal.storage.PRJDataStore;
+import org.apache.sis.internal.storage.StoreMetadata;
 import org.apache.sis.internal.storage.io.IOUtilities;
-import org.apache.sis.storage.GridCoverageResource;
-import org.apache.sis.storage.Aggregate;
-import org.apache.sis.storage.ProbeResult;
+import org.apache.sis.storage.*;
 import org.apache.sis.util.ArraysExt;
+
+import javax.imageio.spi.ImageReaderSpi;
+import java.io.IOException;
+import java.util.HashSet;
+import java.util.Set;
 
 
 /**

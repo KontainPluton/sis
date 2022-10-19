@@ -16,10 +16,11 @@
  */
 package org.apache.sis.storage.event;
 
-import java.util.logging.Level;
-import java.util.logging.LogRecord;
 import org.apache.sis.storage.Resource;
 import org.apache.sis.util.ArgumentChecks;
+
+import java.util.logging.Level;
+import java.util.logging.LogRecord;
 
 
 /**

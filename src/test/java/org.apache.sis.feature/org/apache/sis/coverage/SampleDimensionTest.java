@@ -25,7 +25,7 @@ import org.apache.sis.referencing.operation.transform.TransferFunction;
 import org.apache.sis.math.MathFunctions;
 import org.apache.sis.measure.NumberRange;
 import org.apache.sis.measure.Units;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.opengis.test.Assert.*;

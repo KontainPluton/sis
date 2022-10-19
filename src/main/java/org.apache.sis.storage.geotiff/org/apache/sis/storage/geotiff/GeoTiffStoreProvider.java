@@ -16,21 +16,16 @@
  */
 package org.apache.sis.storage.geotiff;
 
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import org.opengis.parameter.ParameterDescriptorGroup;
-import org.apache.sis.util.Version;
-import org.apache.sis.storage.Aggregate;
-import org.apache.sis.storage.DataStore;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.DataStoreProvider;
-import org.apache.sis.storage.GridCoverageResource;
-import org.apache.sis.storage.ProbeResult;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.internal.storage.StoreMetadata;
 import org.apache.sis.internal.storage.Capability;
+import org.apache.sis.internal.storage.StoreMetadata;
 import org.apache.sis.internal.storage.URIDataStore;
 import org.apache.sis.internal.util.Constants;
+import org.apache.sis.storage.*;
+import org.apache.sis.util.Version;
+import org.opengis.parameter.ParameterDescriptorGroup;
+
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
 
 
 /**

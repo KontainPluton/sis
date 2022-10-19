@@ -16,37 +16,26 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.util.logging.Level;
-import java.util.logging.LogRecord;
-import java.util.stream.Collector;
-import java.util.function.BiConsumer;
-import java.util.function.BinaryOperator;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Future;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.Shape;
-import java.awt.image.Raster;
-import java.awt.image.RenderedImage;
-import java.awt.image.WritableRaster;
-import java.awt.image.WritableRenderedImage;
-import java.awt.image.ImagingOpException;
-import org.apache.sis.util.Classes;
-import org.apache.sis.util.Exceptions;
-import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.image.ErrorHandler;
 import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.internal.system.CommonExecutor;
 import org.apache.sis.internal.util.Strings;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.Classes;
+import org.apache.sis.util.Exceptions;
 
-import static java.lang.Math.addExact;
-import static java.lang.Math.subtractExact;
-import static java.lang.Math.incrementExact;
-import static java.lang.Math.decrementExact;
-import static java.lang.Math.multiplyExact;
-import static java.lang.Math.toIntExact;
-import static java.lang.Math.floorDiv;
+import java.awt.*;
+import java.awt.image.*;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.BiConsumer;
+import java.util.function.BinaryOperator;
+import java.util.logging.Level;
+import java.util.logging.LogRecord;
+import java.util.stream.Collector;
+
+import static java.lang.Math.*;
 
 
 /**

@@ -16,14 +16,12 @@
  */
 package org.apache.sis.feature.builder;
 
-import org.opengis.util.GenericName;
 import org.apache.sis.util.resources.Errors;
-
-// Branch-dependent imports
 import org.opengis.feature.AttributeType;
+import org.opengis.feature.FeatureAssociationRole;
 import org.opengis.feature.FeatureType;
 import org.opengis.feature.PropertyType;
-import org.opengis.feature.FeatureAssociationRole;
+import org.opengis.util.GenericName;
 
 
 /**

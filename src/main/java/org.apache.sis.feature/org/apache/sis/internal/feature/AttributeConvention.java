@@ -16,25 +16,16 @@
  */
 package org.apache.sis.internal.feature;
 
-import java.util.Optional;
+import org.apache.sis.feature.Features;
+import org.apache.sis.util.Static;
+import org.apache.sis.util.iso.Names;
+import org.opengis.feature.*;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.util.GenericName;
 import org.opengis.util.LocalName;
 import org.opengis.util.ScopedName;
-import org.opengis.util.GenericName;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
-import org.apache.sis.util.iso.Names;
-import org.apache.sis.util.Static;
-import org.apache.sis.feature.Features;
 
-// Branch-dependent imports
-import org.opengis.feature.Feature;
-import org.opengis.feature.Attribute;
-import org.opengis.feature.AttributeType;
-import org.opengis.feature.IdentifiedType;
-import org.opengis.feature.Operation;
-import org.opengis.feature.Property;
-import org.opengis.feature.PropertyType;
-import org.opengis.feature.FeatureType;
-import org.opengis.feature.PropertyNotFoundException;
+import java.util.Optional;
 
 
 /**

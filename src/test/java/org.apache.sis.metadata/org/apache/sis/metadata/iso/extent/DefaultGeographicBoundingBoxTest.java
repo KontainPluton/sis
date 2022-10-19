@@ -20,13 +20,13 @@ import java.util.Map;
 import org.opengis.metadata.extent.GeographicBoundingBox;
 import org.apache.sis.measure.Latitude;
 import org.apache.sis.measure.Longitude;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.TestUtilities;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.TestUtilities;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static java.lang.Double.NaN;
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

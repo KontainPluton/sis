@@ -16,6 +16,12 @@
  */
 package org.apache.sis.internal.shapefile.jdbc.resultset;
 
+import org.apache.sis.internal.shapefile.jdbc.SQLConnectionClosedException;
+import org.apache.sis.internal.shapefile.jdbc.connection.DBFConnection;
+import org.apache.sis.internal.shapefile.jdbc.metadata.DBFResultSetMataData;
+import org.apache.sis.internal.shapefile.jdbc.sql.*;
+import org.apache.sis.internal.shapefile.jdbc.statement.DBFStatement;
+
 import java.math.BigDecimal;
 import java.math.MathContext;
 import java.math.RoundingMode;
@@ -28,12 +34,6 @@ import java.util.GregorianCalendar;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.logging.Level;
-
-import org.apache.sis.internal.shapefile.jdbc.SQLConnectionClosedException;
-import org.apache.sis.internal.shapefile.jdbc.connection.DBFConnection;
-import org.apache.sis.internal.shapefile.jdbc.metadata.DBFResultSetMataData;
-import org.apache.sis.internal.shapefile.jdbc.sql.*;
-import org.apache.sis.internal.shapefile.jdbc.statement.DBFStatement;
 
 /**
  * A ResultSet based on a record.

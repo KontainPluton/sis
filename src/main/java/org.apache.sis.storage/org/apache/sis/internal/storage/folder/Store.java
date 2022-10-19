@@ -16,48 +16,35 @@
  */
 package org.apache.sis.internal.storage.folder;
 
-import java.util.Map;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Locale;
-import java.util.TimeZone;
-import java.util.Optional;
-import java.util.logging.Level;
-import java.util.concurrent.ConcurrentHashMap;
-import java.nio.charset.Charset;
-import java.nio.file.Path;
-import java.nio.file.Files;
-import java.nio.file.DirectoryStream;
-import java.nio.file.DirectoryIteratorException;
-import java.io.IOException;
-import java.io.UncheckedIOException;
-import org.opengis.util.GenericName;
-import org.opengis.util.NameFactory;
-import org.opengis.util.NameSpace;
-import org.opengis.metadata.Metadata;
-import org.opengis.metadata.maintenance.ScopeCode;
-import org.opengis.parameter.ParameterValueGroup;
-import org.apache.sis.setup.OptionKey;
-import org.apache.sis.storage.Resource;
-import org.apache.sis.storage.Aggregate;
-import org.apache.sis.storage.DataStore;
-import org.apache.sis.storage.DataStores;
-import org.apache.sis.storage.DataStoreProvider;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.UnsupportedStorageException;
-import org.apache.sis.util.collection.BackingStoreException;
-import org.apache.sis.internal.util.UnmodifiableArrayList;
-import org.apache.sis.internal.system.DefaultFactories;
 import org.apache.sis.internal.storage.MetadataBuilder;
-import org.apache.sis.internal.storage.StoreUtilities;
-import org.apache.sis.internal.storage.StoreResource;
 import org.apache.sis.internal.storage.Resources;
+import org.apache.sis.internal.storage.StoreResource;
+import org.apache.sis.internal.storage.StoreUtilities;
+import org.apache.sis.internal.system.DefaultFactories;
+import org.apache.sis.internal.util.UnmodifiableArrayList;
+import org.apache.sis.setup.OptionKey;
+import org.apache.sis.storage.*;
 import org.apache.sis.storage.event.StoreEvent;
 import org.apache.sis.storage.event.StoreListener;
 import org.apache.sis.storage.event.WarningEvent;
+import org.apache.sis.util.collection.BackingStoreException;
+import org.opengis.metadata.Metadata;
+import org.opengis.metadata.maintenance.ScopeCode;
+import org.opengis.parameter.ParameterValueGroup;
+import org.opengis.util.GenericName;
+import org.opengis.util.NameFactory;
+import org.opengis.util.NameSpace;
+
+import java.io.IOException;
+import java.io.UncheckedIOException;
+import java.nio.charset.Charset;
+import java.nio.file.DirectoryIteratorException;
+import java.nio.file.DirectoryStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.logging.Level;
 
 
 /**

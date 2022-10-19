@@ -16,19 +16,15 @@
  */
 package org.apache.sis.internal.feature.jts;
 
-import java.util.Iterator;
-import java.util.Collection;
-import java.util.Collections;
-import java.awt.geom.PathIterator;
-import java.awt.geom.AffineTransform;
 import org.apache.sis.util.Classes;
 import org.apache.sis.util.resources.Errors;
-import org.locationtech.jts.geom.CoordinateSequence;
-import org.locationtech.jts.geom.GeometryCollection;
-import org.locationtech.jts.geom.Geometry;
-import org.locationtech.jts.geom.LineString;
-import org.locationtech.jts.geom.Polygon;
-import org.locationtech.jts.geom.Point;
+import org.locationtech.jts.geom.*;
+
+import java.awt.geom.AffineTransform;
+import java.awt.geom.PathIterator;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
 
 
 /**

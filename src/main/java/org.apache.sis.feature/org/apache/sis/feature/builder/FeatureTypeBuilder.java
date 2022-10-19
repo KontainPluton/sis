@@ -16,40 +16,26 @@
  */
 package org.apache.sis.feature.builder;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Locale;
-import java.util.Set;
-import java.util.Objects;
-import org.opengis.util.NameSpace;
-import org.opengis.util.GenericName;
-import org.opengis.util.NameFactory;
-import org.opengis.util.FactoryException;
-import org.opengis.metadata.acquisition.GeometryType;
-import org.apache.sis.setup.GeometryLibrary;
 import org.apache.sis.feature.AbstractOperation;
 import org.apache.sis.feature.DefaultFeatureType;
 import org.apache.sis.feature.FeatureOperations;
-import org.apache.sis.internal.system.DefaultFactories;
 import org.apache.sis.internal.feature.AttributeConvention;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.Resources;
-import org.apache.sis.util.CorruptedObjectException;
-import org.apache.sis.util.resources.Errors;
+import org.apache.sis.internal.system.DefaultFactories;
+import org.apache.sis.setup.GeometryLibrary;
 import org.apache.sis.util.ArraysExt;
+import org.apache.sis.util.CorruptedObjectException;
 import org.apache.sis.util.Numbers;
+import org.apache.sis.util.resources.Errors;
+import org.opengis.feature.*;
+import org.opengis.metadata.acquisition.GeometryType;
+import org.opengis.util.FactoryException;
+import org.opengis.util.GenericName;
+import org.opengis.util.NameFactory;
+import org.opengis.util.NameSpace;
 
-// Branch-dependent imports
-import org.opengis.feature.AttributeType;
-import org.opengis.feature.Feature;
-import org.opengis.feature.FeatureType;
-import org.opengis.feature.PropertyType;
-import org.opengis.feature.FeatureAssociationRole;
-import org.opengis.feature.Operation;
+import java.util.*;
 
 
 /**

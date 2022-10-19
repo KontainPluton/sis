@@ -16,12 +16,13 @@
  */
 package org.apache.sis.internal.storage.io;
 
+import org.apache.sis.internal.storage.Resources;
+import org.apache.sis.util.resources.Errors;
+
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.Channel;
 import java.nio.channels.SeekableByteChannel;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.internal.storage.Resources;
 
 import static org.apache.sis.util.ArgumentChecks.ensureBetween;
 

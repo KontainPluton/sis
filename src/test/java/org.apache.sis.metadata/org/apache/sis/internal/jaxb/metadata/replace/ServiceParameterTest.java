@@ -23,10 +23,10 @@ import org.apache.sis.xml.Namespaces;
 import org.apache.sis.metadata.iso.identification.DefaultServiceIdentificationTest;
 import org.opengis.util.MemberName;
 import org.opengis.parameter.ParameterDirection;
-import org.apache.sis.test.xml.TestCase;
+import org.apache.sis.testmetadata.xml.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.MetadataAssert.*;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
 
 
 /**

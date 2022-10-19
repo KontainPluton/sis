@@ -16,32 +16,32 @@
  */
 package org.apache.sis.coverage.grid;
 
-import java.util.Arrays;
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.image.RenderedImage;
-import org.opengis.util.FactoryException;
-import org.opengis.coverage.CannotEvaluateException;
-import org.opengis.referencing.datum.PixelInCell;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
-import org.opengis.referencing.operation.TransformException;
-import org.opengis.referencing.operation.MathTransform;
-import org.opengis.referencing.operation.Matrix;
 import org.apache.sis.geometry.Envelopes;
-import org.apache.sis.image.ImageProcessor;
 import org.apache.sis.geometry.GeneralEnvelope;
-import org.apache.sis.internal.feature.Resources;
-import org.apache.sis.internal.util.DoubleDouble;
+import org.apache.sis.image.ImageProcessor;
 import org.apache.sis.internal.coverage.SampleDimensions;
+import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.internal.referencing.DirectPositionView;
 import org.apache.sis.internal.referencing.ExtendedPrecisionMatrix;
+import org.apache.sis.internal.util.DoubleDouble;
+import org.apache.sis.referencing.operation.matrix.Matrices;
+import org.apache.sis.referencing.operation.matrix.MatrixSIS;
 import org.apache.sis.referencing.operation.transform.LinearTransform;
 import org.apache.sis.referencing.operation.transform.MathTransforms;
 import org.apache.sis.referencing.operation.transform.TransformSeparator;
-import org.apache.sis.referencing.operation.matrix.MatrixSIS;
-import org.apache.sis.referencing.operation.matrix.Matrices;
 import org.apache.sis.util.ComparisonMode;
 import org.apache.sis.util.Utilities;
+import org.opengis.coverage.CannotEvaluateException;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.referencing.datum.PixelInCell;
+import org.opengis.referencing.operation.MathTransform;
+import org.opengis.referencing.operation.Matrix;
+import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.FactoryException;
+
+import java.awt.*;
+import java.awt.image.RenderedImage;
+import java.util.Arrays;
 
 
 /**

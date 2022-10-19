@@ -16,10 +16,11 @@
  */
 package org.apache.sis.internal.feature;
 
-import java.time.Instant;
-import java.util.AbstractList;
 import org.apache.sis.math.Vector;
 import org.apache.sis.util.collection.CheckedContainer;
+
+import java.time.Instant;
+import java.util.AbstractList;
 
 
 /**

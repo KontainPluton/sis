@@ -27,10 +27,10 @@ import java.awt.image.ColorModel;
 import java.awt.image.IndexColorModel;
 import org.apache.sis.internal.coverage.j2d.ColorModelFactory;
 import org.apache.sis.internal.coverage.j2d.ImageUtilities;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.FeatureAssert.*;
+import static org.apache.sis.testfeature.FeatureAssert.*;
 
 
 /**

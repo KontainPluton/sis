@@ -16,9 +16,9 @@
  */
 package org.apache.sis.internal.feature.j2d;
 
-import java.awt.Shape;
-import java.awt.geom.PathIterator;
+import java.awt.*;
 import java.awt.geom.AffineTransform;
+import java.awt.geom.PathIterator;
 
 
 /**

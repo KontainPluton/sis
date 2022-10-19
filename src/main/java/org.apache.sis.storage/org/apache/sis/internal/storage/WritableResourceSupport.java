@@ -16,34 +16,27 @@
  */
 package org.apache.sis.internal.storage;
 
-import java.util.Locale;
-import java.io.IOException;
-import java.nio.channels.WritableByteChannel;
-import java.awt.geom.AffineTransform;
-import org.opengis.util.FactoryException;
-import org.opengis.referencing.operation.MathTransform;
-import org.opengis.referencing.operation.TransformException;
 import org.apache.sis.coverage.grid.GridCoverage;
 import org.apache.sis.coverage.grid.GridExtent;
-import org.apache.sis.storage.GridCoverageResource;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.DataStoreReferencingException;
-import org.apache.sis.storage.ReadOnlyStorageException;
-import org.apache.sis.storage.ResourceAlreadyExistsException;
-import org.apache.sis.storage.IncompatibleResourceException;
-import org.apache.sis.storage.WritableGridCoverageResource;
+import org.apache.sis.internal.coverage.CoverageCombiner;
 import org.apache.sis.internal.storage.io.ChannelDataInput;
 import org.apache.sis.internal.storage.io.ChannelDataOutput;
-import org.apache.sis.internal.coverage.CoverageCombiner;
 import org.apache.sis.referencing.operation.matrix.AffineTransforms2D;
 import org.apache.sis.referencing.operation.transform.TransformSeparator;
-import org.apache.sis.util.resources.Errors;
+import org.apache.sis.storage.*;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.Classes;
 import org.apache.sis.util.Localized;
-
-// Branch-dependent imports
+import org.apache.sis.util.resources.Errors;
 import org.opengis.coverage.CannotEvaluateException;
+import org.opengis.referencing.operation.MathTransform;
+import org.opengis.referencing.operation.TransformException;
+import org.opengis.util.FactoryException;
+
+import java.awt.geom.AffineTransform;
+import java.io.IOException;
+import java.nio.channels.WritableByteChannel;
+import java.util.Locale;
 
 
 /**

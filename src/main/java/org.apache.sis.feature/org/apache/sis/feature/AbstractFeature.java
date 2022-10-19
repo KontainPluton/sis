@@ -16,38 +16,20 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Objects;
-import java.util.Iterator;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.IdentityHashMap;
-import java.io.Serializable;
-
-import org.apache.sis.feature.*;
-import org.opengis.util.ScopedName;
-import org.opengis.util.GenericName;
-import org.opengis.metadata.quality.DataQuality;
-import org.opengis.metadata.maintenance.ScopeCode;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.collection.Containers;
-import org.apache.sis.util.CorruptedObjectException;
-import org.apache.sis.internal.util.CheckedArrayList;
 import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.internal.util.CheckedArrayList;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.CorruptedObjectException;
+import org.apache.sis.util.collection.Containers;
+import org.apache.sis.util.resources.Errors;
+import org.opengis.feature.*;
+import org.opengis.metadata.maintenance.ScopeCode;
+import org.opengis.metadata.quality.DataQuality;
+import org.opengis.util.GenericName;
+import org.opengis.util.ScopedName;
 
-// Branch-dependent imports
-import org.opengis.feature.Property;
-import org.opengis.feature.PropertyType;
-import org.opengis.feature.PropertyNotFoundException;
-import org.opengis.feature.InvalidPropertyValueException;
-import org.opengis.feature.Attribute;
-import org.opengis.feature.AttributeType;
-import org.opengis.feature.Feature;
-import org.opengis.feature.FeatureType;
-import org.opengis.feature.FeatureAssociation;
-import org.opengis.feature.FeatureAssociationRole;
-import org.opengis.feature.IdentifiedType;
-import org.opengis.feature.Operation;
+import java.io.Serializable;
+import java.util.*;
 
 
 /**

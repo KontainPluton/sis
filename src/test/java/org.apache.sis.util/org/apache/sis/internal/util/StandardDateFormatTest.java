@@ -22,11 +22,11 @@ import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import java.text.ParseException;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.TestUtilities.date;
+import static org.apache.sis.testutilities.TestUtilities.date;
 import static org.junit.Assert.*;
 
 

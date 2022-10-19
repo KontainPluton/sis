@@ -16,12 +16,13 @@
  */
 package org.apache.sis.internal.storage.io;
 
-import java.nio.Buffer;
-import java.nio.ByteBuffer;
-import java.io.IOException;
+import org.apache.sis.storage.DataStoreContentException;
 import org.apache.sis.util.Numbers;
 import org.apache.sis.util.resources.Errors;
-import org.apache.sis.storage.DataStoreContentException;
+
+import java.io.IOException;
+import java.nio.Buffer;
+import java.nio.ByteBuffer;
 
 
 /**

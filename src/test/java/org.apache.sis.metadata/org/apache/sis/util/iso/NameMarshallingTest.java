@@ -26,8 +26,8 @@ import org.apache.sis.internal.xml.LegacyNamespaces;
 import org.apache.sis.xml.MarshallerPool;
 import org.apache.sis.xml.Namespaces;
 import org.apache.sis.xml.XML;
-import org.apache.sis.test.MetadataAssert;
-import org.apache.sis.test.mock.IdentifiedObjectMock;
+import org.apache.sis.testmetadata.MetadataAssert;
+import org.apache.sis.testmetadata.mock.IdentifiedObjectMock;
 import org.apache.sis.util.iso.DefaultNameFactoryTest;
 import org.opengis.util.TypeName;
 import org.opengis.util.LocalName;
@@ -35,11 +35,13 @@ import org.opengis.util.GenericName;
 import org.opengis.util.NameFactory;
 import org.opengis.util.NameSpace;
 import org.apache.sis.internal.system.DefaultFactories;
-import org.apache.sis.test.xml.TestCase;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testmetadata.xml.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.DependsOnMethod;
 import org.junit.AfterClass;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 
 /**

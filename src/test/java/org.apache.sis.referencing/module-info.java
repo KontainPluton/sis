@@ -14,9 +14,13 @@ open module org.apache.sis.referencing {
     exports org.apache.sis.referencing.operation.projection;
     exports org.apache.sis.referencing.operation.transform;
 
-    exports org.apache.sis.internal.referencing to org.apache.sis.feature, org.apache.sis.referencing.gazetteer, org.apache.sis.storage, org.apache.sis.portrayal;
-    exports org.apache.sis.internal.referencing.j2d to org.apache.sis.feature, org.apache.sis.referencing.gazetteer, org.apache.sis.storage, org.apache.sis.portrayal;
-    exports org.apache.sis.internal.referencing.provider to org.apache.sis.referencing.gazetteer;
+    exports org.apache.sis.internal.referencing to org.apache.sis.feature, org.apache.sis.referencing.gazetteer, org.apache.sis.storage,
+            org.apache.sis.portrayal, org.apache.sis.storage.sql, org.apache.sis.storage.netcdf, org.apache.sis.storage.geotiff,
+            org.apache.sis.storage.earthobservation, org.apache.sis.console, org.apache.sis.openoffice;
+    exports org.apache.sis.internal.referencing.j2d to org.apache.sis.feature, org.apache.sis.referencing.gazetteer, org.apache.sis.storage,
+            org.apache.sis.portrayal, org.apache.sis.storage.sql, org.apache.sis.storage.netcdf;
+    exports org.apache.sis.internal.referencing.provider to org.apache.sis.referencing.gazetteer, org.apache.sis.storage.netcdf,
+            org.apache.sis.storage.earthobservation, org.apache.sis.profile.japan;
 
     requires transitive org.apache.sis.metadata;
     requires org.opengis.geoapi.pending;
@@ -24,7 +28,9 @@ open module org.apache.sis.referencing {
     requires java.logging;
     requires java.sql;
 
+    exports org.apache.sis.testreferencing;
+
     requires junit;
-    //requires geographiclib.java;
+    //requires geographicLib;
     requires jama;
 }

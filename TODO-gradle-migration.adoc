@@ -1,6 +1,26 @@
-= TODO for Gradle migration
+= TODO - Gradle Migration
 
-== General
+== TODO
+===== Most of the work on the modularization is done but there are still things to do to completely finish the migration.
+
+*TODO List (not sorted) :*
+
+- Update inner files structure (the *checkstyle* task does not succeed)
+- Modularize the *application:sis-javafx* subproject
+- *Repair tests* (ResourceBundle.Control doesn't work with modules) (Maybe some files will have to be moved in the modules tree)
+- Migration of the *testJar* task
+- Migration of the *javadoc* task
+- Finish the migration of the *war* task
+- Update the *jar* task to create pom.xml dynamically (for maven repository) (Some updates will have  to be done in sis-build-helper for the dependencies)
+- Migration of the *maven publication* task
+- Finish the migration of *sis-build-helper* task (the creation of utf files seems to work but the files in the internal package have not been tested)
+- Clean up source codes (remove duplicate dependencies in build.gradle.kts, delete "oldproject" directory, update README, ... )
+
+---
+
+Old message (Alexis) :
+
+==== General
 
 . Cleanup build files
 .. dependency declaration
@@ -13,7 +33,7 @@
 . Properly finish *testJar* artifact/usage configuration
 . Check if I've missed something
 
-== Applications
+==== Applications
 
 . Add `java-application` plugin, or any module needed for proper application distribution
 . Setup compilation profiles for release

@@ -17,10 +17,10 @@
 package org.apache.sis.internal.geotiff;
 
 import org.apache.sis.coverage.SampleDimension;
+import org.apache.sis.internal.storage.io.InternalOptionKey;
 import org.apache.sis.measure.NumberRange;
 import org.apache.sis.metadata.iso.DefaultMetadata;
 import org.apache.sis.setup.OptionKey;
-import org.apache.sis.internal.storage.io.InternalOptionKey;
 import org.apache.sis.storage.DataStoreException;
 import org.opengis.metadata.Metadata;
 import org.opengis.util.GenericName;

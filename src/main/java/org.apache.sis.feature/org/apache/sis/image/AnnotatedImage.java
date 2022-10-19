@@ -16,25 +16,24 @@
  */
 package org.apache.sis.image;
 
-import java.util.Locale;
+import org.apache.sis.internal.coverage.j2d.ImageUtilities;
+import org.apache.sis.internal.coverage.j2d.TileOpExecutor;
+import org.apache.sis.internal.util.Strings;
+import org.apache.sis.util.ArraysExt;
+import org.apache.sis.util.collection.Cache;
+import org.apache.sis.util.resources.Errors;
+
+import java.awt.*;
+import java.awt.image.ImagingOpException;
+import java.awt.image.Raster;
+import java.awt.image.RenderedImage;
 import java.util.Arrays;
+import java.util.Locale;
 import java.util.Objects;
 import java.util.WeakHashMap;
 import java.util.logging.Level;
 import java.util.logging.LogRecord;
 import java.util.stream.Collector;
-import java.awt.Image;
-import java.awt.Shape;
-import java.awt.Rectangle;
-import java.awt.image.RenderedImage;
-import java.awt.image.Raster;
-import java.awt.image.ImagingOpException;
-import org.apache.sis.util.ArraysExt;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.collection.Cache;
-import org.apache.sis.internal.coverage.j2d.TileOpExecutor;
-import org.apache.sis.internal.coverage.j2d.ImageUtilities;
-import org.apache.sis.internal.util.Strings;
 
 
 /**

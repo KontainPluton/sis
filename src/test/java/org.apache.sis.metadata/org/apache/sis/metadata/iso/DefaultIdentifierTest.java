@@ -20,11 +20,11 @@ import javax.xml.bind.JAXBException;
 import org.apache.sis.metadata.iso.citation.DefaultCitation;
 import org.apache.sis.xml.Namespaces;
 import org.apache.sis.metadata.iso.citation.DefaultCitationTest;
-import org.apache.sis.test.xml.TestCase;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testmetadata.xml.TestCase;
+import org.apache.sis.testutilities.DependsOn;
 import org.junit.*;
 
-import static org.apache.sis.test.MetadataAssert.*;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
 
 
 /**

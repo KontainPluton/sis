@@ -16,25 +16,26 @@
  */
 package org.apache.sis.internal.feature;
 
-import java.io.ObjectStreamException;
-import java.io.Serializable;
-import java.nio.ByteBuffer;
-import java.util.Optional;
-import java.util.Iterator;
+import org.apache.sis.geometry.AbstractEnvelope;
+import org.apache.sis.geometry.GeneralEnvelope;
+import org.apache.sis.geometry.WraparoundMethod;
+import org.apache.sis.internal.referencing.AxisDirections;
+import org.apache.sis.math.Vector;
+import org.apache.sis.referencing.CRS;
+import org.apache.sis.referencing.cs.AxesConvention;
+import org.apache.sis.setup.GeometryLibrary;
+import org.apache.sis.util.Classes;
+import org.apache.sis.util.resources.Errors;
 import org.opengis.geometry.DirectPosition;
 import org.opengis.geometry.Envelope;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.opengis.referencing.cs.CoordinateSystem;
-import org.apache.sis.geometry.AbstractEnvelope;
-import org.apache.sis.geometry.GeneralEnvelope;
-import org.apache.sis.geometry.WraparoundMethod;
-import org.apache.sis.referencing.CRS;
-import org.apache.sis.referencing.cs.AxesConvention;
-import org.apache.sis.internal.referencing.AxisDirections;
-import org.apache.sis.math.Vector;
-import org.apache.sis.setup.GeometryLibrary;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.Classes;
+
+import java.io.ObjectStreamException;
+import java.io.Serializable;
+import java.nio.ByteBuffer;
+import java.util.Iterator;
+import java.util.Optional;
 
 
 /**

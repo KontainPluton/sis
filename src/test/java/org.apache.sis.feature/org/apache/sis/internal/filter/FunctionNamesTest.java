@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Collections;
 import java.lang.reflect.Field;
 import org.apache.sis.internal.filter.sqlmm.SQLMM;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

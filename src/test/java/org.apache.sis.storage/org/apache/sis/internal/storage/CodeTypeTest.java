@@ -16,7 +16,7 @@
  */
 package org.apache.sis.internal.storage;
 
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -16,29 +16,20 @@
  */
 package org.apache.sis.image;
 
-import java.nio.ByteBuffer;
-import java.nio.LongBuffer;
-import java.awt.Rectangle;
-import java.awt.Point;
-import java.awt.Shape;
-import java.awt.Color;
-import java.awt.Graphics2D;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferByte;
-import java.awt.image.RenderedImage;
-import java.awt.image.IndexColorModel;
-import java.awt.image.MultiPixelPackedSampleModel;
-import java.lang.ref.SoftReference;
-import java.nio.ByteOrder;
-import org.apache.sis.internal.util.Numerics;
 import org.apache.sis.internal.coverage.j2d.FillValues;
 import org.apache.sis.internal.coverage.j2d.ImageUtilities;
 import org.apache.sis.internal.coverage.j2d.TilePlaceholder;
+import org.apache.sis.internal.util.Numerics;
 
-import static org.apache.sis.internal.util.Numerics.ceilDiv;
+import java.awt.*;
+import java.awt.image.*;
+import java.lang.ref.SoftReference;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.nio.LongBuffer;
+
 import static org.apache.sis.internal.util.Numerics.LONG_SHIFT;
+import static org.apache.sis.internal.util.Numerics.ceilDiv;
 
 
 /**

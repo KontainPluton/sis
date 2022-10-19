@@ -16,8 +16,9 @@
  */
 package org.apache.sis.internal.filter;
 
-import java.util.Collection;
 import org.opengis.filter.Expression;
+
+import java.util.Collection;
 
 
 /**

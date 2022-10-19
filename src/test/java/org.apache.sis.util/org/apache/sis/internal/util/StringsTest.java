@@ -16,7 +16,7 @@
  */
 package org.apache.sis.internal.util;
 
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.apache.sis.util.Characters;
 import org.junit.Test;
 

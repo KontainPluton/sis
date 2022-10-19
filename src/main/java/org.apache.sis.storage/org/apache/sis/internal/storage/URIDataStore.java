@@ -16,33 +16,29 @@
  */
 package org.apache.sis.internal.storage;
 
-import java.util.Optional;
-import java.io.DataOutput;
-import java.io.OutputStream;
-import java.io.File;
-import java.net.URI;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
-import java.nio.file.FileSystemNotFoundException;
-import java.nio.charset.Charset;
-import org.opengis.util.GenericName;
-import org.opengis.parameter.ParameterValueGroup;
-import org.opengis.parameter.ParameterDescriptor;
-import org.opengis.parameter.ParameterDescriptorGroup;
-import org.opengis.parameter.ParameterNotFoundException;
-import org.apache.sis.parameter.ParameterBuilder;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.storage.Resource;
-import org.apache.sis.storage.DataStore;
-import org.apache.sis.storage.DataStoreProvider;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.IllegalOpenParameterException;
 import org.apache.sis.internal.storage.io.IOUtilities;
+import org.apache.sis.parameter.ParameterBuilder;
 import org.apache.sis.setup.OptionKey;
+import org.apache.sis.storage.*;
 import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.iso.Names;
 import org.apache.sis.util.logging.Logging;
+import org.opengis.parameter.ParameterDescriptor;
+import org.opengis.parameter.ParameterDescriptorGroup;
+import org.opengis.parameter.ParameterNotFoundException;
+import org.opengis.parameter.ParameterValueGroup;
+import org.opengis.util.GenericName;
+
+import java.io.DataOutput;
+import java.io.File;
+import java.io.OutputStream;
+import java.net.URI;
+import java.nio.charset.Charset;
+import java.nio.file.FileSystemNotFoundException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.Optional;
 
 
 /**

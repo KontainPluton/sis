@@ -42,9 +42,9 @@ import org.apache.sis.internal.feature.jts.JTS;
 import org.apache.sis.referencing.CRS;
 import org.apache.sis.referencing.CommonCRS;
 import org.apache.sis.referencing.crs.HardCodedCRS;
-import org.apache.sis.test.sql.TestDatabase;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testmetadata.sql.TestDatabase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.apache.sis.util.Version;
 import org.junit.Test;
 

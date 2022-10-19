@@ -17,9 +17,9 @@
 package org.apache.sis.measure;
 
 import java.lang.reflect.Field;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.DependsOnMethod;
 import org.apache.sis.util.ArraysExt;
 import org.junit.Test;
 

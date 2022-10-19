@@ -16,19 +16,16 @@
  */
 package org.apache.sis.internal.storage.wkt;
 
-import java.io.Reader;
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.nio.file.Path;
-import java.nio.file.Files;
-import java.nio.channels.SeekableByteChannel;
 import org.apache.sis.internal.storage.io.IOUtilities;
-import org.apache.sis.storage.CanNotProbeException;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.DataStoreProvider;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.storage.ProbeResult;
+import org.apache.sis.storage.*;
 import org.apache.sis.util.Characters;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.nio.ByteBuffer;
+import java.nio.channels.SeekableByteChannel;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 
 /**

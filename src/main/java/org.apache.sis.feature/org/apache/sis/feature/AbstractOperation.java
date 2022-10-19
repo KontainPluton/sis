@@ -16,34 +16,19 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Map;
-import java.util.Set;
-import java.util.Objects;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.function.BiFunction;
-import java.io.IOException;
-import java.io.UncheckedIOException;
-
-import org.apache.sis.feature.AbstractIdentifiedType;
-import org.apache.sis.feature.DefaultFeatureType;
-import org.apache.sis.feature.FeatureOperations;
-import org.opengis.util.GenericName;
+import org.apache.sis.util.Classes;
+import org.opengis.feature.FeatureOperationException;
+import org.opengis.feature.*;
 import org.opengis.metadata.Identifier;
 import org.opengis.parameter.GeneralParameterDescriptor;
 import org.opengis.parameter.ParameterDescriptorGroup;
 import org.opengis.parameter.ParameterValueGroup;
-import org.apache.sis.util.Classes;
+import org.opengis.util.GenericName;
 
-// Branch-dependent imports
-import org.opengis.feature.Attribute;
-import org.opengis.feature.AttributeType;
-import org.opengis.feature.Feature;
-import org.opengis.feature.FeatureAssociation;
-import org.opengis.feature.FeatureOperationException;
-import org.opengis.feature.IdentifiedType;
-import org.opengis.feature.Operation;
-import org.opengis.feature.Property;
+import java.io.IOException;
+import java.io.UncheckedIOException;
+import java.util.*;
+import java.util.function.BiFunction;
 
 
 /**

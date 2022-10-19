@@ -16,25 +16,26 @@
  */
 package org.apache.sis.internal.storage.wkt;
 
-import java.text.ParseException;
-import java.util.Locale;
-import java.util.TimeZone;
-import java.util.logging.Level;
-import java.util.logging.LogRecord;
-import org.opengis.geometry.Geometry;
-import org.opengis.util.FactoryException;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
-import org.apache.sis.io.wkt.WKTFormat;
-import org.apache.sis.io.wkt.Warnings;
-import org.apache.sis.referencing.CRS;
-import org.apache.sis.setup.GeometryLibrary;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.GeometryWrapper;
 import org.apache.sis.internal.referencing.DefinitionVerifier;
 import org.apache.sis.internal.storage.Resources;
 import org.apache.sis.internal.system.Loggers;
+import org.apache.sis.io.wkt.WKTFormat;
+import org.apache.sis.io.wkt.Warnings;
+import org.apache.sis.referencing.CRS;
+import org.apache.sis.setup.GeometryLibrary;
 import org.apache.sis.storage.event.StoreListeners;
 import org.apache.sis.util.ArraysExt;
+import org.opengis.geometry.Geometry;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+import org.opengis.util.FactoryException;
+
+import java.text.ParseException;
+import java.util.Locale;
+import java.util.TimeZone;
+import java.util.logging.Level;
+import java.util.logging.LogRecord;
 
 
 /**

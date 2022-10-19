@@ -16,13 +16,11 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Map;
-import java.util.LinkedHashMap;
-import java.util.function.Predicate;
-
-// Branch-dependent imports
-import org.apache.sis.feature.DefaultFeatureType;
 import org.opengis.feature.FeatureType;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.function.Predicate;
 
 
 /**

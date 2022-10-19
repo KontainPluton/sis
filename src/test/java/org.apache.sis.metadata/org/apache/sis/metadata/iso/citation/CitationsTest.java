@@ -33,13 +33,14 @@ import org.apache.sis.metadata.iso.DefaultIdentifier;
 import org.apache.sis.internal.simple.CitationConstant;
 import org.apache.sis.internal.simple.SimpleCitation;
 import org.apache.sis.internal.util.Constants;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.TestUtilities.getSingleton;
-import static org.apache.sis.test.MetadataAssert.*;
+import static org.apache.sis.metadata.iso.citation.Citations.*;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
 
 
 /**

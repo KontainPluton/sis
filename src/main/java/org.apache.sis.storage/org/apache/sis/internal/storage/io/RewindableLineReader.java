@@ -16,13 +16,14 @@
  */
 package org.apache.sis.internal.storage.io;
 
+import org.apache.sis.io.InvalidSeekException;
+import org.apache.sis.util.resources.Errors;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.nio.charset.Charset;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.io.InvalidSeekException;
 
 
 /**

@@ -16,18 +16,18 @@
  */
 package org.apache.sis.internal.shapefile.jdbc.metadata;
 
+import org.apache.sis.internal.shapefile.jdbc.AbstractJDBC;
+import org.apache.sis.internal.shapefile.jdbc.SQLConnectionClosedException;
+import org.apache.sis.internal.shapefile.jdbc.connection.DBFConnection;
+import org.apache.sis.internal.shapefile.jdbc.resultset.*;
+import org.apache.sis.internal.shapefile.jdbc.statement.DBFStatement;
+
 import java.io.File;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.SQLFeatureNotSupportedException;
 import java.util.Objects;
 import java.util.logging.Level;
-
-import org.apache.sis.internal.shapefile.jdbc.AbstractJDBC;
-import org.apache.sis.internal.shapefile.jdbc.SQLConnectionClosedException;
-import org.apache.sis.internal.shapefile.jdbc.connection.DBFConnection;
-import org.apache.sis.internal.shapefile.jdbc.statement.DBFStatement;
-import org.apache.sis.internal.shapefile.jdbc.resultset.*;
 
 /**
  * ResultSet Metadata.

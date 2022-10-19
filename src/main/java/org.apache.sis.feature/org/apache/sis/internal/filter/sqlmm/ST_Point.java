@@ -16,19 +16,18 @@
  */
 package org.apache.sis.internal.filter.sqlmm;
 
-import java.util.List;
-import java.nio.ByteBuffer;
-import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.GeometryWrapper;
 import org.apache.sis.internal.util.UnmodifiableArrayList;
 import org.apache.sis.util.resources.Errors;
-
-import static java.lang.Double.isNaN;
-
-// Branch-dependent imports
 import org.opengis.filter.Expression;
 import org.opengis.filter.InvalidFilterValueException;
+import org.opengis.referencing.crs.CoordinateReferenceSystem;
+
+import java.nio.ByteBuffer;
+import java.util.List;
+
+import static java.lang.Double.isNaN;
 
 
 /**

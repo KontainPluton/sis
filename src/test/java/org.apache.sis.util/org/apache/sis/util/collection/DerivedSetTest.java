@@ -22,7 +22,7 @@ import java.util.EnumSet;
 import java.util.Arrays;
 import org.apache.sis.math.FunctionProperty;
 import org.apache.sis.util.ObjectConverter;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

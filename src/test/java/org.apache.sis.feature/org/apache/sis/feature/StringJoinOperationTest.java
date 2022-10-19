@@ -20,9 +20,9 @@ import java.util.Collections;
 import java.util.Map;
 import org.junit.Test;
 import org.apache.sis.internal.feature.AttributeConvention;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 
 import static org.junit.Assert.*;
 

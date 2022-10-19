@@ -16,10 +16,11 @@
  */
 package org.apache.sis.coverage;
 
-import java.util.Optional;
-import javax.measure.Unit;
 import org.opengis.referencing.operation.MathTransform1D;
 import org.opengis.referencing.operation.TransformException;
+
+import javax.measure.Unit;
+import java.util.Optional;
 
 
 /**

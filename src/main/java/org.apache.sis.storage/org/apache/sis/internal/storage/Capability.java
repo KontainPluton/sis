@@ -16,17 +16,16 @@
  */
 package org.apache.sis.internal.storage;
 
-import java.util.Locale;
-import java.util.Collection;
-import org.apache.sis.storage.DataStores;
 import org.apache.sis.storage.DataStoreProvider;
+import org.apache.sis.storage.DataStores;
 import org.apache.sis.util.Exceptions;
-import org.apache.sis.util.resources.Vocabulary;
 import org.apache.sis.util.collection.BackingStoreException;
-
-// Branch-dependent imports
-import org.opengis.util.InternationalString;
+import org.apache.sis.util.resources.Vocabulary;
 import org.opengis.metadata.citation.Citation;
+import org.opengis.util.InternationalString;
+
+import java.util.Collection;
+import java.util.Locale;
 
 
 /**

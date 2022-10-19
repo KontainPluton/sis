@@ -27,8 +27,8 @@ import java.nio.charset.StandardCharsets;
 
 import org.apache.sis.storage.*;
 import org.opengis.parameter.ParameterDescriptorGroup;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

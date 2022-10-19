@@ -16,11 +16,12 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.util.Arrays;
-import java.util.Objects;
+import org.apache.sis.util.Workaround;
+
 import java.awt.image.ColorModel;
 import java.awt.image.IndexColorModel;
-import org.apache.sis.util.Workaround;
+import java.util.Arrays;
+import java.util.Objects;
 
 
 /**

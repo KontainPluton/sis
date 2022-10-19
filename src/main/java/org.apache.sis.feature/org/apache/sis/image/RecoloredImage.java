@@ -16,25 +16,26 @@
  */
 package org.apache.sis.image;
 
-import java.util.Map;
-import java.util.List;
-import java.util.Arrays;
-import java.util.function.DoubleUnaryOperator;
-import java.awt.Shape;
-import java.awt.image.ColorModel;
-import java.awt.image.IndexColorModel;
-import java.awt.image.SampleModel;
-import java.awt.image.RenderedImage;
 import org.apache.sis.coverage.Category;
 import org.apache.sis.coverage.SampleDimension;
 import org.apache.sis.internal.coverage.j2d.ColorModelFactory;
 import org.apache.sis.internal.coverage.j2d.ImageUtilities;
 import org.apache.sis.internal.util.Numerics;
-import org.apache.sis.util.collection.Containers;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.math.Statistics;
 import org.apache.sis.measure.NumberRange;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.collection.Containers;
+import org.apache.sis.util.resources.Errors;
+
+import java.awt.*;
+import java.awt.image.ColorModel;
+import java.awt.image.IndexColorModel;
+import java.awt.image.RenderedImage;
+import java.awt.image.SampleModel;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.function.DoubleUnaryOperator;
 
 
 /**

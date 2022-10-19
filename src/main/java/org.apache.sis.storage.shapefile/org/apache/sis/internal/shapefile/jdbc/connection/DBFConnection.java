@@ -16,18 +16,21 @@
  */
 package org.apache.sis.internal.shapefile.jdbc.connection;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.sql.*;
-import java.util.*;
-import java.util.logging.Level;
-import java.util.stream.Collectors;
-
 import org.apache.sis.internal.shapefile.jdbc.*;
 import org.apache.sis.internal.shapefile.jdbc.metadata.DBFDatabaseMetaData;
 import org.apache.sis.internal.shapefile.jdbc.resultset.*;
 import org.apache.sis.internal.shapefile.jdbc.statement.DBFStatement;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.sql.*;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.logging.Level;
+import java.util.stream.Collectors;
 
 
 /**

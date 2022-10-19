@@ -19,12 +19,12 @@ package org.apache.sis.util.collection;
 import java.util.List;
 import java.util.Collection;
 import org.junit.Test;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.TestStep;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.TestStep;
+import org.apache.sis.testutilities.DependsOn;
 
-import static org.apache.sis.test.Assert.*;
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testutilities.Assert.*;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
 import static org.apache.sis.util.collection.TableColumn.*;
 
 

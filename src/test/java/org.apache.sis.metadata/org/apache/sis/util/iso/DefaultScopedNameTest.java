@@ -22,12 +22,12 @@ import org.apache.sis.util.iso.DefaultLocalNameTest;
 import org.apache.sis.util.iso.DefaultNameFactoryTest;
 import org.opengis.util.GenericName;
 import org.apache.sis.util.SimpleInternationalString;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.opengis.test.Validators.*;
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

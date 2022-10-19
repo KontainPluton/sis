@@ -19,7 +19,7 @@ package org.apache.sis.util;
 import java.util.Locale;
 import java.io.IOException;
 import java.io.FileNotFoundException;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

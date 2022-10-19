@@ -16,35 +16,29 @@
  */
 package org.apache.sis.internal.storage.image;
 
-import java.util.function.BiConsumer;
-import java.io.IOException;
-import java.io.BufferedWriter;
-import java.nio.file.StandardOpenOption;
-import java.awt.geom.AffineTransform;
+import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridExtent;
+import org.apache.sis.coverage.grid.GridGeometry;
+import org.apache.sis.internal.storage.Resources;
+import org.apache.sis.referencing.operation.matrix.AffineTransforms2D;
+import org.apache.sis.setup.OptionKey;
+import org.apache.sis.storage.*;
+import org.apache.sis.util.ComparisonMode;
+
 import javax.imageio.ImageIO;
 import javax.imageio.ImageReader;
 import javax.imageio.ImageWriter;
 import javax.imageio.spi.IIORegistry;
 import javax.imageio.spi.ImageReaderSpi;
-import javax.imageio.spi.ImageWriterSpi;
 import javax.imageio.spi.ImageReaderWriterSpi;
+import javax.imageio.spi.ImageWriterSpi;
 import javax.imageio.stream.ImageInputStream;
 import javax.imageio.stream.ImageOutputStream;
-import org.apache.sis.coverage.grid.GridCoverage;
-import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.coverage.grid.GridExtent;
-import org.apache.sis.internal.storage.Resources;
-import org.apache.sis.storage.Resource;
-import org.apache.sis.storage.GridCoverageResource;
-import org.apache.sis.storage.WritableAggregate;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.DataStoreClosedException;
-import org.apache.sis.storage.UnsupportedStorageException;
-import org.apache.sis.storage.IncompatibleResourceException;
-import org.apache.sis.referencing.operation.matrix.AffineTransforms2D;
-import org.apache.sis.util.ComparisonMode;
-import org.apache.sis.setup.OptionKey;
+import java.awt.geom.AffineTransform;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.nio.file.StandardOpenOption;
+import java.util.function.BiConsumer;
 
 
 /**

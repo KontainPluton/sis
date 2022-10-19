@@ -16,9 +16,10 @@
  */
 package org.apache.sis.feature.builder;
 
-import java.util.Set;
-import java.util.EnumSet;
 import org.apache.sis.feature.FeatureOperations;
+
+import java.util.EnumSet;
+import java.util.Set;
 
 
 /**

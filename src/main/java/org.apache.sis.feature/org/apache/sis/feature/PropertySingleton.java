@@ -16,14 +16,9 @@
  */
 package org.apache.sis.feature;
 
-import java.util.List;
-import java.util.AbstractList;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.ConcurrentModificationException;
-
-import org.apache.sis.feature.DefaultAttributeType;
 import org.apache.sis.util.resources.Errors;
+
+import java.util.*;
 
 import static org.apache.sis.util.ArgumentChecks.ensureNonNull;
 

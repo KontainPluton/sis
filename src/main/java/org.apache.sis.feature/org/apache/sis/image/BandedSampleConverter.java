@@ -16,32 +16,25 @@
  */
 package org.apache.sis.image;
 
-import java.util.Arrays;
-import java.util.Objects;
-import java.awt.Rectangle;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.awt.image.RenderedImage;
-import java.awt.image.WritableRenderedImage;
-import java.awt.image.BandedSampleModel;
-import java.awt.image.ColorModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.SampleModel;
-import java.awt.image.TileObserver;
-import java.lang.reflect.Array;
-import org.opengis.referencing.operation.MathTransform1D;
-import org.opengis.referencing.operation.TransformException;
-import org.opengis.referencing.operation.NoninvertibleTransformException;
 import org.apache.sis.internal.coverage.j2d.ImageLayout;
 import org.apache.sis.internal.coverage.j2d.ImageUtilities;
 import org.apache.sis.internal.coverage.j2d.TileOpExecutor;
 import org.apache.sis.internal.coverage.j2d.WriteSupport;
 import org.apache.sis.internal.system.Modules;
-import org.apache.sis.util.Numbers;
-import org.apache.sis.util.Disposable;
-import org.apache.sis.util.logging.Logging;
 import org.apache.sis.math.DecimalFunctions;
 import org.apache.sis.measure.NumberRange;
+import org.apache.sis.util.Disposable;
+import org.apache.sis.util.Numbers;
+import org.apache.sis.util.logging.Logging;
+import org.opengis.referencing.operation.MathTransform1D;
+import org.opengis.referencing.operation.NoninvertibleTransformException;
+import org.opengis.referencing.operation.TransformException;
+
+import java.awt.*;
+import java.awt.image.*;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Objects;
 
 import static java.util.logging.Logger.getLogger;
 

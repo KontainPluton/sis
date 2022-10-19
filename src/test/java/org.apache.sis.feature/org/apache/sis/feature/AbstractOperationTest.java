@@ -20,12 +20,12 @@ import org.apache.sis.feature.DefaultAttributeTypeTest;
 import org.apache.sis.feature.SingletonAttributeTest;
 import org.opengis.parameter.ParameterDescriptor;
 import org.apache.sis.parameter.ParameterBuilder;
-import org.apache.sis.test.DependsOn;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOn;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static java.util.Collections.singletonMap;
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

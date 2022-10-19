@@ -27,15 +27,15 @@ import org.apache.sis.feature.FoliationRepresentation;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.StorageConnector;
 import org.apache.sis.storage.DataOptionKey;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 import com.esri.core.geometry.Point2D;
 import com.esri.core.geometry.Polyline;
 
 import static org.junit.Assert.*;
 import static java.util.Collections.singletonList;
-import static org.apache.sis.test.TestUtilities.date;
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testutilities.TestUtilities.date;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
 
 // Branch-dependent imports
 import org.opengis.feature.Feature;

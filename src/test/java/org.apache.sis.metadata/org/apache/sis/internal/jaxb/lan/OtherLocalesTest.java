@@ -22,7 +22,7 @@ import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.nio.charset.Charset;
 import org.junit.Test;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 
 import static java.util.Locale.*;
 import static org.junit.Assert.*;

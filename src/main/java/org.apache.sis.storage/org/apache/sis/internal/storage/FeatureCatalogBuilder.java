@@ -16,14 +16,12 @@
  */
 package org.apache.sis.internal.storage;
 
-import org.opengis.util.GenericName;
+import org.apache.sis.metadata.iso.DefaultMetadata;
 import org.apache.sis.storage.DataStore;
 import org.apache.sis.storage.FeatureNaming;
 import org.apache.sis.storage.IllegalNameException;
-import org.apache.sis.metadata.iso.DefaultMetadata;
-
-// Branch-dependent imports
 import org.opengis.feature.FeatureType;
+import org.opengis.util.GenericName;
 
 
 /**

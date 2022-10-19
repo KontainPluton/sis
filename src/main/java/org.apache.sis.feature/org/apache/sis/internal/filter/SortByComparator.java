@@ -16,19 +16,14 @@
  */
 package org.apache.sis.internal.filter;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.LinkedHashMap;
-import java.util.Comparator;
-import java.io.Serializable;
-import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.internal.util.UnmodifiableArrayList;
-
-// Branch-dependent imports
+import org.apache.sis.util.ArgumentChecks;
 import org.opengis.filter.SortBy;
 import org.opengis.filter.SortProperty;
 import org.opengis.filter.ValueReference;
+
+import java.io.Serializable;
+import java.util.*;
 
 
 /**

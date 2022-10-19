@@ -16,31 +16,21 @@
  */
 package org.apache.sis.image;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Vector;
-import java.util.Objects;
-import java.lang.ref.Reference;
-import java.awt.Insets;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.awt.image.WritableRenderedImage;
-import java.awt.image.RenderedImage;
-import java.awt.image.SampleModel;
-import java.awt.image.TileObserver;
-import java.awt.image.ImagingOpException;
+import org.apache.sis.coverage.grid.GridExtent;
+import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.internal.util.Numerics;
-import org.apache.sis.util.collection.Cache;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.Disposable;
 import org.apache.sis.util.Exceptions;
+import org.apache.sis.util.collection.Cache;
 import org.apache.sis.util.resources.Errors;
-import org.apache.sis.coverage.grid.GridExtent;     // For javadoc
-import org.apache.sis.internal.feature.Resources;
+
+import java.awt.*;
+import java.awt.image.*;
+import java.lang.ref.Reference;
+import java.util.List;
+import java.util.*;
 
 
 /**

@@ -16,14 +16,15 @@
  */
 package org.apache.sis.internal.feature.j2d;
 
-import java.util.Iterator;
-import java.util.Collections;
-import java.awt.Shape;
-import java.awt.geom.Path2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.PathIterator;
-import java.awt.geom.AffineTransform;
 import org.apache.sis.internal.util.Numerics;
+
+import java.awt.*;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.Path2D;
+import java.awt.geom.PathIterator;
+import java.awt.geom.Rectangle2D;
+import java.util.Collections;
+import java.util.Iterator;
 
 
 /**

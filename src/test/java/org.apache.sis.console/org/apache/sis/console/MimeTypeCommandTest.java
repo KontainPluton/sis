@@ -23,7 +23,7 @@ import org.apache.sis.console.CommandRunnerTest;
 import org.apache.sis.console.MimeTypeCommand;
 import org.apache.sis.internal.storage.gpx.MetadataTest;
 import org.apache.sis.metadata.xml.TestUsingFile;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOn;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -16,19 +16,15 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.util.Map;
-import java.util.Collections;
-import java.awt.Rectangle;
-import java.awt.Image;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.awt.image.RenderedImage;
-import java.awt.image.SampleModel;
-import java.awt.image.ImagingOpException;
 import org.apache.sis.image.ComputedImage;
 import org.apache.sis.internal.jdk9.JDK9;
 import org.apache.sis.util.Disposable;
 import org.apache.sis.util.resources.Errors;
+
+import java.awt.*;
+import java.awt.image.*;
+import java.util.Collections;
+import java.util.Map;
 
 
 /**

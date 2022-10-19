@@ -16,37 +16,31 @@
  */
 package org.apache.sis.internal.storage.esri;
 
-import java.util.List;
-import java.util.Locale;
-import java.io.IOException;
-import java.nio.ByteOrder;
-import java.awt.image.DataBuffer;
-import java.awt.image.SampleModel;
-import java.awt.image.BandedSampleModel;
-import java.awt.image.ComponentSampleModel;
-import java.awt.image.MultiPixelPackedSampleModel;
-import java.awt.image.PixelInterleavedSampleModel;
-import java.awt.image.RasterFormatException;
-import java.awt.image.WritableRaster;
-import org.opengis.metadata.Metadata;
-import org.opengis.referencing.datum.PixelInCell;
 import org.apache.sis.coverage.SampleDimension;
-import org.apache.sis.coverage.grid.GridExtent;
 import org.apache.sis.coverage.grid.GridCoverage;
+import org.apache.sis.coverage.grid.GridExtent;
 import org.apache.sis.coverage.grid.GridGeometry;
-import org.apache.sis.internal.storage.Resources;
-import org.apache.sis.internal.storage.RangeArgument;
-import org.apache.sis.internal.storage.io.ChannelDataInput;
+import org.apache.sis.image.DataType;
 import org.apache.sis.internal.referencing.j2d.AffineTransform2D;
-import org.apache.sis.storage.DataStoreException;
+import org.apache.sis.internal.storage.RangeArgument;
+import org.apache.sis.internal.storage.Resources;
+import org.apache.sis.internal.storage.io.ChannelDataInput;
 import org.apache.sis.storage.DataStoreClosedException;
 import org.apache.sis.storage.DataStoreContentException;
+import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.util.resources.Messages;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.CharSequences;
 import org.apache.sis.util.ArraysExt;
-import org.apache.sis.image.DataType;
+import org.apache.sis.util.CharSequences;
+import org.apache.sis.util.resources.Errors;
+import org.apache.sis.util.resources.Messages;
+import org.opengis.metadata.Metadata;
+import org.opengis.referencing.datum.PixelInCell;
+
+import java.awt.image.*;
+import java.io.IOException;
+import java.nio.ByteOrder;
+import java.util.List;
+import java.util.Locale;
 
 import static java.lang.Math.multiplyExact;
 import static org.apache.sis.internal.util.Numerics.ceilDiv;

@@ -16,12 +16,13 @@
  */
 package org.apache.sis.internal.storage;
 
+import org.apache.sis.storage.DataStoreProvider;
+import org.apache.sis.storage.Resource;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import org.apache.sis.storage.DataStoreProvider;
-import org.apache.sis.storage.Resource;
 
 
 /**

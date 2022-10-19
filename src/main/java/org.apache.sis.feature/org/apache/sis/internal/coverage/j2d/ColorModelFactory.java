@@ -16,27 +16,21 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.util.Map;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Optional;
-import java.awt.Transparency;
-import java.awt.Color;
-import java.awt.color.ColorSpace;
-import java.awt.image.ColorModel;
-import java.awt.image.IndexColorModel;
-import java.awt.image.PackedColorModel;
-import java.awt.image.DirectColorModel;
-import java.awt.image.ComponentColorModel;
-import java.awt.image.SampleModel;
-import java.awt.image.DataBuffer;
-import org.apache.sis.measure.NumberRange;
 import org.apache.sis.internal.util.Numerics;
-import org.apache.sis.util.ArraysExt;
+import org.apache.sis.measure.NumberRange;
 import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.ArraysExt;
+import org.apache.sis.util.Debug;
 import org.apache.sis.util.collection.WeakHashSet;
 import org.apache.sis.util.collection.WeakValueHashMap;
-import org.apache.sis.util.Debug;
+
+import java.awt.*;
+import java.awt.color.ColorSpace;
+import java.awt.image.*;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Map;
+import java.util.Optional;
 
 
 /**

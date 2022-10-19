@@ -16,56 +16,37 @@
  */
 package org.apache.sis.feature;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Set;
-import java.util.EnumSet;
-import java.util.Iterator;
-import java.util.Collection;
-import java.util.Locale;
-import java.util.TimeZone;
-import java.io.IOException;
-import java.io.UncheckedIOException;
-import java.text.Format;
-import java.text.FieldPosition;
-import java.text.ParsePosition;
-import java.text.ParseException;
-import java.util.concurrent.atomic.AtomicReference;
-
-import org.apache.sis.feature.*;
-import org.opengis.referencing.IdentifiedObject;
-import org.opengis.util.InternationalString;
-import org.opengis.util.GenericName;
-import org.apache.sis.io.TableAppender;
-import org.apache.sis.io.TabularFormat;
-import org.apache.sis.util.Deprecable;
-import org.apache.sis.util.Characters;
-import org.apache.sis.util.CharSequences;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.logging.Logging;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.resources.Vocabulary;
-import org.apache.sis.internal.util.Strings;
-import org.apache.sis.internal.util.CollectionsExt;
 import org.apache.sis.internal.feature.Geometries;
 import org.apache.sis.internal.feature.GeometryWrapper;
 import org.apache.sis.internal.system.Modules;
-import org.apache.sis.referencing.IdentifiedObjects;
+import org.apache.sis.internal.util.CollectionsExt;
+import org.apache.sis.internal.util.Strings;
+import org.apache.sis.io.TableAppender;
+import org.apache.sis.io.TabularFormat;
 import org.apache.sis.math.MathFunctions;
+import org.apache.sis.referencing.IdentifiedObjects;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.CharSequences;
+import org.apache.sis.util.Characters;
+import org.apache.sis.util.Deprecable;
+import org.apache.sis.util.logging.Logging;
+import org.apache.sis.util.resources.Errors;
+import org.apache.sis.util.resources.Vocabulary;
+import org.opengis.feature.*;
+import org.opengis.referencing.IdentifiedObject;
+import org.opengis.util.GenericName;
+import org.opengis.util.InternationalString;
+
+import java.io.IOException;
+import java.io.UncheckedIOException;
+import java.text.FieldPosition;
+import java.text.Format;
+import java.text.ParseException;
+import java.text.ParsePosition;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
 
 import static java.util.logging.Logger.getLogger;
-
-// Branch-dependent imports
-import org.opengis.feature.IdentifiedType;
-import org.opengis.feature.Property;
-import org.opengis.feature.PropertyType;
-import org.opengis.feature.Attribute;
-import org.opengis.feature.AttributeType;
-import org.opengis.feature.Feature;
-import org.opengis.feature.FeatureType;
-import org.opengis.feature.FeatureAssociation;
-import org.opengis.feature.FeatureAssociationRole;
-import org.opengis.feature.Operation;
 
 
 /**

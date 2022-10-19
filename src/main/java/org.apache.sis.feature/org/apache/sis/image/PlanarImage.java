@@ -16,28 +16,22 @@
  */
 package org.apache.sis.image;
 
-import java.awt.Image;
-import java.awt.Rectangle;
-import java.awt.image.ColorModel;
-import java.awt.image.IndexColorModel;
-import java.awt.image.SampleModel;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.awt.image.WritableRenderedImage;
-import java.awt.image.RenderedImage;
-import java.util.Vector;
-import java.util.function.DoubleUnaryOperator;
-import org.apache.sis.util.Classes;
-import org.apache.sis.util.Disposable;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.util.resources.Messages;
-import org.apache.sis.internal.util.Numerics;
+import org.apache.sis.coverage.grid.GridGeometry;
+import org.apache.sis.internal.coverage.j2d.ColorModelFactory;
 import org.apache.sis.internal.coverage.j2d.ImageUtilities;
 import org.apache.sis.internal.coverage.j2d.TileOpExecutor;
-import org.apache.sis.internal.coverage.j2d.ColorModelFactory;
 import org.apache.sis.internal.jdk9.JDK9;
-import org.apache.sis.coverage.grid.GridGeometry;       // For javadoc
+import org.apache.sis.internal.util.Numerics;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.util.Classes;
+import org.apache.sis.util.Disposable;
+import org.apache.sis.util.resources.Errors;
+import org.apache.sis.util.resources.Messages;
+
+import java.awt.*;
+import java.awt.image.*;
+import java.util.Vector;
+import java.util.function.DoubleUnaryOperator;
 
 
 /**

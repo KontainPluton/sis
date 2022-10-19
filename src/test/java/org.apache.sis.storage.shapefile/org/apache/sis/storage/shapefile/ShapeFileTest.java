@@ -27,7 +27,7 @@ import java.util.logging.Logger;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.shapefile.InputFeatureStream;
 import org.apache.sis.storage.shapefile.ShapeFile;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.opengis.feature.Feature;

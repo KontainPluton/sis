@@ -29,13 +29,13 @@ import org.apache.sis.xml.Namespaces;
 import org.apache.sis.xml.XML;
 import org.opengis.metadata.identification.BrowseGraphic;
 import org.apache.sis.util.Version;
-import org.apache.sis.test.xml.TestCase;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testmetadata.xml.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
 import org.junit.Test;
 
 import static java.util.logging.Logger.getLogger;
 import static java.util.Collections.singletonMap;
-import static org.apache.sis.test.MetadataAssert.*;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
 
 
 /**

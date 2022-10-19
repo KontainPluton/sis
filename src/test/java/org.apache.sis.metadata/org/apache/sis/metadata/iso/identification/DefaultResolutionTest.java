@@ -23,14 +23,14 @@ import org.apache.sis.xml.Namespaces;
 import org.apache.sis.metadata.iso.identification.DefaultRepresentativeFractionTest;
 import org.opengis.metadata.identification.RepresentativeFraction;
 import org.apache.sis.internal.jaxb.Context;
-import org.apache.sis.test.LoggingWatcher;
-import org.apache.sis.test.xml.TestCase;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.LoggingWatcher;
+import org.apache.sis.testmetadata.xml.TestCase;
+import org.apache.sis.testutilities.DependsOn;
 import org.junit.After;
 import org.junit.Rule;
 import org.junit.Test;
 
-import static org.apache.sis.test.MetadataAssert.*;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
 import static org.apache.sis.internal.jaxb.gml.MeasureTest.UOM_URL;
 
 

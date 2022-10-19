@@ -16,14 +16,12 @@
  */
 package org.apache.sis.storage;
 
-import java.util.Objects;
-import java.io.Serializable;
-import java.io.ObjectStreamException;
-
-import org.apache.sis.storage.DataStoreProvider;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.util.Version;
 import org.apache.sis.internal.util.Strings;
+import org.apache.sis.util.Version;
+
+import java.io.ObjectStreamException;
+import java.io.Serializable;
+import java.util.Objects;
 
 
 /**

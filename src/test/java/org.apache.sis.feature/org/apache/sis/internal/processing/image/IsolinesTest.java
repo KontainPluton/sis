@@ -24,7 +24,7 @@ import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
 import org.opengis.referencing.operation.TransformException;
 import org.apache.sis.internal.coverage.j2d.RasterFactory;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

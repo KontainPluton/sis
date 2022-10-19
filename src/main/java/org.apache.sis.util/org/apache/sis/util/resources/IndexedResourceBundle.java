@@ -166,7 +166,8 @@ public class IndexedResourceBundle extends ResourceBundle implements Localized {
             locale = Locale.getDefault();
         }
         // No caching; we rely on the one implemented in ResourceBundle.
-        return base.cast(getBundle(base.getName(), locale, base.getClassLoader(), Loader.INSTANCE));
+        return base.cast(getBundle(base.getName(), locale, base.getClassLoader()));
+        //return base.cast(getBundle(base.getName(), locale, base.getClassLoader(), Loader.INSTANCE));
     }
 
     /**

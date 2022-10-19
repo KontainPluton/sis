@@ -16,33 +16,25 @@
  */
 package org.apache.sis.coverage;
 
-import java.util.List;
-import java.util.AbstractList;
-import java.util.Arrays;
-import java.util.Set;
-import java.util.TreeSet;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Locale;
-import java.util.Objects;
-import java.util.Optional;
-import java.io.Serializable;
-import javax.measure.Unit;
-import org.opengis.util.GenericName;
-import org.opengis.util.InternationalString;
-import org.opengis.referencing.operation.MathTransform1D;
-import org.apache.sis.referencing.operation.transform.TransferFunction;
-import org.apache.sis.internal.util.UnmodifiableArrayList;
 import org.apache.sis.internal.feature.Resources;
+import org.apache.sis.internal.util.UnmodifiableArrayList;
+import org.apache.sis.math.MathFunctions;
 import org.apache.sis.measure.MeasurementRange;
 import org.apache.sis.measure.NumberRange;
-import org.apache.sis.math.MathFunctions;
-import org.apache.sis.util.resources.Vocabulary;
-import org.apache.sis.util.resources.Errors;
+import org.apache.sis.referencing.operation.transform.TransferFunction;
 import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.util.iso.Names;
-import org.apache.sis.util.Numbers;
 import org.apache.sis.util.Debug;
+import org.apache.sis.util.Numbers;
+import org.apache.sis.util.iso.Names;
+import org.apache.sis.util.resources.Errors;
+import org.apache.sis.util.resources.Vocabulary;
+import org.opengis.referencing.operation.MathTransform1D;
+import org.opengis.util.GenericName;
+import org.opengis.util.InternationalString;
+
+import javax.measure.Unit;
+import java.io.Serializable;
+import java.util.*;
 
 
 /**

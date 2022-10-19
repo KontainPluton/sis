@@ -24,8 +24,6 @@ import java.util.List;
 import java.util.Collection;
 import java.util.Optional;
 
-import org.apache.sis.storage.netcdf.MetadataReader;
-import org.apache.sis.storage.netcdf.NetcdfStoreProvider;
 import org.opengis.util.NameSpace;
 import org.opengis.util.NameFactory;
 import org.opengis.util.GenericName;

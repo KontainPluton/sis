@@ -16,11 +16,12 @@
  */
 package org.apache.sis.internal.storage.inflater;
 
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import org.apache.sis.util.ArraysExt;
 import org.apache.sis.internal.geotiff.Predictor;
 import org.apache.sis.internal.jdk9.JDK9;
+import org.apache.sis.util.ArraysExt;
+
+import java.io.IOException;
+import java.nio.ByteBuffer;
 
 
 /**

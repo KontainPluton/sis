@@ -16,8 +16,8 @@
  */
 package org.apache.sis.index.tree;
 
-import java.util.Arrays;
 import java.io.Serializable;
+import java.util.Arrays;
 
 
 /**

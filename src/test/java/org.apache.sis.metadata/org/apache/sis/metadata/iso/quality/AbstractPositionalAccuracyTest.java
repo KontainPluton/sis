@@ -24,12 +24,12 @@ import org.opengis.metadata.quality.Result;
 import org.opengis.util.InternationalString;
 import org.apache.sis.internal.jaxb.lan.FreeTextMarshallingTest;
 import org.apache.sis.util.Version;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOn;
 import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.opengis.test.Assert.*;
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
 
 
 /**

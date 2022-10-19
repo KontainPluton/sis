@@ -16,19 +16,18 @@
  */
 package org.apache.sis.filter;
 
-import java.util.List;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Optional;
-import org.apache.sis.xml.NilReason;
-import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.internal.filter.Node;
-
-// Branch-dependent imports
-import org.opengis.filter.Filter;
+import org.apache.sis.util.ArgumentChecks;
+import org.apache.sis.xml.NilReason;
 import org.opengis.filter.Expression;
+import org.opengis.filter.Filter;
 import org.opengis.filter.NilOperator;
 import org.opengis.filter.NullOperator;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
 
 
 /**

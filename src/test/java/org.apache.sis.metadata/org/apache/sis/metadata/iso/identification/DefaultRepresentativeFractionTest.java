@@ -22,11 +22,11 @@ import org.apache.sis.xml.IdentifierSpace;
 import org.apache.sis.xml.Namespaces;
 import org.opengis.metadata.identification.RepresentativeFraction;
 import org.apache.sis.util.Version;
-import org.apache.sis.test.xml.TestCase;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testmetadata.xml.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
 import org.junit.Test;
 
-import static org.apache.sis.test.MetadataAssert.*;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
 
 
 /**

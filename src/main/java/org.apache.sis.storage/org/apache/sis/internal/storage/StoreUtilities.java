@@ -16,44 +16,36 @@
  */
 package org.apache.sis.internal.storage;
 
-import java.util.Set;
-import java.util.EnumSet;
-import java.util.Optional;
-import java.util.stream.Stream;
-import java.util.logging.Filter;
-import java.util.logging.Logger;
-import java.util.logging.LogRecord;
-import java.nio.file.OpenOption;
-import java.nio.file.StandardOpenOption;
-import java.nio.charset.Charset;
-import org.opengis.util.GenericName;
-import org.opengis.geometry.Envelope;
-import org.opengis.metadata.Metadata;
-import org.opengis.metadata.extent.Extent;
-import org.opengis.metadata.extent.GeographicExtent;
-import org.opengis.metadata.extent.GeographicBoundingBox;
-import org.opengis.metadata.identification.Identification;
-import org.opengis.metadata.identification.DataIdentification;
-import org.apache.sis.util.Static;
-import org.apache.sis.storage.FeatureSet;
-import org.apache.sis.storage.Resource;
-import org.apache.sis.storage.DataStore;
-import org.apache.sis.storage.DataStores;
-import org.apache.sis.storage.DataStoreProvider;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.WritableFeatureSet;
-import org.apache.sis.storage.UnsupportedStorageException;
-import org.apache.sis.storage.event.StoreListeners;
 import org.apache.sis.geometry.GeneralEnvelope;
 import org.apache.sis.internal.jdk9.JDK9;
 import org.apache.sis.internal.metadata.Identifiers;
 import org.apache.sis.internal.system.Modules;
-import org.apache.sis.util.resources.Errors;
+import org.apache.sis.storage.*;
+import org.apache.sis.storage.event.StoreListeners;
 import org.apache.sis.util.CharSequences;
 import org.apache.sis.util.Classes;
-
-// Branch-dependent imports
+import org.apache.sis.util.Static;
+import org.apache.sis.util.resources.Errors;
 import org.opengis.feature.Feature;
+import org.opengis.geometry.Envelope;
+import org.opengis.metadata.Metadata;
+import org.opengis.metadata.extent.Extent;
+import org.opengis.metadata.extent.GeographicBoundingBox;
+import org.opengis.metadata.extent.GeographicExtent;
+import org.opengis.metadata.identification.DataIdentification;
+import org.opengis.metadata.identification.Identification;
+import org.opengis.util.GenericName;
+
+import java.nio.charset.Charset;
+import java.nio.file.OpenOption;
+import java.nio.file.StandardOpenOption;
+import java.util.EnumSet;
+import java.util.Optional;
+import java.util.Set;
+import java.util.logging.Filter;
+import java.util.logging.LogRecord;
+import java.util.logging.Logger;
+import java.util.stream.Stream;
 
 
 /**

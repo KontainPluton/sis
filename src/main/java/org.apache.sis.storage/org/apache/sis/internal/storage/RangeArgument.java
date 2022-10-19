@@ -16,22 +16,23 @@
  */
 package org.apache.sis.internal.storage;
 
-import java.util.List;
-import java.util.Arrays;
-import java.util.Optional;
-import java.awt.image.ColorModel;
-import java.awt.image.SampleModel;
-import java.awt.image.RasterFormatException;
-import org.opengis.metadata.spatial.DimensionNameType;
 import org.apache.sis.coverage.SampleDimension;
 import org.apache.sis.coverage.grid.GridExtent;
 import org.apache.sis.internal.coverage.j2d.ColorModelFactory;
 import org.apache.sis.internal.coverage.j2d.SampleModelFactory;
-import org.apache.sis.storage.GridCoverageResource;
 import org.apache.sis.math.MathFunctions;
+import org.apache.sis.storage.GridCoverageResource;
 import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.Localized;
+import org.opengis.metadata.spatial.DimensionNameType;
+
+import java.awt.image.ColorModel;
+import java.awt.image.RasterFormatException;
+import java.awt.image.SampleModel;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
 
 
 /**

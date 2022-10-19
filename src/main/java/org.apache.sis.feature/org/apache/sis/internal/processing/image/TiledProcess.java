@@ -16,17 +16,18 @@
  */
 package org.apache.sis.internal.processing.image;
 
-import java.awt.Rectangle;
-import java.awt.image.RenderedImage;
-import java.util.concurrent.Future;
-import java.util.concurrent.Callable;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.concurrent.atomic.AtomicInteger;
+import org.apache.sis.image.PixelIterator;
+import org.apache.sis.internal.jdk9.JDK9;
 import org.apache.sis.internal.system.CommonExecutor;
 import org.apache.sis.internal.util.Numerics;
-import org.apache.sis.internal.jdk9.JDK9;
-import org.apache.sis.image.PixelIterator;
 import org.apache.sis.util.ArgumentChecks;
+
+import java.awt.*;
+import java.awt.image.RenderedImage;
+import java.util.concurrent.Callable;
+import java.util.concurrent.Future;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.locks.ReentrantLock;
 
 
 /**

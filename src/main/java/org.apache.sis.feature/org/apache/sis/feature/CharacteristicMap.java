@@ -16,21 +16,18 @@
  */
 package org.apache.sis.feature;
 
-import java.util.Map;
-
-import org.apache.sis.feature.CharacteristicTypeMap;
-import org.opengis.util.GenericName;
-import org.apache.sis.util.ArgumentChecks;
-import org.apache.sis.internal.util.Cloner;
+import org.apache.sis.internal.feature.Resources;
 import org.apache.sis.internal.util.AbstractMap;
 import org.apache.sis.internal.util.AbstractMapEntry;
-import org.apache.sis.internal.feature.Resources;
-
-// Branch-dependent imports
+import org.apache.sis.internal.util.Cloner;
+import org.apache.sis.util.ArgumentChecks;
 import org.opengis.feature.Attribute;
 import org.opengis.feature.AttributeType;
 import org.opengis.feature.InvalidPropertyValueException;
 import org.opengis.feature.PropertyNotFoundException;
+import org.opengis.util.GenericName;
+
+import java.util.Map;
 
 
 /**

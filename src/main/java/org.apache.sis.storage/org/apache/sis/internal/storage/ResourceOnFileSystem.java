@@ -16,9 +16,10 @@
  */
 package org.apache.sis.internal.storage;
 
-import java.nio.file.Path;
 import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.Resource;
+
+import java.nio.file.Path;
 
 
 /**

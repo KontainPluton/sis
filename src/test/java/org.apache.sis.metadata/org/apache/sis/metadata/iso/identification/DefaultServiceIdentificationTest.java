@@ -33,12 +33,12 @@ import org.opengis.metadata.identification.ServiceIdentification;
 import org.opengis.metadata.identification.DistributedComputingPlatform;
 import org.apache.sis.metadata.iso.citation.DefaultCitation;
 import org.apache.sis.internal.system.DefaultFactories;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOn;
 import org.junit.Test;
 
 import static java.util.Collections.singleton;
-import static org.apache.sis.test.MetadataAssert.*;
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testmetadata.MetadataAssert.*;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
 
 
 /**

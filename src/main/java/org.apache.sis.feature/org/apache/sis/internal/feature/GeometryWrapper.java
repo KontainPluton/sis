@@ -16,37 +16,36 @@
  */
 package org.apache.sis.internal.feature;
 
-import java.util.Set;
-import java.util.Objects;
-import java.util.Iterator;
-import java.util.OptionalInt;
-import javax.measure.Unit;
-import javax.measure.Quantity;
-import javax.measure.quantity.Length;
-import javax.measure.IncommensurableException;
-import org.opengis.geometry.Geometry;
+import org.apache.sis.geometry.GeneralEnvelope;
+import org.apache.sis.internal.filter.sqlmm.SQLMM;
+import org.apache.sis.internal.referencing.ReferencingUtilities;
+import org.apache.sis.util.Classes;
+import org.apache.sis.util.Debug;
+import org.apache.sis.util.NullArgumentException;
+import org.apache.sis.util.UnconvertibleObjectException;
+import org.apache.sis.util.collection.BackingStoreException;
+import org.apache.sis.util.resources.Errors;
+import org.opengis.filter.DistanceOperatorName;
+import org.opengis.filter.InvalidFilterValueException;
+import org.opengis.filter.SpatialOperatorName;
 import org.opengis.geometry.Boundary;
 import org.opengis.geometry.DirectPosition;
+import org.opengis.geometry.Geometry;
 import org.opengis.geometry.TransfiniteSet;
 import org.opengis.geometry.complex.Complex;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.opengis.referencing.operation.CoordinateOperation;
 import org.opengis.referencing.operation.TransformException;
 import org.opengis.util.FactoryException;
-import org.apache.sis.geometry.GeneralEnvelope;
-import org.apache.sis.internal.filter.sqlmm.SQLMM;
-import org.apache.sis.internal.referencing.ReferencingUtilities;
-import org.apache.sis.util.collection.BackingStoreException;
-import org.apache.sis.util.UnconvertibleObjectException;
-import org.apache.sis.util.NullArgumentException;
-import org.apache.sis.util.Classes;
-import org.apache.sis.util.Debug;
-import org.apache.sis.util.resources.Errors;
 
-// Branch-dependent imports
-import org.opengis.filter.SpatialOperatorName;
-import org.opengis.filter.DistanceOperatorName;
-import org.opengis.filter.InvalidFilterValueException;
+import javax.measure.IncommensurableException;
+import javax.measure.Quantity;
+import javax.measure.Unit;
+import javax.measure.quantity.Length;
+import java.util.Iterator;
+import java.util.Objects;
+import java.util.OptionalInt;
+import java.util.Set;
 
 
 /**

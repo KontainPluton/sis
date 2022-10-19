@@ -16,11 +16,12 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.util.logging.LogRecord;
-import java.awt.image.RenderedImage;
-import java.awt.image.ImagingOpException;
 import org.apache.sis.image.ErrorHandler;
 import org.apache.sis.internal.system.Modules;
+
+import java.awt.image.ImagingOpException;
+import java.awt.image.RenderedImage;
+import java.util.logging.LogRecord;
 
 
 /**

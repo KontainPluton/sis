@@ -16,37 +16,37 @@
  */
 package org.apache.sis.storage.geotiff;
 
-import java.util.Locale;
-import java.util.Iterator;
-import java.util.Collections;
-import java.util.StringJoiner;
-import java.util.logging.Filter;
-import java.util.logging.LogRecord;
-import java.io.IOException;
-import java.io.StringReader;
-import java.io.ByteArrayInputStream;
-import java.nio.ByteBuffer;
-import java.nio.charset.StandardCharsets;
-import java.time.Instant;
+import org.apache.sis.internal.storage.MetadataBuilder;
+import org.apache.sis.internal.util.StandardDateFormat;
+import org.apache.sis.storage.event.StoreListeners;
+import org.apache.sis.util.collection.DefaultTreeTable;
+import org.apache.sis.util.collection.TableColumn;
+import org.apache.sis.util.collection.TreeTable;
+import org.apache.sis.util.resources.Errors;
+import org.apache.sis.xml.XML;
+
+import javax.xml.bind.JAXBException;
+import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.events.XMLEvent;
 import javax.xml.stream.events.Attribute;
 import javax.xml.stream.events.Characters;
 import javax.xml.stream.events.StartElement;
+import javax.xml.stream.events.XMLEvent;
 import javax.xml.transform.stax.StAXSource;
-import javax.xml.bind.JAXBException;
-import javax.xml.namespace.QName;
-import org.apache.sis.internal.util.StandardDateFormat;
-import org.apache.sis.internal.storage.MetadataBuilder;
-import org.apache.sis.storage.event.StoreListeners;
-import org.apache.sis.storage.geotiff.NativeMetadata;
-import org.apache.sis.util.collection.TreeTable;
-import org.apache.sis.util.collection.DefaultTreeTable;
-import org.apache.sis.util.collection.TableColumn;
-import org.apache.sis.util.resources.Errors;
-import org.apache.sis.xml.XML;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.StringReader;
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
+import java.time.Instant;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.Locale;
+import java.util.StringJoiner;
+import java.util.logging.Filter;
+import java.util.logging.LogRecord;
 
 import static org.apache.sis.internal.util.TemporalUtilities.toDate;
 

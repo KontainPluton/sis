@@ -16,19 +16,20 @@
  */
 package org.apache.sis.coverage;
 
-import java.util.Locale;
-import java.text.NumberFormat;
+import org.apache.sis.internal.util.Numerics;
+import org.apache.sis.io.TableAppender;
+import org.apache.sis.measure.MeasurementRange;
+import org.apache.sis.measure.NumberRange;
+import org.apache.sis.measure.Range;
+import org.apache.sis.measure.RangeFormat;
+import org.apache.sis.util.resources.Vocabulary;
+import org.opengis.util.GenericName;
+
 import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.text.Format;
-import org.opengis.util.GenericName;
-import org.apache.sis.io.TableAppender;
-import org.apache.sis.measure.Range;
-import org.apache.sis.measure.RangeFormat;
-import org.apache.sis.internal.util.Numerics;
-import org.apache.sis.measure.NumberRange;
-import org.apache.sis.measure.MeasurementRange;
-import org.apache.sis.util.resources.Vocabulary;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 
 /**

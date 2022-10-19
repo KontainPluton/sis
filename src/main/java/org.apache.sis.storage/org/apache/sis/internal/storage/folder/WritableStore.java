@@ -16,28 +16,17 @@
  */
 package org.apache.sis.internal.storage.folder;
 
-import java.nio.file.Path;
-import java.nio.file.Files;
-import java.nio.file.FileVisitResult;
-import java.nio.file.SimpleFileVisitor;
-import java.nio.file.StandardOpenOption;
-import java.nio.file.attribute.BasicFileAttributes;
-import java.io.IOException;
-import org.opengis.util.GenericName;
-import org.apache.sis.setup.OptionKey;
-import org.apache.sis.storage.Resource;
-import org.apache.sis.storage.DataStore;
-import org.apache.sis.storage.DataStoreProvider;
-import org.apache.sis.storage.StorageConnector;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.FeatureSet;
-import org.apache.sis.storage.WritableAggregate;
-import org.apache.sis.storage.WritableFeatureSet;
-import org.apache.sis.internal.storage.StoreUtilities;
-import org.apache.sis.internal.storage.Resources;
-import org.apache.sis.util.ArgumentChecks;
 import org.apache.sis.internal.storage.ResourceOnFileSystem;
-import org.apache.sis.storage.ReadOnlyStorageException;
+import org.apache.sis.internal.storage.Resources;
+import org.apache.sis.internal.storage.StoreUtilities;
+import org.apache.sis.setup.OptionKey;
+import org.apache.sis.storage.*;
+import org.apache.sis.util.ArgumentChecks;
+import org.opengis.util.GenericName;
+
+import java.io.IOException;
+import java.nio.file.*;
+import java.nio.file.attribute.BasicFileAttributes;
 
 
 /**

@@ -16,13 +16,16 @@
  */
 package org.apache.sis.internal.shapefile.jdbc;
 
-import java.io.*;
+import org.apache.sis.internal.shapefile.AutoChecker;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.util.Objects;
 import java.util.logging.Level;
-
-import org.apache.sis.internal.shapefile.AutoChecker;
 
 /**
  * Common byte reader.

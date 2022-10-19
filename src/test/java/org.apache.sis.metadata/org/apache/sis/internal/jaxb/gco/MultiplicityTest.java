@@ -26,7 +26,7 @@ import org.apache.sis.xml.XML;
 import org.apache.sis.metadata.xml.TestUsingFile;
 import org.apache.sis.util.Version;
 import org.apache.sis.measure.NumberRange;
-import org.apache.sis.test.mock.FeatureAttributeMock;
+import org.apache.sis.testmetadata.mock.FeatureAttributeMock;
 import org.junit.AfterClass;
 import org.junit.Test;
 

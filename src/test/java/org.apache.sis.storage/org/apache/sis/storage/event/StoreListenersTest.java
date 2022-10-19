@@ -20,8 +20,8 @@ import java.util.logging.Level;
 import java.util.logging.LogRecord;
 import org.apache.sis.storage.Resource;
 import org.apache.sis.storage.DataStoreMock;
-import org.apache.sis.test.DependsOnMethod;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.DependsOnMethod;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

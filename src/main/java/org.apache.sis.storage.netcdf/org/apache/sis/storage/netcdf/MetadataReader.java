@@ -34,7 +34,6 @@ import javax.measure.UnitConverter;
 import javax.measure.IncommensurableException;
 import javax.measure.format.ParserException;
 
-import org.apache.sis.storage.netcdf.NetcdfStoreProvider;
 import org.opengis.util.CodeList;
 import org.opengis.util.NameFactory;
 import org.opengis.util.InternationalString;

@@ -18,10 +18,10 @@ package org.apache.sis.metadata.iso.quality;
 
 import java.util.Date;
 import java.util.List;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 
 
 /**

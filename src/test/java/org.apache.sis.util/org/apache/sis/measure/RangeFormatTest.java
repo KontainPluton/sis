@@ -28,8 +28,8 @@ import java.text.ParsePosition;
 import java.text.ParseException;
 import java.text.AttributedCharacterIterator;
 import org.junit.Test;
-import org.apache.sis.test.TestCase;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.TestCase;
+import org.apache.sis.testutilities.DependsOn;
 
 import static org.junit.Assert.*;
 import static java.lang.StrictMath.*;

@@ -16,9 +16,10 @@
  */
 package org.apache.sis.storage.geotiff;
 
-import java.lang.reflect.Field;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.opengis.referencing.operation.MathTransform;
+
+import java.lang.reflect.Field;
 
 
 /**

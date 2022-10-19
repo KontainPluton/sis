@@ -16,15 +16,8 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
+import java.awt.image.*;
 import java.util.Arrays;
-import java.awt.image.Raster;
-import java.awt.image.DataBuffer;
-import java.awt.image.SampleModel;
-import java.awt.image.WritableRaster;
-import java.awt.image.IndexColorModel;
-import java.awt.image.BandedSampleModel;
-import java.awt.image.ComponentSampleModel;
-import java.awt.image.SinglePixelPackedSampleModel;
 
 
 /**

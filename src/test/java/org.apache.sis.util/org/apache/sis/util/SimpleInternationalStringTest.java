@@ -17,11 +17,11 @@
 package org.apache.sis.util;
 
 import java.util.Locale;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.opengis.test.Validators.validate;
-import static org.apache.sis.test.Assert.*;
+import static org.apache.sis.testutilities.Assert.*;
 import static org.apache.sis.util.DefaultInternationalStringTest.MESSAGE;
 
 

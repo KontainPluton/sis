@@ -21,13 +21,13 @@ import java.awt.Shape;
 import java.awt.image.BufferedImage;
 import java.awt.image.RenderedImage;
 import org.apache.sis.internal.processing.image.IsolinesTest;
-import org.apache.sis.test.DependsOn;
+import org.apache.sis.testutilities.DependsOn;
 import org.opengis.referencing.operation.MathTransform;
-import org.apache.sis.test.TestCase;
+import org.apache.sis.testutilities.TestCase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-import static org.apache.sis.test.TestUtilities.getSingleton;
+import static org.apache.sis.testutilities.TestUtilities.getSingleton;
 
 
 /**

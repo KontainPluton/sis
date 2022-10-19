@@ -16,37 +16,32 @@
  */
 package org.apache.sis.internal.storage;
 
-import java.util.Map;
-import java.util.List;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Spliterator;
-import java.util.function.Consumer;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
-import org.opengis.util.GenericName;
-import org.apache.sis.feature.FeatureOperations;
-import org.apache.sis.feature.DefaultFeatureType;
 import org.apache.sis.feature.DefaultAssociationRole;
+import org.apache.sis.feature.DefaultFeatureType;
+import org.apache.sis.feature.FeatureOperations;
+import org.apache.sis.filter.DefaultFilterFactory;
 import org.apache.sis.internal.feature.AttributeConvention;
+import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.FeatureQuery;
 import org.apache.sis.storage.FeatureSet;
-import org.apache.sis.storage.DataStoreException;
 import org.apache.sis.storage.event.StoreListeners;
 import org.apache.sis.util.ArraysExt;
 import org.apache.sis.util.collection.BackingStoreException;
 import org.apache.sis.util.collection.Containers;
-
-// Branch-dependent imports
 import org.opengis.feature.Feature;
 import org.opengis.feature.FeatureType;
 import org.opengis.feature.Operation;
 import org.opengis.feature.PropertyType;
+import org.opengis.filter.BinaryComparisonOperator;
+import org.opengis.filter.Expression;
 import org.opengis.filter.Filter;
 import org.opengis.filter.FilterFactory;
-import org.opengis.filter.Expression;
-import org.opengis.filter.BinaryComparisonOperator;
-import org.apache.sis.filter.DefaultFilterFactory;
+import org.opengis.util.GenericName;
+
+import java.util.*;
+import java.util.function.Consumer;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 
 /**

@@ -16,17 +16,16 @@
  */
 package org.apache.sis.storage;
 
-import java.util.Locale;
-import java.io.File;
-import java.nio.file.Path;
-import java.nio.file.Files;
-import java.nio.file.OpenOption;
-
-import org.apache.sis.storage.IllegalOpenParameterException;
-import org.apache.sis.util.Classes;
-import org.apache.sis.util.Workaround;
 import org.apache.sis.internal.storage.Resources;
 import org.apache.sis.internal.storage.io.IOUtilities;
+import org.apache.sis.util.Classes;
+import org.apache.sis.util.Workaround;
+
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.OpenOption;
+import java.nio.file.Path;
+import java.util.Locale;
 
 
 /**

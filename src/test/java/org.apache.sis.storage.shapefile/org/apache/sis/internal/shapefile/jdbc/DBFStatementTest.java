@@ -19,7 +19,7 @@ package org.apache.sis.internal.shapefile.jdbc;
 import java.sql.*;
 
 import org.apache.sis.internal.shapefile.jdbc.statement.DBFStatement;
-import org.apache.sis.test.DependsOnMethod;
+import org.apache.sis.testutilities.DependsOnMethod;
 import org.junit.*;
 
 import static org.junit.Assert.*;

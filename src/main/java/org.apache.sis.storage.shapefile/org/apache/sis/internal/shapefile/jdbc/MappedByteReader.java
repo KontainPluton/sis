@@ -16,6 +16,10 @@
  */
 package org.apache.sis.internal.shapefile.jdbc;
 
+import org.apache.sis.internal.shapefile.jdbc.resultset.SQLIllegalColumnIndexException;
+import org.apache.sis.internal.shapefile.jdbc.resultset.SQLNoSuchFieldException;
+import org.opengis.feature.Feature;
+
 import java.io.File;
 import java.nio.BufferUnderflowException;
 import java.nio.ByteOrder;
@@ -23,10 +27,6 @@ import java.nio.charset.Charset;
 import java.nio.charset.UnsupportedCharsetException;
 import java.util.*;
 import java.util.logging.Level;
-
-import org.apache.sis.internal.shapefile.jdbc.resultset.SQLIllegalColumnIndexException;
-import org.apache.sis.internal.shapefile.jdbc.resultset.SQLNoSuchFieldException;
-import org.opengis.feature.Feature;
 
 
 /**

@@ -16,9 +16,10 @@
  */
 package org.apache.sis.internal.coverage.j2d;
 
-import java.awt.color.ColorSpace;
 import org.apache.sis.internal.util.Numerics;
 import org.apache.sis.util.Debug;
+
+import java.awt.color.ColorSpace;
 
 
 /**

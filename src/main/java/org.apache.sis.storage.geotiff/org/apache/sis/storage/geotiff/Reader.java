@@ -16,24 +16,18 @@
  */
 package org.apache.sis.storage.geotiff;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.Iterator;
+import org.apache.sis.internal.geotiff.Resources;
+import org.apache.sis.internal.storage.io.ChannelDataInput;
+import org.apache.sis.internal.system.DefaultFactories;
+import org.apache.sis.storage.DataStoreContentException;
+import org.apache.sis.storage.DataStoreException;
+import org.apache.sis.storage.GridCoverageResource;
+import org.apache.sis.util.resources.Errors;
+import org.opengis.util.NameFactory;
+
 import java.io.IOException;
 import java.nio.ByteOrder;
-
-import org.apache.sis.storage.geotiff.*;
-import org.opengis.util.NameFactory;
-import org.apache.sis.storage.GridCoverageResource;
-import org.apache.sis.storage.DataStoreException;
-import org.apache.sis.storage.DataStoreContentException;
-import org.apache.sis.internal.storage.io.ChannelDataInput;
-import org.apache.sis.internal.geotiff.Resources;
-import org.apache.sis.internal.system.DefaultFactories;
-import org.apache.sis.util.resources.Errors;
+import java.util.*;
 
 
 /**

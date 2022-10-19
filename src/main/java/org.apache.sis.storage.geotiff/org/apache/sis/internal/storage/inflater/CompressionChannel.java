@@ -16,13 +16,14 @@
  */
 package org.apache.sis.internal.storage.inflater;
 
-import java.util.Arrays;
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import org.apache.sis.math.MathFunctions;
-import org.apache.sis.internal.util.Numerics;
 import org.apache.sis.internal.geotiff.Resources;
 import org.apache.sis.internal.storage.io.ChannelDataInput;
+import org.apache.sis.internal.util.Numerics;
+import org.apache.sis.math.MathFunctions;
+
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.util.Arrays;
 
 
 /**
